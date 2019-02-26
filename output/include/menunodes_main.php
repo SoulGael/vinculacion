@@ -264,7 +264,31 @@ function getMenuNodes_main($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Persona";
+	$menuNode["title"] = "Usuarios";
+
+
+
+	$menuNodesObject->menuNodes["main"][] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "12";
+	$menuNode["name"] = "";
+	$menuNode["href"] = "mypage.htm";
+	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "tbl_distributivo_proyectos";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "0";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "Internal";
+	$menuNode["pageType"] = "List";//
+	$menuNode["openType"] = "None";
+	
+	$menuNode["icon"] = "";
+	$menuNode["iconType"] = "0";
+
+			$menuNode["color"] = "";
+	
+	$menuNode["title"] = "Distributivo de Proyectos";
 
 
 

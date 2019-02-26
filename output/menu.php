@@ -93,6 +93,8 @@ include_once(getabspath("include/tbl_provincia_events.php"));
 $tableEvents["tbl_provincia"] = new eventclass_tbl_provincia;
 include_once(getabspath("include/tbl_persona_events.php"));
 $tableEvents["tbl_persona"] = new eventclass_tbl_persona;
+include_once(getabspath("include/tbl_distributivo_proyectos_events.php"));
+$tableEvents["tbl_distributivo_proyectos"] = new eventclass_tbl_distributivo_proyectos;
 
 $xt = new Xtempl();
 

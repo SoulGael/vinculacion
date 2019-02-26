@@ -505,6 +505,8 @@ class Chart
 			return true;
 		if("tbl_persona" == $this->chrt_array['tables'][0])
 			return true;
+		if("tbl_distributivo_proyectos" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

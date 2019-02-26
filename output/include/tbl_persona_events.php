@@ -14,6 +14,8 @@
 	// fill list of events
 		$this->events["BeforeAdd"]=true;
 
+		$this->events["BeforeEdit"]=true;
+
 
 	}
 
@@ -36,18 +38,24 @@
 function BeforeAdd(&$values, &$message, $inline, &$pageObject)
 {
 
-		$values['nombres']=strtoupper($values['nombres']);
-$values['apellidos']=strtoupper($values['apellidos']);
+		$values['nombres'] = strtoupper($values['nombres']);
+$values['apellidos'] = strtoupper($values['apellidos']);
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
 
 
-$sql = "INSERT INTO tbl_persona(cedula, nro_matricula, nombres, apellidos, telefono, email_institucional, email, id_ciudad, direccion, pass, foto, id_extension, id_carrera, nivel, id_periodo, id_rol, id_modalidad) 
-values ('".$values['cedula']."', '".$values['nro_matricula']."', '".$values['nombres']."', '".$values['apellidos']."', '".$values['telefono']."', '".$values['email_institucional']."', '".$values['email']."', ".$values['id_ciudad'].", '".$values['direccion']."', '".$values['cedula']."', '".$values['foto']."', ".$values['id_extension'].", ".$values['id_carrera'].", '".$values['nivel']."', '".$values['id_periodo']."', '".$values['id_rol']."', '".$values['id_modalidad']."')";
+//**********  Insert a record into another table  ************
+
+$sql = "INSERT INTO tbl_persona(cedula, nro_matricula, nombres, apellidos, telefono, email_institucional, email, direccion, pass, nivel, paralelo, foto, id_ciudad, id_carrera, id_periodo, id_rol) 
+values ('".$values['cedula']."', '".$values['nro_matricula']."', '".$values['nombres']."', '".$values['apellidos']."', '".$values['telefono']."', '".$values['email_institucional']."', '".$values['email']."', '".$values['direccion']."', '".$values['cedula']."', '".$values['nivel']."', '".$values['paralelo']."', '".$values['foto']."', ".$values['id_ciudad'].", ".$values['id_carrera'].", ".$values['id_periodo'].", ".$values['id_rol'].")";
 CustomQuery($sql);
 
 
 $pageObject->setMessageType(MESSAGE_SUCCESS);
 
-$pageObject->setMessage("Carrera Guardada Correctamente");
+$pageObject->setMessage("Usuario Guardado Correctamente, la contraseña es el número de cédula");
+
 
 // Place event code here.
 // Use "Add Action" button to add code snippets.
@@ -62,6 +70,102 @@ return false;
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// Before record updated
+function BeforeEdit(&$values, $where, &$oldvalues, &$keys, &$message, $inline, &$pageObject)
+{
+
+		$values['nombres'] = strtoupper($values['nombres']);
+$values['apellidos'] = strtoupper($values['apellidos']);
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+
+$sql = "UPDATE tbl_persona SET cedula='".$values['cedula']."', 
+nro_matricula='".$values['nro_matricula']."', 
+nombres='".$values['nombres']."', 
+apellidos='".$values['apellidos']."', 
+telefono='".$values['telefono']."', 
+email_institucional='".$values['email_institucional']."', 
+email='".$values['email']."', 
+direccion='".$values['direccion']."', pass='".$values['pass']."', 
+nivel='".$values['nivel']."', 
+paralelo='".$values['paralelo']."', 
+foto='".$values['foto']."', 
+id_ciudad=".$values['id_ciudad'].", 
+id_carrera=".$values['id_carrera'].", 
+id_periodo=".$values['id_periodo'].", 
+id_rol=".$values['id_rol']." where cedula=".$values['cedula'].";";
+CustomQuery($sql);
+
+
+$pageObject->setMessageType(MESSAGE_SUCCESS);
+
+$pageObject->setMessage("Usuario Actualizado Correctamente");
+
+
+return false;
+;		
+} // function BeforeEdit
+
 		
 		
 		

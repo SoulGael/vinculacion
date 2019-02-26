@@ -49,13 +49,19 @@ function InitLookupLinks()
 	$lookupTableLinks["tbl_provincia"]["tbl_extension.id_provincia"]["edit"] = array("table" => "tbl_extension", "field" => "id_provincia", "page" => "edit");
 	$lookupTableLinks["tbl_extension"]["tbl_facultad.id_extension"]["edit"] = array("table" => "tbl_facultad", "field" => "id_extension", "page" => "edit");
 	$lookupTableLinks["tbl_ciudad"]["tbl_persona.id_ciudad"]["edit"] = array("table" => "tbl_persona", "field" => "id_ciudad", "page" => "edit");
-	$lookupTableLinks["tbl_extension"]["tbl_persona.id_extension"]["edit"] = array("table" => "tbl_persona", "field" => "id_extension", "page" => "edit");
 	$lookupTableLinks["tbl_carrera"]["tbl_persona.id_carrera"]["edit"] = array("table" => "tbl_persona", "field" => "id_carrera", "page" => "edit");
 	$lookupTableLinks["tbl_periodo"]["tbl_persona.id_periodo"]["edit"] = array("table" => "tbl_persona", "field" => "id_periodo", "page" => "edit");
 	$lookupTableLinks["tbl_rol"]["tbl_persona.id_rol"]["edit"] = array("table" => "tbl_persona", "field" => "id_rol", "page" => "edit");
-	$lookupTableLinks["tbl_modalidad"]["tbl_persona.id_modalidad"]["edit"] = array("table" => "tbl_persona", "field" => "id_modalidad", "page" => "edit");
 	$lookupTableLinks["tbl_provincia"]["tbl_persona.id_provincia"]["edit"] = array("table" => "tbl_persona", "field" => "id_provincia", "page" => "edit");
 	$lookupTableLinks["tbl_facultad"]["tbl_persona.id_facultad"]["edit"] = array("table" => "tbl_persona", "field" => "id_facultad", "page" => "edit");
+	$lookupTableLinks["tbl_modalidad"]["tbl_persona.id_modalidad"]["edit"] = array("table" => "tbl_persona", "field" => "id_modalidad", "page" => "edit");
+	$lookupTableLinks["tbl_extension"]["tbl_persona.id_extension"]["edit"] = array("table" => "tbl_persona", "field" => "id_extension", "page" => "edit");
+	$lookupTableLinks["tbl_persona"]["tbl_distributivo_proyectos.cedula"]["edit"] = array("table" => "tbl_distributivo_proyectos", "field" => "cedula", "page" => "edit");
+	$lookupTableLinks["tbl_carrera"]["tbl_distributivo_proyectos.id_carrera"]["edit"] = array("table" => "tbl_distributivo_proyectos", "field" => "id_carrera", "page" => "edit");
+	$lookupTableLinks["tbl_periodo"]["tbl_distributivo_proyectos.id_periodo"]["edit"] = array("table" => "tbl_distributivo_proyectos", "field" => "id_periodo", "page" => "edit");
+	$lookupTableLinks["tbl_facultad"]["tbl_distributivo_proyectos.id_facultad"]["edit"] = array("table" => "tbl_distributivo_proyectos", "field" => "id_facultad", "page" => "edit");
+	$lookupTableLinks["tbl_extension"]["tbl_distributivo_proyectos.id_extension"]["edit"] = array("table" => "tbl_distributivo_proyectos", "field" => "id_extension", "page" => "edit");
+	$lookupTableLinks["tbl_modalidad"]["tbl_distributivo_proyectos.id_modalidad"]["edit"] = array("table" => "tbl_distributivo_proyectos", "field" => "id_modalidad", "page" => "edit");
 }
 
 ?>

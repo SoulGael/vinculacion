@@ -728,22 +728,25 @@
 	{$cell_grid_cell_dpreview}
 	{$recordattrs}
 	class="
-		 r-ori-vert			"
+					"
 
 	
 	data-cellId="grid_cell_dpreview" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-			<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
-	data-orders="tbl_persona"
-			data-details-tbl_persona	>
+				<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="tbl_persona,tbl_distributivo_proyectos"
+			data-details-tbl_persona			data-details-tbl_distributivo_proyectos	>
 		<span data-details-inside data-short-table="tbl_persona">
+			</span>
+		<span data-details-inside data-short-table="tbl_distributivo_proyectos">
 			</span>
 		<div data-details-preview>
 	</div>
 </div>
-	
+	 
+			
 	</td>
 	{END cellblock_grid_cell_dpreview}
 							</tr>

@@ -1410,35 +1410,6 @@ $detailsTablesData["tbl_extension"] = array();
 				$detailsTablesData["tbl_extension"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["tbl_extension"][$dIndex]["detailKeys"][]="id_extension";
-//	tbl_persona
-	
-	
-
-		$dIndex = 1;
-	$detailsParam = array();
-	$detailsParam["dDataSourceTable"]="tbl_persona";
-		$detailsParam["dOriginalTable"] = "tbl_persona";
-
-
-	
-				$detailsParam["dType"]=PAGE_LIST;
-	$detailsParam["dShortTable"] = "tbl_persona";
-	$detailsParam["dCaptionTable"] = GetTableCaption("tbl_persona");
-	$detailsParam["masterKeys"] =array();
-	$detailsParam["detailKeys"] =array();
-
-
-		
-	$detailsTablesData["tbl_extension"][$dIndex] = $detailsParam;
-
-	
-		$detailsTablesData["tbl_extension"][$dIndex]["masterKeys"] = array();
-
-	$detailsTablesData["tbl_extension"][$dIndex]["masterKeys"][]="id_extension";
-
-				$detailsTablesData["tbl_extension"][$dIndex]["detailKeys"] = array();
-
-	$detailsTablesData["tbl_extension"][$dIndex]["detailKeys"][]="id_extension";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["tbl_extension"] = array();

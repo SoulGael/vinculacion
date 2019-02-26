@@ -1,5 +1,7 @@
 <?php
 			$optionsArray = array( 'details' => array( 'tbl_persona' => array( 'displayPreview' => 2,
+'previewPageId' => '' ),
+'tbl_distributivo_proyectos' => array( 'displayPreview' => 2,
 'previewPageId' => '' ) ),
 'captcha' => array( 'captcha' => false ),
 'fields' => array( 'gridFields' => array( 'periodo',

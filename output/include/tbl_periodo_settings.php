@@ -826,6 +826,35 @@ $detailsTablesData["tbl_periodo"] = array();
 				$detailsTablesData["tbl_periodo"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["tbl_periodo"][$dIndex]["detailKeys"][]="id_periodo";
+//	tbl_distributivo_proyectos
+	
+	
+
+		$dIndex = 1;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="tbl_distributivo_proyectos";
+		$detailsParam["dOriginalTable"] = "tbl_distributivo_proyectos";
+
+
+	
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "tbl_distributivo_proyectos";
+	$detailsParam["dCaptionTable"] = GetTableCaption("tbl_distributivo_proyectos");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["tbl_periodo"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["tbl_periodo"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["tbl_periodo"][$dIndex]["masterKeys"][]="id_periodo";
+
+				$detailsTablesData["tbl_periodo"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["tbl_periodo"][$dIndex]["detailKeys"][]="id_periodo";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["tbl_periodo"] = array();

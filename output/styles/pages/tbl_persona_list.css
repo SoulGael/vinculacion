@@ -34,12 +34,6 @@
 [data-cellid="grid_footcell_field11"][data-page="tbl_persona_list"][data-cellid="grid_footcell_field11"][data-page="tbl_persona_list"][data-cellid="grid_footcell_field11"][data-page="tbl_persona_list"] {
   white-space: nowrap;
 }
-[data-cellid="grid_footcell_field12"][data-page="tbl_persona_list"][data-cellid="grid_footcell_field12"][data-page="tbl_persona_list"][data-cellid="grid_footcell_field12"][data-page="tbl_persona_list"] {
-  white-space: nowrap;
-}
-[data-cellid="grid_footcell_field13"][data-page="tbl_persona_list"][data-cellid="grid_footcell_field13"][data-page="tbl_persona_list"][data-cellid="grid_footcell_field13"][data-page="tbl_persona_list"] {
-  white-space: nowrap;
-}
 [data-cellid="grid_headcell_icons"][data-page="tbl_persona_list"][data-cellid="grid_headcell_icons"][data-page="tbl_persona_list"][data-cellid="grid_headcell_icons"][data-page="tbl_persona_list"] {
   width: 30px;
 }
@@ -48,4 +42,7 @@
 }
 [data-cellid="grid_headcell_checkbox"][data-page="tbl_persona_list"][data-cellid="grid_headcell_checkbox"][data-page="tbl_persona_list"][data-cellid="grid_headcell_checkbox"][data-page="tbl_persona_list"] {
   width: 30px;
+}
+[data-cellid="grid_cell_details"][data-page="tbl_persona_list"][data-cellid="grid_cell_details"][data-page="tbl_persona_list"][data-cellid="grid_cell_details"][data-page="tbl_persona_list"] {
+  white-space: nowrap;
 }

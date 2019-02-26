@@ -1,0 +1,457 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		<!--BEGIN rtlCSS-->
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		<!--END rtlCSS-->
+		<!--BEGIN styleCSSFiles-->
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		<!--END styleCSSFiles-->
+	<style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style></head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	<!--BEGIN body-->
+		<DIV id='header' class='simple-xt-tag' style='display: inline-block;'>header</DIV>
+		<style>
+			{$containerCss}
+		</style>
+		
+		<div class="container r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							<!--BEGIN top_block-->
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >Distributivo de Proyectos, Añadir nuevo</h2>
+	</div>					</div>
+	</div>		
+<!--END top_block-->
+									<!--BEGIN above-grid_block-->
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<!--BEGIN message_block-->
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5></h5>
+<div>
+<!--BEGIN back_button-->
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	<!--END back_button-->
+<!--BEGIN view_page_button-->
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+<!--END view_page_button-->
+<!--BEGIN edit_page_button-->
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+<!--END edit_page_button-->
+</div>
+</div>
+<!--END message_block-->	</div>					</div>
+	</div>		
+<!--END above-grid_block-->
+									<!--BEGIN grid_block-->
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+<!--BEGIN cellblock_grid_c3-->
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+<!--BEGIN cedula_fieldblock-->
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cedula}  r-vertical-field" 
+	data-fieldname="cedula" 
+	data-signal-error-for="cedula{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="cedula" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cedula}">
+		<!--BEGIN cedula_label--><span typeid="label" id1="tbl_distributivo_proyectos" id2="cedula">Apellidos</span><!--END cedula_label-->
+	</label>
+	<div class="r-edit-field">
+		<div class="field_black edit-control form-control" typeid="edit_cedula"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Apellidos</div>	</div>
+	<div class="r-edit-tooltip" data-helpfor="cedula">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+<!--END cedula_fieldblock-->
+											
+<!--BEGIN hrs_proyecto_vinculacion_fieldblock-->
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hrs_proyecto_vinculacion}  r-vertical-field" 
+	data-fieldname="hrs_proyecto_vinculacion" 
+	data-signal-error-for="hrs_proyecto_vinculacion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="hrs_proyecto_vinculacion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_hrs_proyecto_vinculacion}">
+		<!--BEGIN hrs_proyecto_vinculacion_label--><span typeid="label" id1="tbl_distributivo_proyectos" id2="hrs_proyecto_vinculacion">Hrs Proyecto Vinculacion</span><!--END hrs_proyecto_vinculacion_label-->
+	</label>
+	<div class="r-edit-field">
+		<div class="field_black edit-control form-control" typeid="edit_hrs_proyecto_vinculacion"><span class="glyphicon glyphicon-edit"></span>&nbsp;Hrs Proyecto Vinculacion</div>	</div>
+	<div class="r-edit-tooltip" data-helpfor="hrs_proyecto_vinculacion">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+<!--END hrs_proyecto_vinculacion_fieldblock-->
+											
+<!--BEGIN hrs_docente_tutor_fieldblock-->
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hrs_docente_tutor}  r-vertical-field" 
+	data-fieldname="hrs_docente_tutor" 
+	data-signal-error-for="hrs_docente_tutor{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="hrs_docente_tutor" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_hrs_docente_tutor}">
+		<!--BEGIN hrs_docente_tutor_label--><span typeid="label" id1="tbl_distributivo_proyectos" id2="hrs_docente_tutor">Hrs Docente Tutor</span><!--END hrs_docente_tutor_label-->
+	</label>
+	<div class="r-edit-field">
+		<div class="field_black edit-control form-control" typeid="edit_hrs_docente_tutor"><span class="glyphicon glyphicon-edit"></span>&nbsp;Hrs Docente Tutor</div>	</div>
+	<div class="r-edit-tooltip" data-helpfor="hrs_docente_tutor">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+<!--END hrs_docente_tutor_fieldblock-->
+											
+<!--BEGIN hrs_docente_participante_fieldblock-->
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hrs_docente_participante}  r-vertical-field" 
+	data-fieldname="hrs_docente_participante" 
+	data-signal-error-for="hrs_docente_participante{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="hrs_docente_participante" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_hrs_docente_participante}">
+		<!--BEGIN hrs_docente_participante_label--><span typeid="label" id1="tbl_distributivo_proyectos" id2="hrs_docente_participante">Hrs Docente Participante</span><!--END hrs_docente_participante_label-->
+	</label>
+	<div class="r-edit-field">
+		<div class="field_black edit-control form-control" typeid="edit_hrs_docente_participante"><span class="glyphicon glyphicon-edit"></span>&nbsp;Hrs Docente Participante</div>	</div>
+	<div class="r-edit-tooltip" data-helpfor="hrs_docente_participante">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+<!--END hrs_docente_participante_fieldblock-->
+											
+<!--BEGIN hrs_seguimiento_graduados_fieldblock-->
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hrs_seguimiento_graduados}  r-vertical-field" 
+	data-fieldname="hrs_seguimiento_graduados" 
+	data-signal-error-for="hrs_seguimiento_graduados{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="hrs_seguimiento_graduados" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_hrs_seguimiento_graduados}">
+		<!--BEGIN hrs_seguimiento_graduados_label--><span typeid="label" id1="tbl_distributivo_proyectos" id2="hrs_seguimiento_graduados">Hrs Seguimiento Graduados</span><!--END hrs_seguimiento_graduados_label-->
+	</label>
+	<div class="r-edit-field">
+		<div class="field_black edit-control form-control" typeid="edit_hrs_seguimiento_graduados"><span class="glyphicon glyphicon-edit"></span>&nbsp;Hrs Seguimiento Graduados</div>	</div>
+	<div class="r-edit-tooltip" data-helpfor="hrs_seguimiento_graduados">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+<!--END hrs_seguimiento_graduados_fieldblock-->
+											
+<!--BEGIN hrs_supervision_pasantias_comunitario_fieldblock-->
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hrs_supervision_pasantias_comunitario}  r-vertical-field" 
+	data-fieldname="hrs_supervision_pasantias_comunitario" 
+	data-signal-error-for="hrs_supervision_pasantias_comunitario{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="hrs_supervision_pasantias_comunitario" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_hrs_supervision_pasantias_comunitario}">
+		<!--BEGIN hrs_supervision_pasantias_comunitario_label--><span typeid="label" id1="tbl_distributivo_proyectos" id2="hrs_supervision_pasantias_comunitario">Hrs Supervision Pasantias Comunitario</span><!--END hrs_supervision_pasantias_comunitario_label-->
+	</label>
+	<div class="r-edit-field">
+		<div class="field_black edit-control form-control" typeid="edit_hrs_supervision_pasantias_comunitario"><span class="glyphicon glyphicon-edit"></span>&nbsp;Hrs Supervision Pasantias Comunitario</div>	</div>
+	<div class="r-edit-tooltip" data-helpfor="hrs_supervision_pasantias_comunitario">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+<!--END hrs_supervision_pasantias_comunitario_fieldblock-->
+											
+<!--BEGIN id_extension_fieldblock-->
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_extension}  r-vertical-field" 
+	data-fieldname="id_extension" 
+	data-signal-error-for="id_extension{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="id_extension" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_extension}">
+		<!--BEGIN id_extension_label--><span typeid="label" id1="tbl_distributivo_proyectos" id2="id_extension">Id Extension</span><!--END id_extension_label-->
+	</label>
+	<div class="r-edit-field">
+		<div class="field_black edit-control form-control" typeid="edit_id_extension"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Id Extension</div>	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_extension">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+<!--END id_extension_fieldblock-->
+											
+<!--BEGIN id_facultad_fieldblock-->
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_facultad}  r-vertical-field" 
+	data-fieldname="id_facultad" 
+	data-signal-error-for="id_facultad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="id_facultad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_facultad}">
+		<!--BEGIN id_facultad_label--><span typeid="label" id1="tbl_distributivo_proyectos" id2="id_facultad">Id Facultad</span><!--END id_facultad_label-->
+	</label>
+	<div class="r-edit-field">
+		<div class="field_black edit-control form-control" typeid="edit_id_facultad"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Id Facultad</div>	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_facultad">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+<!--END id_facultad_fieldblock-->
+											
+<!--BEGIN id_modalidad_fieldblock-->
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_modalidad}  r-vertical-field" 
+	data-fieldname="id_modalidad" 
+	data-signal-error-for="id_modalidad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="id_modalidad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_modalidad}">
+		<!--BEGIN id_modalidad_label--><span typeid="label" id1="tbl_distributivo_proyectos" id2="id_modalidad">Id Modalidad</span><!--END id_modalidad_label-->
+	</label>
+	<div class="r-edit-field">
+		<div class="field_black edit-control form-control" typeid="edit_id_modalidad"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Id Modalidad</div>	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_modalidad">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+<!--END id_modalidad_fieldblock-->
+											
+<!--BEGIN id_carrera_fieldblock-->
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_carrera}  r-vertical-field" 
+	data-fieldname="id_carrera" 
+	data-signal-error-for="id_carrera{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="id_carrera" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_carrera}">
+		<!--BEGIN id_carrera_label--><span typeid="label" id1="tbl_distributivo_proyectos" id2="id_carrera">Id Carrera</span><!--END id_carrera_label-->
+	</label>
+	<div class="r-edit-field">
+		<div class="field_black edit-control form-control" typeid="edit_id_carrera"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Id Carrera</div>	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_carrera">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+<!--END id_carrera_fieldblock-->
+											
+<!--BEGIN id_periodo_fieldblock-->
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_periodo}  r-vertical-field" 
+	data-fieldname="id_periodo" 
+	data-signal-error-for="id_periodo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="id_periodo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_periodo}">
+		<!--BEGIN id_periodo_label--><span typeid="label" id1="tbl_distributivo_proyectos" id2="id_periodo">Id Periodo</span><!--END id_periodo_label-->
+	</label>
+	<div class="r-edit-field">
+		<div class="field_black edit-control form-control" typeid="edit_id_periodo"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Id Periodo</div>	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_periodo">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+<!--END id_periodo_fieldblock-->
+	
+								</td>
+			<!--END cellblock_grid_c3-->
+								</tr>
+			</tbody></table>
+<!--END grid_block-->
+									<!--BEGIN below-grid_block-->
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		<!--BEGIN back_button-->
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+<!--END back_button-->
+	 
+		<!--BEGIN cancel_button-->
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+<!--END cancel_button-->
+	</div>					</div>
+	</div>		
+<!--END below-grid_block-->
+			</div>
+		<DIV id='footer' class='simple-xt-tag' style='display: inline-block;'>footer</DIV>
+	<!--END body-->
+	</body>
+</html>

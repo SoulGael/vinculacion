@@ -277,6 +277,8 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("tbl_persona" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
+	if ("tbl_distributivo_proyectos" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
 	return false;
 }
 
@@ -335,6 +337,7 @@ function GetTablesList($pdfMode = false)
 		$arr[]="tbl_rol";
 		$arr[]="tbl_provincia";
 		$arr[]="tbl_persona";
+		$arr[]="tbl_distributivo_proyectos";
 	return $arr;
 }
 
@@ -353,6 +356,7 @@ function GetTablesListWithoutSecurity()
 	$arr[]="tbl_rol";
 	$arr[]="tbl_provincia";
 	$arr[]="tbl_persona";
+	$arr[]="tbl_distributivo_proyectos";
 	return $arr;
 }
 
@@ -1044,6 +1048,10 @@ function GetUserPermissions($table="")
 		$permissions =  "ADESPIM";
 	}
 	if($table=="tbl_persona")
+	{
+		$permissions =  "ADESPIM";
+	}
+	if($table=="tbl_distributivo_proyectos")
 	{
 		$permissions =  "ADESPIM";
 	}

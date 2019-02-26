@@ -625,10 +625,12 @@ $tableCaptions["Spanish"]["tbl_modalidad"] = "Modalidades";
 $tableCaptions["Spanish"]["tbl_periodo"] = "Periodos";
 $tableCaptions["Spanish"]["tbl_rol"] = "Roles";
 $tableCaptions["Spanish"]["tbl_provincia"] = "Provincias";
-$tableCaptions["Spanish"]["tbl_persona"] = "Tbl Persona";
+$tableCaptions["Spanish"]["tbl_persona"] = "Usuarios";
+$tableCaptions["Spanish"]["tbl_distributivo_proyectos"] = "Distributivo de Proyectos";
 $tableCaptions["English"] = array();
 $tableCaptions["English"][""] = "";
 $tableCaptions["English"]["tbl_extension"] = "Tbl Extension";
+$tableCaptions["English"]["tbl_persona"] = "Usuarios";
 
 
 $globalEvents = new class_GlobalEvents;

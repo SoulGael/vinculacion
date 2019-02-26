@@ -408,6 +408,7 @@ class DB
 		{
 			$dalTables[$conn->connId][] = array("name" => "tbl_carrera", "varname" => "vinculacion_at_localhost__tbl_carrera", "altvarname" => "tbl_carrera", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 			$dalTables[$conn->connId][] = array("name" => "tbl_ciudad", "varname" => "vinculacion_at_localhost__tbl_ciudad", "altvarname" => "tbl_ciudad", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
+			$dalTables[$conn->connId][] = array("name" => "tbl_distributivo_proyectos", "varname" => "vinculacion_at_localhost__tbl_distributivo_proyectos", "altvarname" => "tbl_distributivo_proyectos", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 			$dalTables[$conn->connId][] = array("name" => "tbl_extension", "varname" => "vinculacion_at_localhost__tbl_extension", "altvarname" => "tbl_extension", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 			$dalTables[$conn->connId][] = array("name" => "tbl_facultad", "varname" => "vinculacion_at_localhost__tbl_facultad", "altvarname" => "tbl_facultad", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 			$dalTables[$conn->connId][] = array("name" => "tbl_modalidad", "varname" => "vinculacion_at_localhost__tbl_modalidad", "altvarname" => "tbl_modalidad", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");

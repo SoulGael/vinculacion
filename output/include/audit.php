@@ -338,6 +338,10 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="tbl_distributivo_proyectos")
+		{
+			return false;
+		}
 	}
 	
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -679,6 +683,10 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="tbl_persona")
+		{
+			return false;
+		}
+		if($table=="tbl_distributivo_proyectos")
 		{
 			return false;
 		}

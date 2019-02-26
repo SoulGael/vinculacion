@@ -325,6 +325,7 @@ class ConnectionManager
 		$connectionsIds["tbl_rol"] = "vinculacion_at_localhost";
 		$connectionsIds["tbl_provincia"] = "vinculacion_at_localhost";
 		$connectionsIds["tbl_persona"] = "vinculacion_at_localhost";
+		$connectionsIds["tbl_distributivo_proyectos"] = "vinculacion_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

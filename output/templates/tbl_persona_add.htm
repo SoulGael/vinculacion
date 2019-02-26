@@ -88,7 +88,7 @@
 		<a href="#">Información Personal</a>
 	</li>
 	<li role="presentation" data-step="1">
-		<a href="#">Institucional</a>
+		<a href="#">Información Institucional</a>
 	</li>
 </ul>	</div>					</div>
 	</div>		
@@ -134,7 +134,7 @@
 <div class="r-integrated-field form-group clearfix {$fielddispclass_foto}  r-vertical-field" 
 	data-fieldname="foto" 
 	data-signal-error-for="foto{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="foto" >
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="foto" >
 
 
 	<label class="r-edit-label control-label" for="{$labelfor_foto}">
@@ -266,13 +266,36 @@
 
 {END email_fieldblock}
 											
+{BEGIN direccion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_direccion}  r-vertical-field" 
+	data-fieldname="direccion" 
+	data-signal-error-for="direccion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="direccion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_direccion}">
+		{BEGIN direccion_label}{$label tbl_persona direccion }{END direccion_label}
+	</label>
+	<div class="r-edit-field">
+		{$direccion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="direccion">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END direccion_fieldblock}
+											
 {BEGIN id_provincia_fieldblock}
 
 
 <div class="r-integrated-field form-group clearfix {$fielddispclass_id_provincia}  r-vertical-field" 
 	data-fieldname="id_provincia" 
 	data-signal-error-for="id_provincia{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="id_provincia" >
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="id_provincia" >
 
 
 	<label class="r-edit-label control-label" for="{$labelfor_id_provincia}">
@@ -295,7 +318,7 @@
 <div class="r-integrated-field form-group clearfix {$fielddispclass_id_ciudad}  r-vertical-field" 
 	data-fieldname="id_ciudad" 
 	data-signal-error-for="id_ciudad{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="id_ciudad" >
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="id_ciudad" >
 
 
 	<label class="r-edit-label control-label" for="{$labelfor_id_ciudad}">
@@ -311,29 +334,6 @@
 
 
 {END id_ciudad_fieldblock}
-											
-{BEGIN direccion_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_direccion}  r-vertical-field" 
-	data-fieldname="direccion" 
-	data-signal-error-for="direccion{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="direccion" >
-
-
-	<label class="r-edit-label control-label" for="{$labelfor_direccion}">
-		{BEGIN direccion_label}{$label tbl_persona direccion }{END direccion_label}
-	</label>
-	<div class="r-edit-field">
-		{$direccion_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="direccion">
-		<div class="text-muted" >
-				</div>
-	</div>
-</div>
-
-
-{END direccion_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}
@@ -365,7 +365,7 @@
 {BEGIN cellblock_step2_c1}
 <td
 	{$cell_step2_c1}
-	class=" r-ori-vert"
+	class="r-align-left r-ori-vert"
 	
 			
 			data-cellId="step2_c1" data-pageid="{$pageid}"
@@ -449,7 +449,7 @@
 <div class="r-integrated-field form-group clearfix {$fielddispclass_id_extension}  r-vertical-field" 
 	data-fieldname="id_extension" 
 	data-signal-error-for="id_extension{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="id_extension" >
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="id_extension" >
 
 
 	<label class="r-edit-label control-label" for="{$labelfor_id_extension}">
@@ -472,7 +472,7 @@
 <div class="r-integrated-field form-group clearfix {$fielddispclass_id_facultad}  r-vertical-field" 
 	data-fieldname="id_facultad" 
 	data-signal-error-for="id_facultad{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="id_facultad" >
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="id_facultad" >
 
 
 	<label class="r-edit-label control-label" for="{$labelfor_id_facultad}">
@@ -489,13 +489,36 @@
 
 {END id_facultad_fieldblock}
 											
+{BEGIN id_modalidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_modalidad}  r-vertical-field" 
+	data-fieldname="id_modalidad" 
+	data-signal-error-for="id_modalidad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="id_modalidad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_modalidad}">
+		{BEGIN id_modalidad_label}{$label tbl_persona id_modalidad }{END id_modalidad_label}
+	</label>
+	<div class="r-edit-field">
+		{$id_modalidad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_modalidad">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END id_modalidad_fieldblock}
+											
 {BEGIN id_carrera_fieldblock}
 
 
 <div class="r-integrated-field form-group clearfix {$fielddispclass_id_carrera}  r-vertical-field" 
 	data-fieldname="id_carrera" 
 	data-signal-error-for="id_carrera{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="id_carrera" >
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="id_carrera" >
 
 
 	<label class="r-edit-label control-label" for="{$labelfor_id_carrera}">
@@ -518,7 +541,7 @@
 <div class="r-integrated-field form-group clearfix {$fielddispclass_nivel}  r-vertical-field" 
 	data-fieldname="nivel" 
 	data-signal-error-for="nivel{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="nivel" >
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="nivel" >
 
 
 	<label class="r-edit-label control-label" for="{$labelfor_nivel}">
@@ -535,28 +558,28 @@
 
 {END nivel_fieldblock}
 											
-{BEGIN id_modalidad_fieldblock}
+{BEGIN paralelo_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_id_modalidad}  r-vertical-field" 
-	data-fieldname="id_modalidad" 
-	data-signal-error-for="id_modalidad{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="id_modalidad" >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_paralelo}  r-vertical-field" 
+	data-fieldname="paralelo" 
+	data-signal-error-for="paralelo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="paralelo" >
 
 
-	<label class="r-edit-label control-label" for="{$labelfor_id_modalidad}">
-		{BEGIN id_modalidad_label}{$label tbl_persona id_modalidad }{END id_modalidad_label}
+	<label class="r-edit-label control-label" for="{$labelfor_paralelo}">
+		{BEGIN paralelo_label}{$label tbl_persona paralelo }{END paralelo_label}
 	</label>
 	<div class="r-edit-field">
-		{$id_modalidad_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="id_modalidad">
+		{$paralelo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="paralelo">
 		<div class="text-muted" >
 				</div>
 	</div>
 </div>
 
 
-{END id_modalidad_fieldblock}
+{END paralelo_fieldblock}
 											
 {BEGIN id_rol_fieldblock}
 

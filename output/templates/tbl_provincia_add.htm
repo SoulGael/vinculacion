@@ -102,6 +102,7 @@
 	{$cell_grid_c3}
 	class=" r-ori-vert"
 	
+			data-single
 				data-fullwidth
 		
 			data-cellId="grid_c3" data-pageid="{$pageid}"
@@ -132,29 +133,6 @@
 
 
 {END provincia_fieldblock}
-											
-{BEGIN estado_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_estado}  r-vertical-field" 
-	data-fieldname="estado" 
-	data-signal-error-for="estado{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="estado" >
-
-
-	<label class="r-edit-label control-label" for="{$labelfor_estado}">
-		{BEGIN estado_label}{$label tbl_provincia estado }{END estado_label}
-	</label>
-	<div class="r-edit-field">
-		{$estado_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="estado">
-		<div class="text-muted" >
-				</div>
-	</div>
-</div>
-
-
-{END estado_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}
