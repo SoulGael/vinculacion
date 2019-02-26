@@ -503,6 +503,8 @@ class Chart
 			return true;
 		if("tbl_provincia" == $this->chrt_array['tables'][0])
 			return true;
+		if("tbl_persona" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

@@ -100,6 +100,21 @@
 						</ul>
 		</td>
 		{END item5_menulink}
+			
+		{BEGIN item11_menulink}
+		<td id="item11" view="topitem" class="Leaf">
+			<table cellpadding="0">
+	<tr class="runner-menutab{BEGIN item11_current} current{END item11_current}">
+		<td class="runner-cl"><img src="images/spacer.gif"></td>
+		<td class="runner-cc">	
+			<a {$item11_menulink_attrs} {BEGIN item11_current}class="curlink"{END item11_current}>{$item11_title}</a>
+		</td>
+		<td class="runner-cr"><img src="images/spacer.gif"></td>
+	</tr>
+</table>	
+
+		</td>
+		{END item11_menulink}
 				{END simpleTypeMenu}
 
 	{BEGIN adminAreaTypeMenu}

@@ -24,7 +24,7 @@ function getMenuNodes_Datos_Generales($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Ciudad";
+	$menuNode["title"] = "Ciudad";
 
 
 
@@ -48,7 +48,7 @@ function getMenuNodes_Datos_Generales($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Carrera";
+	$menuNode["title"] = "Carreras";
 
 
 
@@ -72,7 +72,7 @@ function getMenuNodes_Datos_Generales($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Extension";
+	$menuNode["title"] = "Extensiones";
 
 
 
@@ -96,7 +96,7 @@ function getMenuNodes_Datos_Generales($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Facultad";
+	$menuNode["title"] = "Facultades";
 
 
 
@@ -120,7 +120,7 @@ function getMenuNodes_Datos_Generales($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Modalidad";
+	$menuNode["title"] = "Modalidades";
 
 
 
@@ -144,7 +144,7 @@ function getMenuNodes_Datos_Generales($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Periodo";
+	$menuNode["title"] = "Periodos";
 
 
 
@@ -168,7 +168,7 @@ function getMenuNodes_Datos_Generales($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Rol";
+	$menuNode["title"] = "Roles";
 
 
 
@@ -192,7 +192,7 @@ function getMenuNodes_Datos_Generales($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Provincia";
+	$menuNode["title"] = "Provincias";
 
 
 

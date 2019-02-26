@@ -1,5 +1,7 @@
 <?php
-			$optionsArray = array( 'master' => array( 'tbl_facultad' => array( 'preview' => false ),
+			$optionsArray = array( 'details' => array( 'tbl_persona' => array( 'displayPreview' => 2,
+'previewPageId' => '' ) ),
+'master' => array( 'tbl_facultad' => array( 'preview' => false ),
 'tbl_modalidad' => array( 'preview' => false ) ),
 'fields' => array( 'gridFields' => array( 'id_carrera',
 'carrera',

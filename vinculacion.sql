@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-02-2019 a las 08:11:29
+-- Tiempo de generación: 26-02-2019 a las 04:59:49
 -- Versión del servidor: 10.1.21-MariaDB
 -- Versión de PHP: 7.1.1
 
@@ -35,6 +35,15 @@ CREATE TABLE `tbl_carrera` (
   `id_modalidad` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `tbl_carrera`
+--
+
+INSERT INTO `tbl_carrera` (`id_carrera`, `carrera`, `codigo`, `estado`, `id_facultad`, `id_modalidad`) VALUES
+(1, 'SISTEMAS', 'SIS-010', 'Activo', 1, 2),
+(2, 'SISTEMAS', 'SIS-011', 'Activo', 2, 2),
+(3, 'CONTABILIDAD Y AUDOTORIA', 'CONT-111', 'Activo', 3, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -62,7 +71,9 @@ INSERT INTO `tbl_ciudad` (`id_ciudad`, `ciudad`, `estado`, `id_provincia`) VALUE
 (7, 'SAN PABLO', 'Activo', 1),
 (8, 'GUAYAQUIL', 'Activo', 5),
 (9, 'CUICOCHA', 'Activo', 1),
-(10, 'BAñOS DE AGUA SANTA', 'Activo', 6);
+(10, 'BAñOS DE AGUA SANTA', 'Activo', 6),
+(11, 'AMBATO', 'Activo', 6),
+(12, 'TULCAN', 'Activo', 8);
 
 -- --------------------------------------------------------
 
@@ -78,6 +89,14 @@ CREATE TABLE `tbl_extension` (
   `id_ciudad` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `tbl_extension`
+--
+
+INSERT INTO `tbl_extension` (`id_extension`, `extension`, `estado`, `codigo_u`, `id_ciudad`) VALUES
+(1, 'IBARRA', 'Activo', '10200', 1),
+(2, 'EXT TULCAN', 'Activo', 'tulcan_190', 12);
+
 -- --------------------------------------------------------
 
 --
@@ -91,6 +110,15 @@ CREATE TABLE `tbl_facultad` (
   `id_extension` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `tbl_facultad`
+--
+
+INSERT INTO `tbl_facultad` (`id_facultad`, `facultad`, `estado`, `id_extension`) VALUES
+(1, 'ERACLITO', 'Activo', 1),
+(2, 'ERACLITO', 'Activo', 2),
+(3, 'KLOKLES', 'Activo', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -102,6 +130,14 @@ CREATE TABLE `tbl_modalidad` (
   `modalidad` varchar(20) DEFAULT NULL,
   `estado` varchar(10) DEFAULT 'Activo'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `tbl_modalidad`
+--
+
+INSERT INTO `tbl_modalidad` (`id_modalidad`, `modalidad`, `estado`) VALUES
+(1, 'SEMI-PRESENCIAL', 'Activo'),
+(2, 'PRESENCIAL', 'Activo');
 
 -- --------------------------------------------------------
 
@@ -136,6 +172,48 @@ CREATE TABLE `tbl_periodo` (
   `codigo` varchar(45) DEFAULT NULL,
   `estado` varchar(10) DEFAULT 'Activo'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `tbl_periodo`
+--
+
+INSERT INTO `tbl_periodo` (`id_periodo`, `periodo`, `codigo`, `estado`) VALUES
+(1, '2018-2019', 'UI_2019', 'Activo');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbl_persona`
+--
+
+CREATE TABLE `tbl_persona` (
+  `id_persona` int(11) NOT NULL,
+  `cedula` varchar(15) NOT NULL,
+  `nro_matricula` varchar(20) DEFAULT NULL,
+  `nombres` varchar(100) NOT NULL,
+  `apellidos` varchar(100) NOT NULL,
+  `telefono` text,
+  `email_institucional` varchar(50) NOT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `id_ciudad` int(11) DEFAULT NULL,
+  `direccion` text,
+  `pass` varchar(50) NOT NULL,
+  `foto` text,
+  `estado` varchar(10) DEFAULT 'Activo',
+  `id_extension` int(11) NOT NULL,
+  `id_carrera` int(11) NOT NULL,
+  `nivel` varchar(20) NOT NULL,
+  `id_periodo` int(11) NOT NULL,
+  `id_rol` int(11) NOT NULL,
+  `id_modalidad` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `tbl_persona`
+--
+
+INSERT INTO `tbl_persona` (`id_persona`, `cedula`, `nro_matricula`, `nombres`, `apellidos`, `telefono`, `email_institucional`, `email`, `id_ciudad`, `direccion`, `pass`, `foto`, `estado`, `id_extension`, `id_carrera`, `nivel`, `id_periodo`, `id_rol`, `id_modalidad`) VALUES
+(1, '1720929593', 'oqwblkq', 'GIOVANNI GABRIEL', 'ROMERO DIAZ', '0960907044', 'si.uniande.s', 'ggabrielrd@gmail.com', 1, 'Guayaquil \r\nAbdon Calderon', '1720929593', '[{\"name\":\"perfil/chico lentes_pbz6bc5c.jpg\",\"usrName\":\"chico lentes.jpg\",\"size\":11019,\"type\":\"image/jpeg\",\"thumbnail\":\"perfil/thchico lentes_dv3ccxy1.jpg\",\"thumbnail_type\":\"image/jpeg\",\"thumbnail_size\":4131,\"searchStr\":\"chico lentes.jpg,!:sStrEnd\"}]', 'Activo', 1, 1, 'NOVENO', 1, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -180,7 +258,9 @@ INSERT INTO `tbl_provincia` (`id_provincia`, `provincia`, `estado`) VALUES
 (3, 'ESMERALDAS', 'Activo'),
 (4, 'LOJA', 'Activo'),
 (5, 'GUAYAS', 'Activo'),
-(6, 'TUNGURAHUA', 'Activo');
+(6, 'TUNGURAHUA', 'Activo'),
+(7, 'SUCUMBIOS', 'Activo'),
+(8, 'CARCHI', 'Activo');
 
 -- --------------------------------------------------------
 
@@ -193,6 +273,13 @@ CREATE TABLE `tbl_rol` (
   `rol` varchar(20) NOT NULL,
   `estado` varchar(10) DEFAULT 'Activo'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `tbl_rol`
+--
+
+INSERT INTO `tbl_rol` (`id_rol`, `rol`, `estado`) VALUES
+(2, 'ADMINISTRADOR', 'Activo');
 
 -- --------------------------------------------------------
 
@@ -349,6 +436,19 @@ ALTER TABLE `tbl_periodo`
   ADD UNIQUE KEY `periodo_UNIQUE` (`periodo`) USING BTREE;
 
 --
+-- Indices de la tabla `tbl_persona`
+--
+ALTER TABLE `tbl_persona`
+  ADD PRIMARY KEY (`id_persona`) USING BTREE,
+  ADD UNIQUE KEY `cedula_UNIQUE` (`cedula`) USING BTREE,
+  ADD KEY `fk_persona_extension1_idx` (`id_extension`) USING BTREE,
+  ADD KEY `fk_persona_rol_idx` (`id_rol`) USING BTREE,
+  ADD KEY `fk_persona_carrera1_idx` (`id_carrera`) USING BTREE,
+  ADD KEY `fk_persona_periodo1_idx` (`id_periodo`) USING BTREE,
+  ADD KEY `fk_persona_modalidad_idx` (`id_modalidad`) USING BTREE,
+  ADD KEY `id_ciudad` (`id_ciudad`);
+
+--
 -- Indices de la tabla `tbl_privilegio`
 --
 ALTER TABLE `tbl_privilegio`
@@ -375,27 +475,27 @@ ALTER TABLE `tbl_rol`
 -- AUTO_INCREMENT de la tabla `tbl_carrera`
 --
 ALTER TABLE `tbl_carrera`
-  MODIFY `id_carrera` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_carrera` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `tbl_ciudad`
 --
 ALTER TABLE `tbl_ciudad`
-  MODIFY `id_ciudad` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_ciudad` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT de la tabla `tbl_extension`
 --
 ALTER TABLE `tbl_extension`
-  MODIFY `id_extension` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_extension` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `tbl_facultad`
 --
 ALTER TABLE `tbl_facultad`
-  MODIFY `id_facultad` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_facultad` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `tbl_modalidad`
 --
 ALTER TABLE `tbl_modalidad`
-  MODIFY `id_modalidad` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_modalidad` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `tbl_pagina`
 --
@@ -405,17 +505,22 @@ ALTER TABLE `tbl_pagina`
 -- AUTO_INCREMENT de la tabla `tbl_periodo`
 --
 ALTER TABLE `tbl_periodo`
-  MODIFY `id_periodo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_periodo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT de la tabla `tbl_persona`
+--
+ALTER TABLE `tbl_persona`
+  MODIFY `id_persona` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `tbl_provincia`
 --
 ALTER TABLE `tbl_provincia`
-  MODIFY `id_provincia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_provincia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT de la tabla `tbl_rol`
 --
 ALTER TABLE `tbl_rol`
-  MODIFY `id_rol` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_rol` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Restricciones para tablas volcadas
 --
@@ -424,26 +529,37 @@ ALTER TABLE `tbl_rol`
 -- Filtros para la tabla `tbl_carrera`
 --
 ALTER TABLE `tbl_carrera`
-  ADD CONSTRAINT `fk_carrera_facultad1` FOREIGN KEY (`id_facultad`) REFERENCES `tbl_facultad` (`id_facultad`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_carrera_modalidad1` FOREIGN KEY (`id_modalidad`) REFERENCES `tbl_modalidad` (`id_modalidad`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_carrera_facultad1` FOREIGN KEY (`id_facultad`) REFERENCES `tbl_facultad` (`id_facultad`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_carrera_modalidad1` FOREIGN KEY (`id_modalidad`) REFERENCES `tbl_modalidad` (`id_modalidad`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `tbl_ciudad`
 --
 ALTER TABLE `tbl_ciudad`
-  ADD CONSTRAINT `fk_ciudad_provincia` FOREIGN KEY (`id_provincia`) REFERENCES `tbl_provincia` (`id_provincia`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_ciudad_provincia` FOREIGN KEY (`id_provincia`) REFERENCES `tbl_provincia` (`id_provincia`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `tbl_extension`
 --
 ALTER TABLE `tbl_extension`
-  ADD CONSTRAINT `fk_extension_ciudad1` FOREIGN KEY (`id_ciudad`) REFERENCES `tbl_ciudad` (`id_ciudad`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_extension_ciudad1` FOREIGN KEY (`id_ciudad`) REFERENCES `tbl_ciudad` (`id_ciudad`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `tbl_facultad`
 --
 ALTER TABLE `tbl_facultad`
-  ADD CONSTRAINT `fk_facultad_extension1` FOREIGN KEY (`id_extension`) REFERENCES `tbl_extension` (`id_extension`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_facultad_extension1` FOREIGN KEY (`id_extension`) REFERENCES `tbl_extension` (`id_extension`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `tbl_persona`
+--
+ALTER TABLE `tbl_persona`
+  ADD CONSTRAINT `fk_persona_carrera1` FOREIGN KEY (`id_carrera`) REFERENCES `tbl_carrera` (`id_carrera`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_persona_extension1` FOREIGN KEY (`id_extension`) REFERENCES `tbl_extension` (`id_extension`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_persona_modalidad` FOREIGN KEY (`id_modalidad`) REFERENCES `tbl_modalidad` (`id_modalidad`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_persona_periodo1` FOREIGN KEY (`id_periodo`) REFERENCES `tbl_periodo` (`id_periodo`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_persona_rol1` FOREIGN KEY (`id_rol`) REFERENCES `tbl_rol` (`id_rol`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `tbl_persona_fk1` FOREIGN KEY (`id_ciudad`) REFERENCES `tbl_ciudad` (`id_ciudad`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

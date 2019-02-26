@@ -48,7 +48,7 @@ function getMenuNodes_main($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Rol";
+	$menuNode["title"] = "Roles";
 
 
 
@@ -72,7 +72,7 @@ function getMenuNodes_main($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Provincia";
+	$menuNode["title"] = "Provincias";
 
 
 
@@ -96,7 +96,7 @@ function getMenuNodes_main($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Ciudad";
+	$menuNode["title"] = "Ciudad";
 
 
 
@@ -127,7 +127,7 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNodesObject->menuNodes["main"][] = $menuNode;
 	$menuNode = array();
 	$menuNode["id"] = "6";
-	$menuNode["name"] = "";
+	$menuNode["name"] = " Periodo";
 	$menuNode["href"] = "mypage.htm";
 	$menuNode["type"] = "Leaf";
 	$menuNode["table"] = "tbl_periodo";
@@ -144,7 +144,7 @@ function getMenuNodes_main($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Periodo";
+	$menuNode["title"] = " Periodo";
 
 
 
@@ -168,7 +168,7 @@ function getMenuNodes_main($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Extension";
+	$menuNode["title"] = "Extensiones";
 
 
 
@@ -192,7 +192,7 @@ function getMenuNodes_main($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Facultad";
+	$menuNode["title"] = "Facultades";
 
 
 
@@ -216,7 +216,7 @@ function getMenuNodes_main($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Modalidad";
+	$menuNode["title"] = "Modalidades";
 
 
 
@@ -240,7 +240,31 @@ function getMenuNodes_main($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Tbl Carrera";
+	$menuNode["title"] = "Carreras";
+
+
+
+	$menuNodesObject->menuNodes["main"][] = $menuNode;
+	$menuNode = array();
+	$menuNode["id"] = "11";
+	$menuNode["name"] = "";
+	$menuNode["href"] = "mypage.htm";
+	$menuNode["type"] = "Leaf";
+	$menuNode["table"] = "tbl_persona";
+	$menuNode["style"] = "";
+	$menuNode["params"] = "";
+	$menuNode["parent"] = "0";
+	$menuNode["nameType"] = "Text";
+	$menuNode["linkType"] = "Internal";
+	$menuNode["pageType"] = "List";//
+	$menuNode["openType"] = "None";
+	
+	$menuNode["icon"] = "";
+	$menuNode["iconType"] = "0";
+
+			$menuNode["color"] = "";
+	
+	$menuNode["title"] = "Tbl Persona";
 
 
 

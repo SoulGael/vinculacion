@@ -41,7 +41,18 @@ function BeforeAdd(&$values, &$message, $inline, &$pageObject)
 // Place event code here.
 // Use "Add Action" button to add code snippets.
 
-return true;
+
+//**********  Insert a record into another table  ************
+
+$sql = "INSERT INTO tbl_extension (extension, id_ciudad, codigo_u) values ('".$values['extension']."',".$values['id_ciudad'].",'".$values['codigo_u']."')";
+CustomQuery($sql);
+
+$pageObject->setMessageType(MESSAGE_SUCCESS);
+
+$pageObject->setMessage("Extensión Guardada Correctamente");
+
+
+return false;
 ;		
 } // function BeforeAdd
 

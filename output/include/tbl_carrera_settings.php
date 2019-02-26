@@ -12,9 +12,9 @@ $tdatatbl_carrera[".searchableFields"] = array();
 	$tdatatbl_carrera[".OriginalTable"] = "tbl_carrera";
 
 
-$defaultPages = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"list\":\"list\",\"search\":\"search\",\"view\":\"view\"}" );
+$defaultPages = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"search\":\"search\",\"view\":\"view\"}" );
 
-$tdatatbl_carrera[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"list\":[\"list\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
+$tdatatbl_carrera[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
 $tdatatbl_carrera[".defaultPages"] = $defaultPages;
 
 //	field labels
@@ -59,7 +59,6 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelstbl_carrera["Spanish"]["id_extension"] = "Id Extension";
 	$fieldToolTipstbl_carrera["Spanish"]["id_extension"] = "";
 	$placeHolderstbl_carrera["Spanish"]["id_extension"] = "";
-	$pageTitlestbl_carrera["Spanish"]["edit"] = "Tbl Carrera, Editar [{%id_carrera}]";
 	if (count($fieldToolTipstbl_carrera["Spanish"]))
 		$tdatatbl_carrera[".isUseToolTips"] = true;
 }
@@ -892,7 +891,8 @@ $tdatatbl_carrera[".hideMobileList"] = array();
 	$edata["categoryFields"] = array();
 	$edata["categoryFields"][] = array( "main" => "id_extension", "lookup" => "id_extension" );
 
-	
+		$edata["AllowToAdd"] = true;
+
 	
 
 	
@@ -1044,7 +1044,8 @@ $tdatatbl_carrera[".hideMobileList"] = array();
 
 	
 	
-	
+		$edata["AllowToAdd"] = true;
+
 	
 
 	
@@ -1565,7 +1566,8 @@ $tdatatbl_carrera[".hideMobileList"] = array();
 
 	
 	
-	
+		$edata["AllowToAdd"] = true;
+
 	
 				//dependent dropdowns @deprecated data ?
 	$edata["DependentLookups"] = array();
@@ -1653,6 +1655,35 @@ $page_titles["tbl_carrera"] = &$pageTitlestbl_carrera;
 // -----------------start  prepare master-details data arrays ------------------------------//
 // tables which are detail tables for current table (master)
 $detailsTablesData["tbl_carrera"] = array();
+//	tbl_persona
+	
+	
+
+		$dIndex = 0;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="tbl_persona";
+		$detailsParam["dOriginalTable"] = "tbl_persona";
+
+
+	
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "tbl_persona";
+	$detailsParam["dCaptionTable"] = GetTableCaption("tbl_persona");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["tbl_carrera"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["tbl_carrera"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["tbl_carrera"][$dIndex]["masterKeys"][]="id_carrera";
+
+				$detailsTablesData["tbl_carrera"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["tbl_carrera"][$dIndex]["detailKeys"][]="id_carrera";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["tbl_carrera"] = array();
@@ -2107,7 +2138,8 @@ $queryData_tbl_carrera = createSqlQuery_tbl_carrera();
 
 $tdatatbl_carrera[".sqlquery"] = $queryData_tbl_carrera;
 
-$tableEvents["tbl_carrera"] = new eventsBase;
-$tdatatbl_carrera[".hasEvents"] = false;
+include_once(getabspath("include/tbl_carrera_events.php"));
+$tableEvents["tbl_carrera"] = new eventclass_tbl_carrera;
+$tdatatbl_carrera[".hasEvents"] = true;
 
 ?>

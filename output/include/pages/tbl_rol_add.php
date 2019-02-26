@@ -1,5 +1,7 @@
 <?php
-			$optionsArray = array( 'captcha' => array( 'captcha' => false ),
+			$optionsArray = array( 'details' => array( 'tbl_persona' => array( 'displayPreview' => 2,
+'previewPageId' => '' ) ),
+'captcha' => array( 'captcha' => false ),
 'fields' => array( 'gridFields' => array( 'rol' ),
 'searchRequiredFields' => array(  ),
 'searchPanelFields' => array(  ),

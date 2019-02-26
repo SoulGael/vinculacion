@@ -285,8 +285,6 @@
 								
 			
 			
-			
-			
 				</li>				
 				{END filterCtrlBlock_provincia}
 
@@ -305,56 +303,6 @@
 			</ul>			
 		</div>
 		{END filter_control_provincia}
-	 
-			
-	 	
-
-		
-		 
-		 
-
-		 	
-
-		{BEGIN filter_control_ciudad}
-		<div class="panel panel-info filter-field filter-ciudad-container">
-			<div class="panel-heading filter-expander">
-																	<span class="filter-indicator glyphicon glyphicon-triangle-bottom"></span>	
-
-			
-				<label>{$label tbl_ciudad ciudad }</label>
-
-				{BEGIN clearLink_ciudad}
-				<a href="#" class="filter-clear filter-clear-ciudad">borrar</a>
-				{END clearLink_ciudad}				
-			</div>
-
-			<ul class="list-group">
-				{BEGIN filterCtrlBlock_ciudad}
-				<li class="list-group-item filter-values filter-values-ciudad {$collapsedClass_ciudad} {$visibilityClass_ciudad}">
-					{$ciudad_filter}
-								
-			
-			
-			
-			
-				</li>				
-				{END filterCtrlBlock_ciudad}
-
-							{BEGIN filter_button_showmore_ciudad}
-				<li class="list-group-item filter-show-more {$collapsedClass_ciudad} {$showMoreBtnClass_ciudad}">
-					<a class="filter-show-more-link filterShowMore_ciudad" href="#">{$show_n_more_ciudad}</a>
-				</li>
-				{END filter_button_showmore_ciudad}			
-			
-
-
-			
-
-				
-	
-			</ul>			
-		</div>
-		{END filter_control_ciudad}
 	 
 	</div>
 </div></td>
@@ -808,22 +756,25 @@
 	{$cell_grid_cell_dpreview}
 	{$recordattrs}
 	class="
-		 r-ori-vert			"
+					"
 
 	
 	data-cellId="grid_cell_dpreview" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-			<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
-	data-orders="tbl_extension"
-			data-details-tbl_extension	>
+				<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="tbl_extension,tbl_persona"
+			data-details-tbl_extension			data-details-tbl_persona	>
 		<span data-details-inside data-short-table="tbl_extension">
+			</span>
+		<span data-details-inside data-short-table="tbl_persona">
 			</span>
 		<div data-details-preview>
 	</div>
 </div>
-	
+	 
+			
 	</td>
 	{END cellblock_grid_cell_dpreview}
 							</tr>

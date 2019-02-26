@@ -688,6 +688,35 @@ $detailsTablesData["tbl_modalidad"] = array();
 				$detailsTablesData["tbl_modalidad"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["tbl_modalidad"][$dIndex]["detailKeys"][]="id_modalidad";
+//	tbl_persona
+	
+	
+
+		$dIndex = 1;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="tbl_persona";
+		$detailsParam["dOriginalTable"] = "tbl_persona";
+
+
+	
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "tbl_persona";
+	$detailsParam["dCaptionTable"] = GetTableCaption("tbl_persona");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["tbl_modalidad"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["tbl_modalidad"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["tbl_modalidad"][$dIndex]["masterKeys"][]="id_modalidad";
+
+				$detailsTablesData["tbl_modalidad"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["tbl_modalidad"][$dIndex]["detailKeys"][]="id_modalidad";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["tbl_modalidad"] = array();
@@ -859,7 +888,8 @@ $queryData_tbl_modalidad = createSqlQuery_tbl_modalidad();
 
 $tdatatbl_modalidad[".sqlquery"] = $queryData_tbl_modalidad;
 
-$tableEvents["tbl_modalidad"] = new eventsBase;
-$tdatatbl_modalidad[".hasEvents"] = false;
+include_once(getabspath("include/tbl_modalidad_events.php"));
+$tableEvents["tbl_modalidad"] = new eventclass_tbl_modalidad;
+$tdatatbl_modalidad[".hasEvents"] = true;
 
 ?>

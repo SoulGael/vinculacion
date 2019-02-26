@@ -334,6 +334,10 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="tbl_persona")
+		{
+			return false;
+		}
 	}
 	
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -671,6 +675,10 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="tbl_provincia")
+		{
+			return false;
+		}
+		if($table=="tbl_persona")
 		{
 			return false;
 		}

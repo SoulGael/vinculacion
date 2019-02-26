@@ -44,7 +44,6 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelstbl_ciudad["Spanish"]["provincia"] = "Provincia";
 	$fieldToolTipstbl_ciudad["Spanish"]["provincia"] = "";
 	$placeHolderstbl_ciudad["Spanish"]["provincia"] = "";
-	$pageTitlestbl_ciudad["Spanish"]["edit"] = "Tbl Ciudad, Editar [{%id_ciudad}]";
 	if (count($fieldToolTipstbl_ciudad["Spanish"]))
 		$tdatatbl_ciudad[".isUseToolTips"] = true;
 }
@@ -1009,6 +1008,35 @@ $detailsTablesData["tbl_ciudad"] = array();
 				$detailsParam["dType"]=PAGE_LIST;
 	$detailsParam["dShortTable"] = "tbl_extension";
 	$detailsParam["dCaptionTable"] = GetTableCaption("tbl_extension");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["tbl_ciudad"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["tbl_ciudad"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["tbl_ciudad"][$dIndex]["masterKeys"][]="id_ciudad";
+
+				$detailsTablesData["tbl_ciudad"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["tbl_ciudad"][$dIndex]["detailKeys"][]="id_ciudad";
+//	tbl_persona
+	
+	
+
+		$dIndex = 1;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="tbl_persona";
+		$detailsParam["dOriginalTable"] = "tbl_persona";
+
+
+	
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "tbl_persona";
+	$detailsParam["dCaptionTable"] = GetTableCaption("tbl_persona");
 	$detailsParam["masterKeys"] =array();
 	$detailsParam["detailKeys"] =array();
 

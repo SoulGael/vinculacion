@@ -264,7 +264,7 @@
 		{BEGIN add_link}
 <span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-button-item>
 	<a type="button" class="btn btn-primary   
-	" {$addlink_attrs} href="tbl_provincia_add.php" >
+	" {$addlink_attrs} href="tbl_provincia_add.php" data-popup >
 							Nuevo			</a>
 </span>
 {END add_link}
@@ -492,7 +492,7 @@
 {BEGIN edit_link}
 <span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-button-item>
 	<a type="button" class="btn-link   
-	 glyphicon glyphicon-pencil" href="tbl_provincia_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >		
+	 glyphicon glyphicon-pencil" href="tbl_provincia_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >		
 				
 								</a>
 </span>

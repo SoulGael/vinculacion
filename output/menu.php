@@ -79,10 +79,20 @@ require_once(getabspath("classes/cipherer.php"));
 
 include_once(getabspath("include/tbl_ciudad_events.php"));
 $tableEvents["tbl_ciudad"] = new eventclass_tbl_ciudad;
+include_once(getabspath("include/tbl_carrera_events.php"));
+$tableEvents["tbl_carrera"] = new eventclass_tbl_carrera;
 include_once(getabspath("include/tbl_extension_events.php"));
 $tableEvents["tbl_extension"] = new eventclass_tbl_extension;
+include_once(getabspath("include/tbl_facultad_events.php"));
+$tableEvents["tbl_facultad"] = new eventclass_tbl_facultad;
+include_once(getabspath("include/tbl_modalidad_events.php"));
+$tableEvents["tbl_modalidad"] = new eventclass_tbl_modalidad;
+include_once(getabspath("include/tbl_rol_events.php"));
+$tableEvents["tbl_rol"] = new eventclass_tbl_rol;
 include_once(getabspath("include/tbl_provincia_events.php"));
 $tableEvents["tbl_provincia"] = new eventclass_tbl_provincia;
+include_once(getabspath("include/tbl_persona_events.php"));
+$tableEvents["tbl_persona"] = new eventclass_tbl_persona;
 
 $xt = new Xtempl();
 

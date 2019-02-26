@@ -12,9 +12,9 @@ $tdatatbl_periodo[".searchableFields"] = array();
 	$tdatatbl_periodo[".OriginalTable"] = "tbl_periodo";
 
 
-$defaultPages = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"list\":\"list\",\"search\":\"search\",\"view\":\"view\"}" );
+$defaultPages = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"search\":\"search\",\"view\":\"view\"}" );
 
-$tdatatbl_periodo[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"list\":[\"list\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
+$tdatatbl_periodo[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
 $tdatatbl_periodo[".defaultPages"] = $defaultPages;
 
 //	field labels
@@ -797,6 +797,35 @@ $page_titles["tbl_periodo"] = &$pageTitlestbl_periodo;
 // -----------------start  prepare master-details data arrays ------------------------------//
 // tables which are detail tables for current table (master)
 $detailsTablesData["tbl_periodo"] = array();
+//	tbl_persona
+	
+	
+
+		$dIndex = 0;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="tbl_persona";
+		$detailsParam["dOriginalTable"] = "tbl_persona";
+
+
+	
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "tbl_persona";
+	$detailsParam["dCaptionTable"] = GetTableCaption("tbl_persona");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["tbl_periodo"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["tbl_periodo"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["tbl_periodo"][$dIndex]["masterKeys"][]="id_periodo";
+
+				$detailsTablesData["tbl_periodo"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["tbl_periodo"][$dIndex]["detailKeys"][]="id_periodo";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["tbl_periodo"] = array();

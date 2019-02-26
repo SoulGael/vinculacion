@@ -2900,6 +2900,8 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "tbl_rol" ] = "tbl_rol";
 	$projectEntities[ "tbl_provincia" ] = array( "url" => "tbl_provincia", "type" => 0 );
 	$projectEntitiesReverse[ "tbl_provincia" ] = "tbl_provincia";
+	$projectEntities[ "tbl_persona" ] = array( "url" => "tbl_persona", "type" => 0 );
+	$projectEntitiesReverse[ "tbl_persona" ] = "tbl_persona";
 }
 
 function findTable( $table ) {

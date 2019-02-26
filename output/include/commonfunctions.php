@@ -275,6 +275,8 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("tbl_provincia" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
+	if ("tbl_persona" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
 	return false;
 }
 
@@ -332,6 +334,7 @@ function GetTablesList($pdfMode = false)
 		$arr[]="tbl_periodo";
 		$arr[]="tbl_rol";
 		$arr[]="tbl_provincia";
+		$arr[]="tbl_persona";
 	return $arr;
 }
 
@@ -349,6 +352,7 @@ function GetTablesListWithoutSecurity()
 	$arr[]="tbl_periodo";
 	$arr[]="tbl_rol";
 	$arr[]="tbl_provincia";
+	$arr[]="tbl_persona";
 	return $arr;
 }
 
@@ -1036,6 +1040,10 @@ function GetUserPermissions($table="")
 		$permissions =  "ADESPIM";
 	}
 	if($table=="tbl_provincia")
+	{
+		$permissions =  "ADESPIM";
+	}
+	if($table=="tbl_persona")
 	{
 		$permissions =  "ADESPIM";
 	}

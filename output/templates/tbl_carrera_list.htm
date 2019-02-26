@@ -255,6 +255,71 @@
 
 </td>
 							</tr>
+											<tr>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="left_c2" data-pageid="{$pageid}">
+ 
+<div data-itemtype="filter_panel" data-itemid="filter_panel" {$item_filter_panel} data-pageid="{$pageid}">
+	<button type="button" class="btn btn-info bs-togglebutton bottom-margin collapsed" data-runner-toggle="collapse" data-target=".filterPanelContainer">	
+		<span class="glyphicon glyphicon-filter"><span> Filter	
+	</button>
+	<div class="filterPanelContainer {$filterPanelStateClass}">
+
+
+
+			
+	 	
+
+		
+		 
+		 
+
+		 	
+
+		{BEGIN filter_control_facultad}
+		<div class="panel panel-info filter-field filter-facultad-container">
+			<div class="panel-heading filter-expander">
+																	<span class="filter-indicator glyphicon glyphicon-triangle-bottom"></span>	
+
+			
+				<label>{$label tbl_carrera facultad }</label>
+
+				{BEGIN clearLink_facultad}
+				<a href="#" class="filter-clear filter-clear-facultad">borrar</a>
+				{END clearLink_facultad}				
+			</div>
+
+			<ul class="list-group">
+				{BEGIN filterCtrlBlock_facultad}
+				<li class="list-group-item filter-values filter-values-facultad {$collapsedClass_facultad} {$visibilityClass_facultad}">
+					{$facultad_filter}
+								
+			
+			
+				</li>				
+				{END filterCtrlBlock_facultad}
+
+							{BEGIN filter_button_showmore_facultad}
+				<li class="list-group-item filter-show-more {$collapsedClass_facultad} {$showMoreBtnClass_facultad}">
+					<a class="filter-show-more-link filterShowMore_facultad" href="#">{$show_n_more_facultad}</a>
+				</li>
+				{END filter_button_showmore_facultad}			
+			
+
+
+			
+
+				
+	
+			</ul>			
+		</div>
+		{END filter_control_facultad}
+	 
+	</div>
+</div></td>
+							</tr>
 					
 					</tbody>
 				</table>
@@ -369,7 +434,7 @@
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  bs-flexgrid rnr-b-grid rnr-gridtable" 
 	cellpadding="0" data-brick="grid"
-	data-body-height="1"
+	data-body-height="2"
 >
 						<thead>
 			{BEGIN grid_header}
@@ -420,6 +485,22 @@
 	
 	</th>
 	{END cellblock_grid_headcell_checkbox}
+				 
+					{BEGIN cellblock_grid_headcell_details}
+	<th
+	
+	{$cell_grid_headcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_details}
 				 
 					{BEGIN cellblock_grid_headcell_field}
 	<th
@@ -585,6 +666,7 @@
 							</tr>
 					 
 					 
+					 
 					
 					{END grid_header}
 			</thead>
@@ -669,6 +751,44 @@
 	
 	</td>
 	{END cellblock_grid_cell_checkbox}
+				 
+					{BEGIN cellblock_grid_cell_details}
+	<td
+	
+	{$cell_grid_cell_details}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="tbl_carrera_list"		data-control-cell
+	
+	>
+
+	 
+			 
+		
+	{BEGIN dtables_link}
+				<a 
+			data-itemtype="grid_details_link" data-itemid="grid_details_link" {$item_grid_details_link} data-pageid="{$pageid}" data-record-id="{$recId}" 
+			{$tbl_persona_link_attrs} 
+			class="{$dtables_link_class} details-badge badge tbl_persona_badge" 
+			title="Mostrar detalles"
+		>
+							<span class="glyphicon glyphicon-th-list"></span>
+									<span class="{$tbl_persona_cntspan_class}" {$tbl_persona_childnumber_attr}>
+				{$tbl_persona_childnumber}				
+			</span>
+		</a>
+	{END dtables_link}
+
+
+
+
+
+	
+	</td>
+	{END cellblock_grid_cell_details}
 				 
 					{BEGIN cellblock_grid_cell_field}
 	<td
@@ -809,6 +929,36 @@
 	{END cellblock_grid_cell_field5}
 							</tr>
 					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+								
+							">
+				 
+					{BEGIN cellblock_grid_cell_dpreview}
+	<td
+	
+	{$cell_grid_cell_dpreview}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_dpreview" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+			<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="tbl_persona"
+			data-details-tbl_persona	>
+		<span data-details-inside data-short-table="tbl_persona">
+			</span>
+		<div data-details-preview>
+	</div>
+</div>
+	
+	</td>
+	{END cellblock_grid_cell_dpreview}
+							</tr>
+					 
 					
 											{END grid_row}
 					</tbody>
@@ -818,7 +968,8 @@
 		 
 					 
 					 
-						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+					 
+						<tr {$rowattrs} {$row_grid_3} class="{$rowclass} 
 									{$gridFooter_class}
 									
 								bs-gridrow
@@ -855,6 +1006,22 @@
 	
 	</td>
 	{END cellblock_grid_footcell_checkbox}
+				 
+					{BEGIN cellblock_grid_footcell_details}
+	<td
+	
+	{$cell_grid_footcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_details}
 				 
 					{BEGIN cellblock_grid_footcell_field}
 	<td

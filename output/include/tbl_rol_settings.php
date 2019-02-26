@@ -12,9 +12,9 @@ $tdatatbl_rol[".searchableFields"] = array();
 	$tdatatbl_rol[".OriginalTable"] = "tbl_rol";
 
 
-$defaultPages = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"list\":\"list\",\"search\":\"search\",\"view\":\"view\"}" );
+$defaultPages = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"search\":\"search\",\"view\":\"view\"}" );
 
-$tdatatbl_rol[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"list\":[\"list\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
+$tdatatbl_rol[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
 $tdatatbl_rol[".defaultPages"] = $defaultPages;
 
 //	field labels
@@ -664,6 +664,35 @@ $page_titles["tbl_rol"] = &$pageTitlestbl_rol;
 // -----------------start  prepare master-details data arrays ------------------------------//
 // tables which are detail tables for current table (master)
 $detailsTablesData["tbl_rol"] = array();
+//	tbl_persona
+	
+	
+
+		$dIndex = 0;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="tbl_persona";
+		$detailsParam["dOriginalTable"] = "tbl_persona";
+
+
+	
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "tbl_persona";
+	$detailsParam["dCaptionTable"] = GetTableCaption("tbl_persona");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["tbl_rol"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["tbl_rol"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["tbl_rol"][$dIndex]["masterKeys"][]="id_rol";
+
+				$detailsTablesData["tbl_rol"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["tbl_rol"][$dIndex]["detailKeys"][]="id_rol";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["tbl_rol"] = array();
@@ -835,7 +864,8 @@ $queryData_tbl_rol = createSqlQuery_tbl_rol();
 
 $tdatatbl_rol[".sqlquery"] = $queryData_tbl_rol;
 
-$tableEvents["tbl_rol"] = new eventsBase;
-$tdatatbl_rol[".hasEvents"] = false;
+include_once(getabspath("include/tbl_rol_events.php"));
+$tableEvents["tbl_rol"] = new eventclass_tbl_rol;
+$tdatatbl_rol[".hasEvents"] = true;
 
 ?>

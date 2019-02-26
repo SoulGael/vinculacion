@@ -1,0 +1,161 @@
+<!doctype html>
+<html  {$html_attrs}>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="2">pagetitle</DIV></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<LINK REL="stylesheet" href="file:///C:/Users/ggabr/Documents/PHPRunnerProjects/vinculacion/tmp/styleCache/default.css" type="text/css" ruleindex="0">
+<!--BEGIN rtlCSS-->
+<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+<!--END rtlCSS-->
+<!--BEGIN styleCSSFiles-->
+<LINK REL="stylesheet" href type="text/css" id="styleCss" ruleindex="1">
+<!--END styleCSSFiles-->
+<style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style><link rel=stylesheet href="file:///C:/Users/ggabr/Documents/PHPRunnerProjects/vinculacion/tmp/styleCache/editor.css" type="text/css" temporary="">
+<link rel=stylesheet href="file:///C:/Users/ggabr/Documents/PHPRunnerProjects/vinculacion/tmp/styleCache/bootstrap/yeti/normal/style.css" type="text/css" temporary="">
+<link rel=stylesheet href="file:///C:/Users/ggabr/Documents/PHPRunnerProjects/vinculacion/tmp/styleCache/bs.css" type="text/css" temporary="">
+<link rel=stylesheet href="file:///C:/Users/ggabr/Documents/PHPRunnerProjects/vinculacion/tmp/styleCache/font-awesome/css/font-awesome.min.css" type="text/css" temporary="">
+<style custombootstrapcss="" temporary=""></style>
+</head>
+<BODY class="{$stylename} function-import" {$bodyattrs}>
+<!--BEGIN body-->
+<DIV id='header' class='simple-xt-tag' style='display: inline-block;'>header</DIV>
+<style>
+			{$containerCss}
+		</style>
+<DIV class="r-panel-page">
+<DIV class="bs-pagepanel panel panel-primary">
+<DIV class="panel-heading">
+<!--BEGIN top_block-->
+<DIV class="panel-title r-panel-top row" data-location="top" id="form_top_{$pageid}" data-makeup="panel" {$form_top} data-pageid="{$pageid}">	<DIV data-cellId="top_c1" data-pageid="{$pageid}" {$cell_top_c1} class="r-ori-vert col-md-12">
+<H3 class="panel-title" data-itemtype="import_header" data-itemid="import_header" {$item_import_header} data-pageid="{$pageid}">Tbl Persona, Importar</h3>
+</div>	</div>	<!--END top_block-->
+</div>
+<DIV class="panel-body">
+<!-- bsimportheader_text data-brick="importheader_text" data-pageid="{$pageid}" {$importheader_text_hiddenattr}-->
+<DIV id="importheaderText{$id}" class="form-group">	Arrastre un fichero separado por comas (.csv), Excel (.xlsx) o elija otra opción.	</div>
+<!-- bsimportfields data-brick="importfields" data-pageid="{$pageid}" {$importfields_hiddenattr}-->
+<DIV id="importFields{$id}" class="form-group">
+<div id="importUploadFallback{$id}" style="display: none;">
+<TABLE class="fieldGrid">
+<tr>
+<td>	Seleccione el fichero con los datos.	</td>
+<td>
+<input type="File" id="importFile{$id}" name="importFile{$id}">
+</td>
+</tr>
+</table>
+</div>
+<DIV class="rnr-import-settings">
+<BUTTON type="button" class="btn btn-default" id="uploadImportFile{$id}">Elegir...</button>
+</div>
+<DIV id="importDropzone{$id}" class="rnr-dragndrop-area" style="display: none;">
+<DIV class="rnr-dragtext"> Arrastre aquí los ficheros </div>
+</div>
+<DIV class="rnr-import-settings">
+<BUTTON type="button" class="btn btn-default" id="switchToTextInsertion{$id}">Copiar y pegar texto</button>
+</div>
+</div>
+<!-- bsimport_rawtext_control brickname_attr data-brick="import_rawtext_control" data-pageid="{$pageid}" {$import_rawtext_control_hiddenattr}-->
+<DIV id="copyAndPasteText{$id}" class="form-group" style="display:none;">
+<div>Copie y pegue su texto aquí:</div>
+<TEXTAREA class="rnr-import-textarea" id="importText{$id}">
+</textarea>
+</div>
+<!-- bsimport_preview data-brick="import_preview" data-pageid="{$pageid}" {$import_preview_hiddenattr}-->
+<DIV id="importPreview{$id}" class="form-group" style="display:none;">
+<DIV id="importSettings{$id}" class="rnr-import-settings form-group">
+<DIV class="rnr-is-control checkbox">
+<label>
+<INPUT class="rnr-checkbox" checked="checked" id="columnsInFirstLine{$id}" name="columnsInFirstLine" type="checkbox">Cabaceras de columnas en la primera línea	</label>
+</div>
+<UL id="delimiterSettings{$id}" style="display:none;" class="rnr-is-control list-inline">
+<LI class="radio">
+<label>
+<INPUT name="importDelimiter" class="importDelimiters" type="radio" value=",">	Coma	</label>
+</li>
+<LI class="radio">
+<label>
+<INPUT name="importDelimiter" class="importDelimiters" type="radio" value="&#9;">	Tabulador	</label>
+</li>
+<LI class="radio">
+<label>
+<INPUT name="importDelimiter" class="importDelimiters" type="radio" value="other">	Otro	</label> <input id="customDelimiter{$id}" value=";" type="text">
+</li>	</ul>	<DIV id="dateFormatSettings{$id}" class="rnr-is-control" style="display:none;">
+<label>Formato de fecha:</label>
+<input id="importDateFormat{$id}" type="text">
+</div>
+</div>
+<DIV id="importGridHead{$id}" class="rnr-import-head-preview">
+</div>
+<DIV id="importGridBody{$id}" class="rnr-import-body-preview form-group">
+<table id="importPreviewBodyTable{$id}"></table>
+</div>
+<DIV id="importErrorMessage{$id}" class="alert alert-danger" style="display:none;"></div>
+</div>	<!-- bsimport_process data-brick="import_process" data-pageid="{$pageid}" {$import_process_hiddenattr} -->
+<DIV id="importProgress{$id}" class="rnr-import-progress form-group" style="display:none;">
+</div>
+<!-- bsimport_results data-brick="import_results" data-pageid="{$pageid}" {$import_results_hiddenattr}-->
+<DIV id="reportText{$id}" class="rnr-import-report form-group" style="display:none;">
+</div>
+<!-- bsimportbuttons data-brick="importbuttons" data-pageid="{$pageid}" {$importbuttons_hiddenattr}-->
+<div id="importButtons{$id}">
+<DIV class="rnr-buttons-right">	<BUTTON type="button" class="btn btn-default" id="backToList{$id}">	Volver a la lista	</button>
+<BUTTON type="button" class="btn btn-default" id="newImport{$id}" style="display: none;">	Nueva importación	</button>
+</div>
+<DIV class="rnr-buttons-left">
+<BUTTON type="button" class="btn btn-primary disabled" id="continueTextImport{$id}" style="display: none;">	Continuar	</button>
+<BUTTON type="button" class="btn btn-primary" id="importButton{$id}" style="display: none;">	Importar datos	</button>
+<BUTTON type="button" class="btn btn-default" id="backTo{$id}" style="display: none;">	Regresar	</button>
+<BUTTON type="button" class="btn btn-default" id="saveReport{$id}" style="display: none;">	Guardar informe	</button>
+<BUTTON type="button" class="btn btn-default errorReportButtons{$id}" id="saveUnprocessedData{$id}" style="display: none;">	Descargar datos no procesados	</button>
+<BUTTON type="button" class="btn btn-default errorReportButtons{$id}" id="saveErrorReport{$id}" style="display: none;">	Descargar log de errores	</button>
+</div>
+</div>	</div>
+</div>
+</div>
+<DIV id='footer' class='simple-xt-tag' style='display: inline-block;'>footer</DIV>
+<!--END body-->
+</body>
+</html>

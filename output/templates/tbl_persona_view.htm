@@ -1,0 +1,628 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		
+		<div class="container r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel tbl_persona view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_persona_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_persona}  r-vertical-field" data-fieldname="id_persona" data-signal-error-for="id_persona{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_persona" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_persona}">
+		
+		{BEGIN id_persona_label}{$label tbl_persona id_persona }{END id_persona_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_persona_value}	</div>
+
+		
+</div>
+
+
+{END id_persona_fieldblock}
+											
+{BEGIN cedula_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cedula}  r-vertical-field" data-fieldname="cedula" data-signal-error-for="cedula{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="cedula" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cedula}">
+		
+		{BEGIN cedula_label}{$label tbl_persona cedula }{END cedula_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cedula_value}	</div>
+
+		
+</div>
+
+
+{END cedula_fieldblock}
+											
+{BEGIN nro_matricula_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nro_matricula}  r-vertical-field" data-fieldname="nro_matricula" data-signal-error-for="nro_matricula{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="nro_matricula" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nro_matricula}">
+		
+		{BEGIN nro_matricula_label}{$label tbl_persona nro_matricula }{END nro_matricula_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nro_matricula_value}	</div>
+
+		
+</div>
+
+
+{END nro_matricula_fieldblock}
+											
+{BEGIN nombres_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombres}  r-vertical-field" data-fieldname="nombres" data-signal-error-for="nombres{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="nombres" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nombres}">
+		
+		{BEGIN nombres_label}{$label tbl_persona nombres }{END nombres_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nombres_value}	</div>
+
+		
+</div>
+
+
+{END nombres_fieldblock}
+											
+{BEGIN apellidos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_apellidos}  r-vertical-field" data-fieldname="apellidos" data-signal-error-for="apellidos{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="apellidos" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_apellidos}">
+		
+		{BEGIN apellidos_label}{$label tbl_persona apellidos }{END apellidos_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$apellidos_value}	</div>
+
+		
+</div>
+
+
+{END apellidos_fieldblock}
+											
+{BEGIN telefono_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_telefono}  r-vertical-field" data-fieldname="telefono" data-signal-error-for="telefono{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="telefono" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_telefono}">
+		
+		{BEGIN telefono_label}{$label tbl_persona telefono }{END telefono_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$telefono_value}	</div>
+
+		
+</div>
+
+
+{END telefono_fieldblock}
+											
+{BEGIN email_institucional_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email_institucional}  r-vertical-field" data-fieldname="email_institucional" data-signal-error-for="email_institucional{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="email_institucional" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_email_institucional}">
+		
+		{BEGIN email_institucional_label}{$label tbl_persona email_institucional }{END email_institucional_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$email_institucional_value}	</div>
+
+		
+</div>
+
+
+{END email_institucional_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-vertical-field" data-fieldname="email" data-signal-error-for="email{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="email" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_email}">
+		
+		{BEGIN email_label}{$label tbl_persona email }{END email_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$email_value}	</div>
+
+		
+</div>
+
+
+{END email_fieldblock}
+											
+{BEGIN id_ciudad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_ciudad}  r-vertical-field" data-fieldname="id_ciudad" data-signal-error-for="id_ciudad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="id_ciudad" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_ciudad}">
+		
+		{BEGIN id_ciudad_label}{$label tbl_persona id_ciudad }{END id_ciudad_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_ciudad_value}	</div>
+
+		
+</div>
+
+
+{END id_ciudad_fieldblock}
+											
+{BEGIN direccion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_direccion}  r-vertical-field" data-fieldname="direccion" data-signal-error-for="direccion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="direccion" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_direccion}">
+		
+		{BEGIN direccion_label}{$label tbl_persona direccion }{END direccion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$direccion_value}	</div>
+
+		
+</div>
+
+
+{END direccion_fieldblock}
+											
+{BEGIN pass_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pass}  r-vertical-field" data-fieldname="pass" data-signal-error-for="pass{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="pass" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_pass}">
+		
+		{BEGIN pass_label}{$label tbl_persona pass }{END pass_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$pass_value}	</div>
+
+		
+</div>
+
+
+{END pass_fieldblock}
+											
+{BEGIN foto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_foto}  r-vertical-field" data-fieldname="foto" data-signal-error-for="foto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="foto" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_foto}">
+		
+		{BEGIN foto_label}{$label tbl_persona foto }{END foto_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$foto_value}	</div>
+
+		
+</div>
+
+
+{END foto_fieldblock}
+											
+{BEGIN estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estado}  r-vertical-field" data-fieldname="estado" data-signal-error-for="estado{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="estado" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_estado}">
+		
+		{BEGIN estado_label}{$label tbl_persona estado }{END estado_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$estado_value}	</div>
+
+		
+</div>
+
+
+{END estado_fieldblock}
+											
+{BEGIN id_extension_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_extension}  r-vertical-field" data-fieldname="id_extension" data-signal-error-for="id_extension{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="id_extension" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_extension}">
+		
+		{BEGIN id_extension_label}{$label tbl_persona id_extension }{END id_extension_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_extension_value}	</div>
+
+		
+</div>
+
+
+{END id_extension_fieldblock}
+											
+{BEGIN id_carrera_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_carrera}  r-vertical-field" data-fieldname="id_carrera" data-signal-error-for="id_carrera{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="id_carrera" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_carrera}">
+		
+		{BEGIN id_carrera_label}{$label tbl_persona id_carrera }{END id_carrera_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_carrera_value}	</div>
+
+		
+</div>
+
+
+{END id_carrera_fieldblock}
+											
+{BEGIN nivel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nivel}  r-vertical-field" data-fieldname="nivel" data-signal-error-for="nivel{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="nivel" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nivel}">
+		
+		{BEGIN nivel_label}{$label tbl_persona nivel }{END nivel_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nivel_value}	</div>
+
+		
+</div>
+
+
+{END nivel_fieldblock}
+											
+{BEGIN id_periodo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_periodo}  r-vertical-field" data-fieldname="id_periodo" data-signal-error-for="id_periodo{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="id_periodo" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_periodo}">
+		
+		{BEGIN id_periodo_label}{$label tbl_persona id_periodo }{END id_periodo_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_periodo_value}	</div>
+
+		
+</div>
+
+
+{END id_periodo_fieldblock}
+											
+{BEGIN id_rol_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_rol}  r-vertical-field" data-fieldname="id_rol" data-signal-error-for="id_rol{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="id_rol" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_rol}">
+		
+		{BEGIN id_rol_label}{$label tbl_persona id_rol }{END id_rol_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_rol_value}	</div>
+
+		
+</div>
+
+
+{END id_rol_fieldblock}
+											
+{BEGIN id_modalidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_modalidad}  r-vertical-field" data-fieldname="id_modalidad" data-signal-error-for="id_modalidad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="id_modalidad" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_modalidad}">
+		
+		{BEGIN id_modalidad_label}{$label tbl_persona id_modalidad }{END id_modalidad_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_modalidad_value}	</div>
+
+		
+</div>
+
+
+{END id_modalidad_fieldblock}
+											
+{BEGIN ciudad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ciudad}  r-vertical-field" data-fieldname="ciudad" data-signal-error-for="ciudad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="ciudad" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ciudad}">
+		
+		{BEGIN ciudad_label}{$label tbl_persona ciudad }{END ciudad_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ciudad_value}	</div>
+
+		
+</div>
+
+
+{END ciudad_fieldblock}
+											
+{BEGIN id_provincia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_provincia}  r-vertical-field" data-fieldname="id_provincia" data-signal-error-for="id_provincia{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="id_provincia" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_provincia}">
+		
+		{BEGIN id_provincia_label}{$label tbl_persona id_provincia }{END id_provincia_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_provincia_value}	</div>
+
+		
+</div>
+
+
+{END id_provincia_fieldblock}
+											
+{BEGIN provincia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_provincia}  r-vertical-field" data-fieldname="provincia" data-signal-error-for="provincia{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="provincia" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_provincia}">
+		
+		{BEGIN provincia_label}{$label tbl_persona provincia }{END provincia_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$provincia_value}	</div>
+
+		
+</div>
+
+
+{END provincia_fieldblock}
+											
+{BEGIN extension_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_extension}  r-vertical-field" data-fieldname="extension" data-signal-error-for="extension{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="extension" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_extension}">
+		
+		{BEGIN extension_label}{$label tbl_persona extension }{END extension_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$extension_value}	</div>
+
+		
+</div>
+
+
+{END extension_fieldblock}
+											
+{BEGIN id_facultad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_facultad}  r-vertical-field" data-fieldname="id_facultad" data-signal-error-for="id_facultad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="id_facultad" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_facultad}">
+		
+		{BEGIN id_facultad_label}{$label tbl_persona id_facultad }{END id_facultad_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_facultad_value}	</div>
+
+		
+</div>
+
+
+{END id_facultad_fieldblock}
+											
+{BEGIN facultad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_facultad}  r-vertical-field" data-fieldname="facultad" data-signal-error-for="facultad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="facultad" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_facultad}">
+		
+		{BEGIN facultad_label}{$label tbl_persona facultad }{END facultad_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$facultad_value}	</div>
+
+		
+</div>
+
+
+{END facultad_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-button-item>
+	<span class="dropdown">
+		<button type="button" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" >
+				<a  href="#" {$edit_page_button_attrs} >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

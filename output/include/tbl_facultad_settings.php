@@ -730,7 +730,7 @@ $tdatatbl_facultad[".hideMobileList"] = array();
 	$edata["LinkFieldType"] = 3;
 	$edata["DisplayField"] = "extension";
 
-				$edata["LookupWhere"] = "estado='Activo'";
+				$edata["LookupWhere"] = "tbl_extension.estado='Activo'";
 
 
 	
@@ -738,7 +738,8 @@ $tdatatbl_facultad[".hideMobileList"] = array();
 
 	
 	
-	
+		$edata["AllowToAdd"] = true;
+
 	
 
 	
@@ -1242,7 +1243,8 @@ $queryData_tbl_facultad = createSqlQuery_tbl_facultad();
 
 $tdatatbl_facultad[".sqlquery"] = $queryData_tbl_facultad;
 
-$tableEvents["tbl_facultad"] = new eventsBase;
-$tdatatbl_facultad[".hasEvents"] = false;
+include_once(getabspath("include/tbl_facultad_events.php"));
+$tableEvents["tbl_facultad"] = new eventclass_tbl_facultad;
+$tdatatbl_facultad[".hasEvents"] = true;
 
 ?>

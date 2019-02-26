@@ -1,5 +1,7 @@
 <?php
-			$optionsArray = array( 'fields' => array( 'gridFields' => array( 'id_rol',
+			$optionsArray = array( 'details' => array( 'tbl_persona' => array( 'displayPreview' => 2,
+'previewPageId' => '' ) ),
+'fields' => array( 'gridFields' => array( 'id_rol',
 'rol',
 'estado' ),
 'searchRequiredFields' => array(  ),

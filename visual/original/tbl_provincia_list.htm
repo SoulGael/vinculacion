@@ -188,21 +188,35 @@
 		 
 				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
 				<ul class="nav navbar-nav">
-                <li class=""><a href="#">Tbl Ciudad</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="nested-dropdown" aria-haspopup="true" aria-expanded="false" href="#">Datos Generales<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    
+                <li class=""><a href="#">Roles</a></li>
             
-                <li class=""><a href="#">Tbl Carrera</a></li>
+                <li class="active"><a href="#">Provincias</a></li>
             
-                <li class=""><a href="#">Tbl Extension</a></li>
+                <li class=""><a href="#">Ciudad</a></li>
             
-                <li class=""><a href="#">Tbl Facultad</a></li>
+                </ul>
+            </li>
             
-                <li class=""><a href="#">Tbl Modalidad</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="nested-dropdown" aria-haspopup="true" aria-expanded="false" href="#">Universidad<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    
+                <li class=""><a href="#"> Periodo</a></li>
             
-                <li class=""><a href="#">Tbl Periodo</a></li>
+                <li class=""><a href="#">Extensiones</a></li>
             
-                <li class=""><a href="#">Tbl Rol</a></li>
+                <li class=""><a href="#">Facultades</a></li>
             
-                <li class="active"><a href="#">Tbl Provincia</a></li>
+                <li class=""><a href="#">Modalidades</a></li>
+            
+                <li class=""><a href="#">Carreras</a></li>
+            
+                </ul>
+            </li>
             </ul>			</span>
 				 
 			 
@@ -299,10 +313,10 @@
                 <li ><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Tbl Provincia
+                        Provincias
                         <span class="caret"></span>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Tbl Ciudad</a></li><li><a href="#">Tbl Carrera</a></li><li><a href="#">Tbl Extension</a></li><li><a href="#">Tbl Facultad</a></li><li><a href="#">Tbl Modalidad</a></li><li><a href="#">Tbl Periodo</a></li><li><a href="#">Tbl Rol</a></li><li><a href="#">Tbl Provincia</a></li>
+                            <li><a href="#">Ciudad</a></li><li><a href="#">Carreras</a></li><li><a href="#">Extensiones</a></li><li><a href="#">Facultades</a></li><li><a href="#">Modalidades</a></li><li><a href="#">Periodos</a></li><li><a href="#">Roles</a></li><li><a href="#">Provincias</a></li>
                         </ul>
                     </a>
                 </li>
@@ -346,21 +360,21 @@
 ">
 		<!--BEGIN firstAboveGridCell-->
 		 
-		<!--BEGIN add_link-->
-<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-button-item>
-	<a type="button" class="btn btn-primary   
-	" {$addlink_attrs} href="tbl_provincia_add.php" >
-							Añadir nuevo			</a>
-</span>
-<!--END add_link-->
-	 
 		<!--BEGIN inlineadd_link-->
 <span data-itemtype="inline_add" data-itemid="inline_add" {$item_inline_add} data-pageid="{$pageid}" data-button-item>
 	<a type="button" class="btn btn-primary   
 	" {$inlineaddlink_attrs} >
-							Añadir nuevo			</a>
+							Añadir en Linea			</a>
 </span>
 <!--END inlineadd_link-->
+	 
+		<!--BEGIN add_link-->
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-primary   
+	" {$addlink_attrs} href="tbl_provincia_add.php" >
+							Nuevo			</a>
+</span>
+<!--END add_link-->
 	 
 		<!--BEGIN saveall_link-->
 <span data-itemtype="inline_save_all" data-itemid="inline_save_all" {$item_inline_save_all} data-pageid="{$pageid}" data-button-item>
@@ -691,7 +705,7 @@
 		>
 							<span class="glyphicon glyphicon-th-list"></span>
 									<span class="{$tbl_ciudad_cntspan_class}" {$tbl_ciudad_childnumber_attr}>
-				6				
+				1				
 			</span>
 		</a>
 	<!--END dtables_link-->

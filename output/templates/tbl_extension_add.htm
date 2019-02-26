@@ -201,6 +201,75 @@
 
 
 {END id_ciudad_fieldblock}
+											
+{BEGIN estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estado}  r-vertical-field" 
+	data-fieldname="estado" 
+	data-signal-error-for="estado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="estado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_estado}">
+		{BEGIN estado_label}{$label tbl_extension estado }{END estado_label}
+	</label>
+	<div class="r-edit-field">
+		{$estado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="estado">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END estado_fieldblock}
+											
+{BEGIN ciudad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ciudad}  r-vertical-field" 
+	data-fieldname="ciudad" 
+	data-signal-error-for="ciudad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="ciudad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ciudad}">
+		{BEGIN ciudad_label}{$label tbl_extension ciudad }{END ciudad_label}
+	</label>
+	<div class="r-edit-field">
+		{$ciudad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ciudad">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END ciudad_fieldblock}
+											
+{BEGIN provincia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_provincia}  r-vertical-field" 
+	data-fieldname="provincia" 
+	data-signal-error-for="provincia{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="provincia" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_provincia}">
+		{BEGIN provincia_label}{$label tbl_extension provincia }{END provincia_label}
+	</label>
+	<div class="r-edit-field">
+		{$provincia_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="provincia">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END provincia_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}
