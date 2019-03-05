@@ -279,6 +279,18 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("tbl_distributivo_proyectos" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
+	if ("tbl_convenio" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("tbl_institucion" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("tbl_linea_investigacion" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("tbl_programa_vinculacion" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("tbl_proyecto_vinculacion" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("tbl_vinculacion_estudiantes" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
 	return false;
 }
 
@@ -338,6 +350,12 @@ function GetTablesList($pdfMode = false)
 		$arr[]="tbl_provincia";
 		$arr[]="tbl_persona";
 		$arr[]="tbl_distributivo_proyectos";
+		$arr[]="tbl_convenio";
+		$arr[]="tbl_institucion";
+		$arr[]="tbl_linea_investigacion";
+		$arr[]="tbl_programa_vinculacion";
+		$arr[]="tbl_proyecto_vinculacion";
+		$arr[]="tbl_vinculacion_estudiantes";
 	return $arr;
 }
 
@@ -357,6 +375,12 @@ function GetTablesListWithoutSecurity()
 	$arr[]="tbl_provincia";
 	$arr[]="tbl_persona";
 	$arr[]="tbl_distributivo_proyectos";
+	$arr[]="tbl_convenio";
+	$arr[]="tbl_institucion";
+	$arr[]="tbl_linea_investigacion";
+	$arr[]="tbl_programa_vinculacion";
+	$arr[]="tbl_proyecto_vinculacion";
+	$arr[]="tbl_vinculacion_estudiantes";
 	return $arr;
 }
 
@@ -1052,6 +1076,30 @@ function GetUserPermissions($table="")
 		$permissions =  "ADESPIM";
 	}
 	if($table=="tbl_distributivo_proyectos")
+	{
+		$permissions =  "ADESPIM";
+	}
+	if($table=="tbl_convenio")
+	{
+		$permissions =  "ADESPIM";
+	}
+	if($table=="tbl_institucion")
+	{
+		$permissions =  "ADESPIM";
+	}
+	if($table=="tbl_linea_investigacion")
+	{
+		$permissions =  "ADESPIM";
+	}
+	if($table=="tbl_programa_vinculacion")
+	{
+		$permissions =  "ADESPIM";
+	}
+	if($table=="tbl_proyecto_vinculacion")
+	{
+		$permissions =  "ADESPIM";
+	}
+	if($table=="tbl_vinculacion_estudiantes")
 	{
 		$permissions =  "ADESPIM";
 	}

@@ -868,6 +868,21 @@ function fileCustomExpression($file, $data, $field, $ptype, $table="")
 	global $strTableName;
 	if(!$table)
 		$table = $strTableName;
+				if($table=="tbl_convenio" && $field=="documentos")
+	{
+		;
+		return $value;
+	}
+				if($table=="tbl_proyecto_vinculacion" && $field=="documento_proyecto_vinculacion")
+	{
+		;
+		return $value;
+	}
+				if($table=="tbl_vinculacion_estudiantes" && $field=="doc_oficio_contestacion")
+	{
+		;
+		return $value;
+	}
 	return $value;
 }
 
@@ -892,6 +907,14 @@ function GetDefaultValue($field, $ptype, $table="")
 	global $strTableName;
 	if(!$table)
 		$table=$strTableName;
+				if($table=="tbl_convenio" && $field=="fecha_inicio")
+	{
+		return now();
+	}
+				if($table=="tbl_convenio" && $field=="fecha_fin")
+	{
+		return now();
+	}
 	return "";
 }
 

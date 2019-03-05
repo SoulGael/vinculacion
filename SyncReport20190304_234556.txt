@@ -1,0 +1,3 @@
+Modified tables ("-" means deleted field, "+" means new field):
+	● tbl_proyecto_vinculacion:
+		 + documento_proyecto_vinculacion

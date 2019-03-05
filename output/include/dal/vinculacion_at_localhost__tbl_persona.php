@@ -18,6 +18,7 @@ $dalTabletbl_persona["id_ciudad"] = array("type"=>3,"varname"=>"id_ciudad", "nam
 $dalTabletbl_persona["id_carrera"] = array("type"=>3,"varname"=>"id_carrera", "name" => "id_carrera");
 $dalTabletbl_persona["id_periodo"] = array("type"=>3,"varname"=>"id_periodo", "name" => "id_periodo");
 $dalTabletbl_persona["id_rol"] = array("type"=>3,"varname"=>"id_rol", "name" => "id_rol");
+$dalTabletbl_persona["id_modalidad"] = array("type"=>3,"varname"=>"id_modalidad", "name" => "id_modalidad");
 	$dalTabletbl_persona["id_persona"]["key"]=true;
 
 $dal_info["vinculacion_at_localhost__tbl_persona"] = &$dalTabletbl_persona;

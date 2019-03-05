@@ -149,7 +149,7 @@ $tdatatbl_modalidad[".rowHighlite"] = true;
 
 
 
-
+			
 $tdatatbl_modalidad[".flexibleSearch"] = true;
 
 

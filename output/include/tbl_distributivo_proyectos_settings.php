@@ -32,42 +32,39 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelstbl_distributivo_proyectos["Spanish"]["id_distributivo_proyectos"] = "Id Distributivo Proyectos";
 	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["id_distributivo_proyectos"] = "";
 	$placeHolderstbl_distributivo_proyectos["Spanish"]["id_distributivo_proyectos"] = "";
-	$fieldLabelstbl_distributivo_proyectos["Spanish"]["cedula"] = "Apellidos";
+	$fieldLabelstbl_distributivo_proyectos["Spanish"]["cedula"] = "Apellidos Docente";
 	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["cedula"] = "";
 	$placeHolderstbl_distributivo_proyectos["Spanish"]["cedula"] = "";
-	$fieldLabelstbl_distributivo_proyectos["Spanish"]["hrs_proyecto_vinculacion"] = "Hrs Proyecto Vinculacion";
+	$fieldLabelstbl_distributivo_proyectos["Spanish"]["hrs_proyecto_vinculacion"] = "Hrs Proyecto de Vinculacion";
 	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["hrs_proyecto_vinculacion"] = "";
 	$placeHolderstbl_distributivo_proyectos["Spanish"]["hrs_proyecto_vinculacion"] = "";
-	$fieldLabelstbl_distributivo_proyectos["Spanish"]["hrs_docente_tutor"] = "Hrs Docente Tutor";
+	$fieldLabelstbl_distributivo_proyectos["Spanish"]["hrs_docente_tutor"] = "Hrs de Docente Tutor";
 	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["hrs_docente_tutor"] = "";
 	$placeHolderstbl_distributivo_proyectos["Spanish"]["hrs_docente_tutor"] = "";
-	$fieldLabelstbl_distributivo_proyectos["Spanish"]["hrs_docente_participante"] = "Hrs Docente Participante";
+	$fieldLabelstbl_distributivo_proyectos["Spanish"]["hrs_docente_participante"] = "Hrs de Docente Participante";
 	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["hrs_docente_participante"] = "";
 	$placeHolderstbl_distributivo_proyectos["Spanish"]["hrs_docente_participante"] = "";
-	$fieldLabelstbl_distributivo_proyectos["Spanish"]["hrs_seguimiento_graduados"] = "Hrs Seguimiento Graduados";
+	$fieldLabelstbl_distributivo_proyectos["Spanish"]["hrs_seguimiento_graduados"] = "Hrs de Seguimiento Graduados";
 	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["hrs_seguimiento_graduados"] = "";
 	$placeHolderstbl_distributivo_proyectos["Spanish"]["hrs_seguimiento_graduados"] = "";
-	$fieldLabelstbl_distributivo_proyectos["Spanish"]["hrs_supervision_pasantias_comunitario"] = "Hrs Supervision Pasantias Comunitario";
+	$fieldLabelstbl_distributivo_proyectos["Spanish"]["hrs_supervision_pasantias_comunitario"] = "Hrs para Supervision Pasantias Comunitario";
 	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["hrs_supervision_pasantias_comunitario"] = "";
 	$placeHolderstbl_distributivo_proyectos["Spanish"]["hrs_supervision_pasantias_comunitario"] = "";
-	$fieldLabelstbl_distributivo_proyectos["Spanish"]["id_periodo"] = "Id Periodo";
+	$fieldLabelstbl_distributivo_proyectos["Spanish"]["id_periodo"] = "Periodo";
 	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["id_periodo"] = "";
 	$placeHolderstbl_distributivo_proyectos["Spanish"]["id_periodo"] = "";
 	$fieldLabelstbl_distributivo_proyectos["Spanish"]["estado"] = "Estado";
 	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["estado"] = "";
 	$placeHolderstbl_distributivo_proyectos["Spanish"]["estado"] = "";
-	$fieldLabelstbl_distributivo_proyectos["Spanish"]["id_carrera"] = "Id Carrera";
+	$fieldLabelstbl_distributivo_proyectos["Spanish"]["id_carrera"] = "Carrera";
 	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["id_carrera"] = "";
 	$placeHolderstbl_distributivo_proyectos["Spanish"]["id_carrera"] = "";
-	$fieldLabelstbl_distributivo_proyectos["Spanish"]["id_facultad"] = "Id Facultad";
+	$fieldLabelstbl_distributivo_proyectos["Spanish"]["id_facultad"] = "Facultad";
 	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["id_facultad"] = "";
 	$placeHolderstbl_distributivo_proyectos["Spanish"]["id_facultad"] = "";
-	$fieldLabelstbl_distributivo_proyectos["Spanish"]["id_extension"] = "Id Extension";
+	$fieldLabelstbl_distributivo_proyectos["Spanish"]["id_extension"] = "Extension";
 	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["id_extension"] = "";
 	$placeHolderstbl_distributivo_proyectos["Spanish"]["id_extension"] = "";
-	$fieldLabelstbl_distributivo_proyectos["Spanish"]["id_modalidad"] = "Id Modalidad";
-	$fieldToolTipstbl_distributivo_proyectos["Spanish"]["id_modalidad"] = "";
-	$placeHolderstbl_distributivo_proyectos["Spanish"]["id_modalidad"] = "";
 	if (count($fieldToolTipstbl_distributivo_proyectos["Spanish"]))
 		$tdatatbl_distributivo_proyectos[".isUseToolTips"] = true;
 }
@@ -179,7 +176,7 @@ $tdatatbl_distributivo_proyectos[".rowHighlite"] = true;
 
 
 
-
+									
 $tdatatbl_distributivo_proyectos[".flexibleSearch"] = true;
 
 
@@ -213,7 +210,6 @@ $tdatatbl_distributivo_proyectos[".googleLikeFields"][] = "id_periodo";
 $tdatatbl_distributivo_proyectos[".googleLikeFields"][] = "estado";
 $tdatatbl_distributivo_proyectos[".googleLikeFields"][] = "id_facultad";
 $tdatatbl_distributivo_proyectos[".googleLikeFields"][] = "id_extension";
-$tdatatbl_distributivo_proyectos[".googleLikeFields"][] = "id_modalidad";
 
 
 
@@ -251,8 +247,8 @@ $tdatatbl_distributivo_proyectos[".strOrderBy"] = $tstrOrderBy;
 
 $tdatatbl_distributivo_proyectos[".orderindexes"] = array();
 
-$tdatatbl_distributivo_proyectos[".sqlHead"] = "SELECT tbl_distributivo_proyectos.id_distributivo_proyectos,  tbl_distributivo_proyectos.cedula,  tbl_distributivo_proyectos.hrs_proyecto_vinculacion,  tbl_distributivo_proyectos.hrs_docente_tutor,  tbl_distributivo_proyectos.hrs_docente_participante,  tbl_distributivo_proyectos.hrs_seguimiento_graduados,  tbl_distributivo_proyectos.hrs_supervision_pasantias_comunitario,  tbl_distributivo_proyectos.id_carrera,  tbl_distributivo_proyectos.id_periodo,  tbl_distributivo_proyectos.estado,  tbl_carrera.id_facultad,  tbl_facultad.id_extension,  tbl_carrera.id_modalidad";
-$tdatatbl_distributivo_proyectos[".sqlFrom"] = "FROM tbl_distributivo_proyectos  INNER JOIN tbl_carrera ON tbl_carrera.id_carrera = tbl_distributivo_proyectos.id_carrera  INNER JOIN tbl_facultad ON tbl_facultad.id_facultad = tbl_carrera.id_facultad";
+$tdatatbl_distributivo_proyectos[".sqlHead"] = "SELECT tbl_distributivo_proyectos.id_distributivo_proyectos,  tbl_distributivo_proyectos.cedula,  tbl_distributivo_proyectos.hrs_proyecto_vinculacion,  tbl_distributivo_proyectos.hrs_docente_tutor,  tbl_distributivo_proyectos.hrs_docente_participante,  tbl_distributivo_proyectos.hrs_seguimiento_graduados,  tbl_distributivo_proyectos.hrs_supervision_pasantias_comunitario,  tbl_distributivo_proyectos.id_carrera,  tbl_distributivo_proyectos.id_periodo,  tbl_distributivo_proyectos.estado,  tbl_carrera.id_facultad,  tbl_facultad.id_extension";
+$tdatatbl_distributivo_proyectos[".sqlFrom"] = "FROM tbl_distributivo_proyectos  INNER JOIN tbl_carrera ON tbl_distributivo_proyectos.id_carrera = tbl_carrera.id_carrera  INNER JOIN tbl_facultad ON tbl_carrera.id_facultad = tbl_facultad.id_facultad";
 $tdatatbl_distributivo_proyectos[".sqlWhereExpr"] = "";
 $tdatatbl_distributivo_proyectos[".sqlTail"] = "";
 
@@ -494,7 +490,7 @@ $tdatatbl_distributivo_proyectos[".hideMobileList"] = array();
 		
 	$edata["LinkField"] = "cedula";
 	$edata["LinkFieldType"] = 0;
-	$edata["DisplayField"] = "nombres";
+	$edata["DisplayField"] = "apellidos";
 
 				$edata["LookupWhere"] = "tbl_persona.estado='Activo'";
 
@@ -1278,7 +1274,6 @@ $tdatatbl_distributivo_proyectos[".hideMobileList"] = array();
 		$edata["UseCategory"] = true;
 	$edata["categoryFields"] = array();
 	$edata["categoryFields"][] = array( "main" => "id_facultad", "lookup" => "id_facultad" );
-	$edata["categoryFields"][] = array( "main" => "id_modalidad", "lookup" => "id_modalidad" );
 
 	
 	
@@ -1954,161 +1949,6 @@ $tdatatbl_distributivo_proyectos[".hideMobileList"] = array();
 
 	$tdatatbl_distributivo_proyectos["id_extension"] = $fdata;
 		$tdatatbl_distributivo_proyectos[".searchableFields"][] = "id_extension";
-//	id_modalidad
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 13;
-	$fdata["strName"] = "id_modalidad";
-	$fdata["GoodName"] = "id_modalidad";
-	$fdata["ownerTable"] = "tbl_carrera";
-	$fdata["Label"] = GetFieldLabel("tbl_distributivo_proyectos","id_modalidad");
-	$fdata["FieldType"] = 3;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "id_modalidad";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "tbl_carrera.id_modalidad";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Lookup wizard");
-
-	
-	
-	
-
-// Begin Lookup settings
-				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "tbl_modalidad";
-		$edata["autoCompleteFieldsOnEdit"] = 0;
-	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
-
-	
-		
-	$edata["LinkField"] = "id_modalidad";
-	$edata["LinkFieldType"] = 0;
-	$edata["DisplayField"] = "modalidad";
-
-				$edata["LookupWhere"] = "tbl_modalidad.estado='Activo'";
-
-
-	
-	$edata["LookupOrderBy"] = "modalidad";
-
-	
-	
-	
-	
-				//dependent dropdowns @deprecated data ?
-	$edata["DependentLookups"] = array();
-	$edata["DependentLookups"][] = "id_carrera";
-
-	
-	
-		$edata["SelectSize"] = 1;
-
-// End Lookup Settings
-
-
-		$edata["IsRequired"] = true;
-
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-			
-	
-	
-//end of Filters settings
-
-
-	$tdatatbl_distributivo_proyectos["id_modalidad"] = $fdata;
-		$tdatatbl_distributivo_proyectos[".searchableFields"][] = "id_modalidad";
 
 
 $tables_data["tbl_distributivo_proyectos"]=&$tdatatbl_distributivo_proyectos;
@@ -2176,8 +2016,8 @@ function createSqlQuery_tbl_distributivo_proyectos()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "tbl_distributivo_proyectos.id_distributivo_proyectos,  tbl_distributivo_proyectos.cedula,  tbl_distributivo_proyectos.hrs_proyecto_vinculacion,  tbl_distributivo_proyectos.hrs_docente_tutor,  tbl_distributivo_proyectos.hrs_docente_participante,  tbl_distributivo_proyectos.hrs_seguimiento_graduados,  tbl_distributivo_proyectos.hrs_supervision_pasantias_comunitario,  tbl_distributivo_proyectos.id_carrera,  tbl_distributivo_proyectos.id_periodo,  tbl_distributivo_proyectos.estado,  tbl_carrera.id_facultad,  tbl_facultad.id_extension,  tbl_carrera.id_modalidad";
-$proto0["m_strFrom"] = "FROM tbl_distributivo_proyectos  INNER JOIN tbl_carrera ON tbl_carrera.id_carrera = tbl_distributivo_proyectos.id_carrera  INNER JOIN tbl_facultad ON tbl_facultad.id_facultad = tbl_carrera.id_facultad";
+$proto0["m_strFieldList"] = "tbl_distributivo_proyectos.id_distributivo_proyectos,  tbl_distributivo_proyectos.cedula,  tbl_distributivo_proyectos.hrs_proyecto_vinculacion,  tbl_distributivo_proyectos.hrs_docente_tutor,  tbl_distributivo_proyectos.hrs_docente_participante,  tbl_distributivo_proyectos.hrs_seguimiento_graduados,  tbl_distributivo_proyectos.hrs_supervision_pasantias_comunitario,  tbl_distributivo_proyectos.id_carrera,  tbl_distributivo_proyectos.id_periodo,  tbl_distributivo_proyectos.estado,  tbl_carrera.id_facultad,  tbl_facultad.id_extension";
+$proto0["m_strFrom"] = "FROM tbl_distributivo_proyectos  INNER JOIN tbl_carrera ON tbl_distributivo_proyectos.id_carrera = tbl_carrera.id_carrera  INNER JOIN tbl_facultad ON tbl_carrera.id_facultad = tbl_facultad.id_facultad";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
 	
@@ -2384,136 +2224,122 @@ $proto28["m_alias"] = "";
 $obj = new SQLFieldListItem($proto28);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto30=array();
-			$obj = new SQLField(array(
-	"m_strName" => "id_modalidad",
-	"m_strTable" => "tbl_carrera",
-	"m_srcTableName" => "tbl_distributivo_proyectos"
-));
-
-$proto30["m_sql"] = "tbl_carrera.id_modalidad";
-$proto30["m_srcTableName"] = "tbl_distributivo_proyectos";
-$proto30["m_expr"]=$obj;
-$proto30["m_alias"] = "";
-$obj = new SQLFieldListItem($proto30);
-
-$proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto32=array();
-$proto32["m_link"] = "SQLL_MAIN";
-			$proto33=array();
-$proto33["m_strName"] = "tbl_distributivo_proyectos";
-$proto33["m_srcTableName"] = "tbl_distributivo_proyectos";
-$proto33["m_columns"] = array();
-$proto33["m_columns"][] = "id_distributivo_proyectos";
-$proto33["m_columns"][] = "cedula";
-$proto33["m_columns"][] = "hrs_proyecto_vinculacion";
-$proto33["m_columns"][] = "hrs_docente_tutor";
-$proto33["m_columns"][] = "hrs_docente_participante";
-$proto33["m_columns"][] = "hrs_seguimiento_graduados";
-$proto33["m_columns"][] = "hrs_supervision_pasantias_comunitario";
-$proto33["m_columns"][] = "id_carrera";
-$proto33["m_columns"][] = "id_periodo";
-$proto33["m_columns"][] = "estado";
-$obj = new SQLTable($proto33);
+												$proto30=array();
+$proto30["m_link"] = "SQLL_MAIN";
+			$proto31=array();
+$proto31["m_strName"] = "tbl_distributivo_proyectos";
+$proto31["m_srcTableName"] = "tbl_distributivo_proyectos";
+$proto31["m_columns"] = array();
+$proto31["m_columns"][] = "id_distributivo_proyectos";
+$proto31["m_columns"][] = "cedula";
+$proto31["m_columns"][] = "hrs_proyecto_vinculacion";
+$proto31["m_columns"][] = "hrs_docente_tutor";
+$proto31["m_columns"][] = "hrs_docente_participante";
+$proto31["m_columns"][] = "hrs_seguimiento_graduados";
+$proto31["m_columns"][] = "hrs_supervision_pasantias_comunitario";
+$proto31["m_columns"][] = "id_carrera";
+$proto31["m_columns"][] = "id_periodo";
+$proto31["m_columns"][] = "estado";
+$obj = new SQLTable($proto31);
 
-$proto32["m_table"] = $obj;
-$proto32["m_sql"] = "tbl_distributivo_proyectos";
-$proto32["m_alias"] = "";
-$proto32["m_srcTableName"] = "tbl_distributivo_proyectos";
-$proto34=array();
-$proto34["m_sql"] = "";
-$proto34["m_uniontype"] = "SQLL_UNKNOWN";
+$proto30["m_table"] = $obj;
+$proto30["m_sql"] = "tbl_distributivo_proyectos";
+$proto30["m_alias"] = "";
+$proto30["m_srcTableName"] = "tbl_distributivo_proyectos";
+$proto32=array();
+$proto32["m_sql"] = "";
+$proto32["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto34["m_column"]=$obj;
-$proto34["m_contained"] = array();
-$proto34["m_strCase"] = "";
-$proto34["m_havingmode"] = false;
-$proto34["m_inBrackets"] = false;
-$proto34["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto34);
+$proto32["m_column"]=$obj;
+$proto32["m_contained"] = array();
+$proto32["m_strCase"] = "";
+$proto32["m_havingmode"] = false;
+$proto32["m_inBrackets"] = false;
+$proto32["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto32);
 
-$proto32["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto32);
+$proto30["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto30);
 
 $proto0["m_fromlist"][]=$obj;
-												$proto36=array();
-$proto36["m_link"] = "SQLL_INNERJOIN";
-			$proto37=array();
-$proto37["m_strName"] = "tbl_carrera";
-$proto37["m_srcTableName"] = "tbl_distributivo_proyectos";
-$proto37["m_columns"] = array();
-$proto37["m_columns"][] = "id_carrera";
-$proto37["m_columns"][] = "carrera";
-$proto37["m_columns"][] = "codigo";
-$proto37["m_columns"][] = "estado";
-$proto37["m_columns"][] = "id_facultad";
-$proto37["m_columns"][] = "id_modalidad";
-$obj = new SQLTable($proto37);
+												$proto34=array();
+$proto34["m_link"] = "SQLL_INNERJOIN";
+			$proto35=array();
+$proto35["m_strName"] = "tbl_carrera";
+$proto35["m_srcTableName"] = "tbl_distributivo_proyectos";
+$proto35["m_columns"] = array();
+$proto35["m_columns"][] = "id_carrera";
+$proto35["m_columns"][] = "carrera";
+$proto35["m_columns"][] = "codigo";
+$proto35["m_columns"][] = "estado";
+$proto35["m_columns"][] = "id_facultad";
+$proto35["m_columns"][] = "id_modalidad";
+$obj = new SQLTable($proto35);
 
-$proto36["m_table"] = $obj;
-$proto36["m_sql"] = "INNER JOIN tbl_carrera ON tbl_carrera.id_carrera = tbl_distributivo_proyectos.id_carrera";
-$proto36["m_alias"] = "";
-$proto36["m_srcTableName"] = "tbl_distributivo_proyectos";
-$proto38=array();
-$proto38["m_sql"] = "tbl_carrera.id_carrera = tbl_distributivo_proyectos.id_carrera";
-$proto38["m_uniontype"] = "SQLL_UNKNOWN";
+$proto34["m_table"] = $obj;
+$proto34["m_sql"] = "INNER JOIN tbl_carrera ON tbl_distributivo_proyectos.id_carrera = tbl_carrera.id_carrera";
+$proto34["m_alias"] = "";
+$proto34["m_srcTableName"] = "tbl_distributivo_proyectos";
+$proto36=array();
+$proto36["m_sql"] = "tbl_distributivo_proyectos.id_carrera = tbl_carrera.id_carrera";
+$proto36["m_uniontype"] = "SQLL_UNKNOWN";
 						$obj = new SQLField(array(
 	"m_strName" => "id_carrera",
+	"m_strTable" => "tbl_distributivo_proyectos",
+	"m_srcTableName" => "tbl_distributivo_proyectos"
+));
+
+$proto36["m_column"]=$obj;
+$proto36["m_contained"] = array();
+$proto36["m_strCase"] = "= tbl_carrera.id_carrera";
+$proto36["m_havingmode"] = false;
+$proto36["m_inBrackets"] = false;
+$proto36["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto36);
+
+$proto34["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto34);
+
+$proto0["m_fromlist"][]=$obj;
+												$proto38=array();
+$proto38["m_link"] = "SQLL_INNERJOIN";
+			$proto39=array();
+$proto39["m_strName"] = "tbl_facultad";
+$proto39["m_srcTableName"] = "tbl_distributivo_proyectos";
+$proto39["m_columns"] = array();
+$proto39["m_columns"][] = "id_facultad";
+$proto39["m_columns"][] = "facultad";
+$proto39["m_columns"][] = "estado";
+$proto39["m_columns"][] = "id_extension";
+$obj = new SQLTable($proto39);
+
+$proto38["m_table"] = $obj;
+$proto38["m_sql"] = "INNER JOIN tbl_facultad ON tbl_carrera.id_facultad = tbl_facultad.id_facultad";
+$proto38["m_alias"] = "";
+$proto38["m_srcTableName"] = "tbl_distributivo_proyectos";
+$proto40=array();
+$proto40["m_sql"] = "tbl_carrera.id_facultad = tbl_facultad.id_facultad";
+$proto40["m_uniontype"] = "SQLL_UNKNOWN";
+						$obj = new SQLField(array(
+	"m_strName" => "id_facultad",
 	"m_strTable" => "tbl_carrera",
 	"m_srcTableName" => "tbl_distributivo_proyectos"
 ));
 
-$proto38["m_column"]=$obj;
-$proto38["m_contained"] = array();
-$proto38["m_strCase"] = "= tbl_distributivo_proyectos.id_carrera";
-$proto38["m_havingmode"] = false;
-$proto38["m_inBrackets"] = false;
-$proto38["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto38);
+$proto40["m_column"]=$obj;
+$proto40["m_contained"] = array();
+$proto40["m_strCase"] = "= tbl_facultad.id_facultad";
+$proto40["m_havingmode"] = false;
+$proto40["m_inBrackets"] = false;
+$proto40["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto40);
 
-$proto36["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto36);
-
-$proto0["m_fromlist"][]=$obj;
-												$proto40=array();
-$proto40["m_link"] = "SQLL_INNERJOIN";
-			$proto41=array();
-$proto41["m_strName"] = "tbl_facultad";
-$proto41["m_srcTableName"] = "tbl_distributivo_proyectos";
-$proto41["m_columns"] = array();
-$proto41["m_columns"][] = "id_facultad";
-$proto41["m_columns"][] = "facultad";
-$proto41["m_columns"][] = "estado";
-$proto41["m_columns"][] = "id_extension";
-$obj = new SQLTable($proto41);
-
-$proto40["m_table"] = $obj;
-$proto40["m_sql"] = "INNER JOIN tbl_facultad ON tbl_facultad.id_facultad = tbl_carrera.id_facultad";
-$proto40["m_alias"] = "";
-$proto40["m_srcTableName"] = "tbl_distributivo_proyectos";
-$proto42=array();
-$proto42["m_sql"] = "tbl_facultad.id_facultad = tbl_carrera.id_facultad";
-$proto42["m_uniontype"] = "SQLL_UNKNOWN";
-						$obj = new SQLField(array(
-	"m_strName" => "id_facultad",
-	"m_strTable" => "tbl_facultad",
-	"m_srcTableName" => "tbl_distributivo_proyectos"
-));
-
-$proto42["m_column"]=$obj;
-$proto42["m_contained"] = array();
-$proto42["m_strCase"] = "= tbl_carrera.id_facultad";
-$proto42["m_havingmode"] = false;
-$proto42["m_inBrackets"] = false;
-$proto42["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto42);
-
-$proto40["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto40);
+$proto38["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto38);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -2529,7 +2355,7 @@ $queryData_tbl_distributivo_proyectos = createSqlQuery_tbl_distributivo_proyecto
 	
 		;
 
-													
+												
 
 $tdatatbl_distributivo_proyectos[".sqlquery"] = $queryData_tbl_distributivo_proyectos;
 

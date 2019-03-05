@@ -144,7 +144,7 @@ function getMenuNodes_Datos_Generales($menuNodesObject)
 
 			$menuNode["color"] = "";
 	
-	$menuNode["title"] = "Periodos";
+	$menuNode["title"] = "Periodos Academicos";
 
 
 

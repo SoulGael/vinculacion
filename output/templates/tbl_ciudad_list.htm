@@ -229,6 +229,58 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_ciudad}</span>
 						</div>
 		{END searchCtrlBlock_ciudad}
+																{BEGIN searchCtrlBlock_provincia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_provincia}" {$filterRow_attrs_provincia}>
+			<label>{$label tbl_ciudad provincia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_provincia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_provincia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_provincia}</span>
+						</div>
+		{END searchCtrlBlock_provincia}
+																{BEGIN searchCtrlBlock_id_provincia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_provincia}" {$filterRow_attrs_id_provincia}>
+			<label>{$label tbl_ciudad id_provincia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_provincia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_provincia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_provincia}</span>
+						</div>
+		{END searchCtrlBlock_id_provincia}
+																{BEGIN searchCtrlBlock_estado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_estado}" {$filterRow_attrs_estado}>
+			<label>{$label tbl_ciudad estado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_estado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_estado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_estado}</span>
+						</div>
+		{END searchCtrlBlock_estado}
+																{BEGIN searchCtrlBlock_id_ciudad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_ciudad}" {$filterRow_attrs_id_ciudad}>
+			<label>{$label tbl_ciudad id_ciudad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_ciudad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_ciudad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_ciudad}</span>
+						</div>
+		{END searchCtrlBlock_id_ciudad}
 		
 
 	</div>
@@ -763,17 +815,20 @@
 	>
 
 	 
-				<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
-	data-orders="tbl_extension,tbl_persona"
-			data-details-tbl_extension			data-details-tbl_persona	>
+					<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="tbl_extension,tbl_persona,tbl_institucion"
+			data-details-tbl_extension			data-details-tbl_persona			data-details-tbl_institucion	>
 		<span data-details-inside data-short-table="tbl_extension">
 			</span>
 		<span data-details-inside data-short-table="tbl_persona">
+			</span>
+		<span data-details-inside data-short-table="tbl_institucion">
 			</span>
 		<div data-details-preview>
 	</div>
 </div>
 	 
+			 
 			
 	</td>
 	{END cellblock_grid_cell_dpreview}

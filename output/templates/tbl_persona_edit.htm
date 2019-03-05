@@ -70,9 +70,27 @@
 </div>
 </div>
 	</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<ul class="nav nav-pills nav-justified" id="stepnav{$id}"  data-stepcontrol data-itemtype="step_nav" data-itemid="step_nav" {$item_step_nav} data-pageid="{$pageid}">
+	<li role="presentation" data-step="0">
+		<a href="#">Información Personal</a>
+	</li>
+	<li role="presentation" data-step="1">
+		<a href="#">Información Institucional</a>
+	</li>
+</ul>	</div>					</div>
 	</div>		
 {END above-grid_block}
-									{BEGIN grid_block}
+									{BEGIN steps_block}
+			<div id="step_0_{$id}" class="stepFrame" data-step="0" >
+		{BEGIN grid_block}
 
 
 
@@ -151,29 +169,6 @@
 
 {END cedula_fieldblock}
 											
-{BEGIN nro_matricula_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_nro_matricula}  r-vertical-field" 
-	data-fieldname="nro_matricula" 
-	data-signal-error-for="nro_matricula{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="nro_matricula" >
-
-
-	<label class="r-edit-label control-label" for="{$labelfor_nro_matricula}">
-		{BEGIN nro_matricula_label}{$label tbl_persona nro_matricula }{END nro_matricula_label}
-	</label>
-	<div class="r-edit-field">
-		{$nro_matricula_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="nro_matricula">
-		<div class="text-muted" >
-				</div>
-	</div>
-</div>
-
-
-{END nro_matricula_fieldblock}
-											
 {BEGIN nombres_fieldblock}
 
 
@@ -243,29 +238,6 @@
 
 {END telefono_fieldblock}
 											
-{BEGIN email_institucional_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_email_institucional}  r-vertical-field" 
-	data-fieldname="email_institucional" 
-	data-signal-error-for="email_institucional{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="email_institucional" >
-
-
-	<label class="r-edit-label control-label" for="{$labelfor_email_institucional}">
-		{BEGIN email_institucional_label}{$label tbl_persona email_institucional }{END email_institucional_label}
-	</label>
-	<div class="r-edit-field">
-		{$email_institucional_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="email_institucional">
-		<div class="text-muted" >
-				</div>
-	</div>
-</div>
-
-
-{END email_institucional_fieldblock}
-											
 {BEGIN email_fieldblock}
 
 
@@ -288,6 +260,29 @@
 
 
 {END email_fieldblock}
+											
+{BEGIN direccion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_direccion}  r-vertical-field" 
+	data-fieldname="direccion" 
+	data-signal-error-for="direccion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="direccion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_direccion}">
+		{BEGIN direccion_label}{$label tbl_persona direccion }{END direccion_label}
+	</label>
+	<div class="r-edit-field">
+		{$direccion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="direccion">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END direccion_fieldblock}
 											
 {BEGIN id_provincia_fieldblock}
 
@@ -335,28 +330,136 @@
 
 {END id_ciudad_fieldblock}
 											
-{BEGIN direccion_fieldblock}
+{BEGIN estado_fieldblock}
 
 
-<div class="r-integrated-field form-group clearfix {$fielddispclass_direccion}  r-vertical-field" 
-	data-fieldname="direccion" 
-	data-signal-error-for="direccion{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="direccion" >
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estado}  r-vertical-field" 
+	data-fieldname="estado" 
+	data-signal-error-for="estado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="estado" >
 
 
-	<label class="r-edit-label control-label" for="{$labelfor_direccion}">
-		{BEGIN direccion_label}{$label tbl_persona direccion }{END direccion_label}
+	<label class="r-edit-label control-label" for="{$labelfor_estado}">
+		{BEGIN estado_label}{$label tbl_persona estado }{END estado_label}
 	</label>
 	<div class="r-edit-field">
-		{$direccion_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="direccion">
+		{$estado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="estado">
 		<div class="text-muted" >
 				</div>
 	</div>
 </div>
 
 
-{END direccion_fieldblock}
+{END estado_fieldblock}
+											
+{BEGIN pass_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pass}  r-vertical-field" 
+	data-fieldname="pass" 
+	data-signal-error-for="pass{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="pass" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_pass}">
+		{BEGIN pass_label}{$label tbl_persona pass }{END pass_label}
+	</label>
+	<div class="r-edit-field">
+		{$pass_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pass">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END pass_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+</div>	
+				<div id="step_1_{$id}" class="stepFrame" data-step="1" style="display:none">
+		{BEGIN step2_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="step2" id="form_step2_{$pageid}" data-makeup="small" {$form_step2} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_step2_c1}
+<td
+	{$cell_step2_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="step2_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN nro_matricula_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nro_matricula}  r-vertical-field" 
+	data-fieldname="nro_matricula" 
+	data-signal-error-for="nro_matricula{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="nro_matricula" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nro_matricula}">
+		{BEGIN nro_matricula_label}{$label tbl_persona nro_matricula }{END nro_matricula_label}
+	</label>
+	<div class="r-edit-field">
+		{$nro_matricula_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nro_matricula">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END nro_matricula_fieldblock}
+											
+{BEGIN email_institucional_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email_institucional}  r-vertical-field" 
+	data-fieldname="email_institucional" 
+	data-signal-error-for="email_institucional{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="email_institucional" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_email_institucional}">
+		{BEGIN email_institucional_label}{$label tbl_persona email_institucional }{END email_institucional_label}
+	</label>
+	<div class="r-edit-field">
+		{$email_institucional_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="email_institucional">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END email_institucional_fieldblock}
 											
 {BEGIN id_periodo_fieldblock}
 
@@ -541,59 +644,14 @@
 
 
 {END id_rol_fieldblock}
-											
-{BEGIN estado_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_estado}  r-vertical-field" 
-	data-fieldname="estado" 
-	data-signal-error-for="estado{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="estado" >
-
-
-	<label class="r-edit-label control-label" for="{$labelfor_estado}">
-		{BEGIN estado_label}{$label tbl_persona estado }{END estado_label}
-	</label>
-	<div class="r-edit-field">
-		{$estado_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="estado">
-		<div class="text-muted" >
-				</div>
-	</div>
-</div>
-
-
-{END estado_fieldblock}
-											
-{BEGIN pass_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_pass}  r-vertical-field" 
-	data-fieldname="pass" 
-	data-signal-error-for="pass{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="pass" >
-
-
-	<label class="r-edit-label control-label" for="{$labelfor_pass}">
-		{BEGIN pass_label}{$label tbl_persona pass }{END pass_label}
-	</label>
-	<div class="r-edit-field">
-		{$pass_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="pass">
-		<div class="text-muted" >
-				</div>
-	</div>
-</div>
-
-
-{END pass_fieldblock}
 	
 								</td>
-			{END cellblock_grid_c3}
+			{END cellblock_step2_c1}
 								</tr>
 			</tbody></table>
-{END grid_block}
-									{BEGIN below-grid_block}
+{END step2_block}
+</div>	
+	{END steps_block}									{BEGIN below-grid_block}
 <div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
 		data-v-width="4"
 	data-v-margin="1"
@@ -606,6 +664,14 @@
 	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
 	class="			col-md-6
 	">
+	 
+		{BEGIN nextStepButton}
+<span data-itemtype="next_step" data-itemid="next_step" {$item_next_step} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-primary   
+	" href="#" id="nextstep{$id}" >
+							Siguiente			</a>
+</span>
+{END nextStepButton}
 	 
 		{BEGIN save_edit}
 <span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-button-item>

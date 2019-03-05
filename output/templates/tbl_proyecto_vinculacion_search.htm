@@ -1,0 +1,808 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		
+		<div class="container r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel tbl_proyecto_vinculacion search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_proyecto_vinculacion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_proyecto_vinculacion}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_proyecto_vinculacion" 
+	
+	data-signal-error-for="id_proyecto_vinculacion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id_proyecto_vinculacion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_proyecto_vinculacion}">
+		{$label tbl_proyecto_vinculacion id_proyecto_vinculacion }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_proyecto_vinculacion}
+	</div>
+	<div class="r-search-field">
+		{$id_proyecto_vinculacion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_proyecto_vinculacion_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_proyecto_vinculacion_fieldblock}
+											
+{BEGIN poa_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_poa}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="poa" 
+	
+	data-signal-error-for="poa{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="poa" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_poa}">
+		{$label tbl_proyecto_vinculacion poa }	</label>
+	<div class="r-search-option">
+		{$searchtype_poa}
+	</div>
+	<div class="r-search-field">
+		{$poa_editcontrol}	</div>
+	<div class="r-search-field">
+		{$poa_editcontrol1}
+	</div>
+	
+</div>
+
+{END poa_fieldblock}
+											
+{BEGIN id_programa_vinculacion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_programa_vinculacion}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_programa_vinculacion" 
+	
+	data-signal-error-for="id_programa_vinculacion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="id_programa_vinculacion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_programa_vinculacion}">
+		{$label tbl_proyecto_vinculacion id_programa_vinculacion }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_programa_vinculacion}
+	</div>
+	<div class="r-search-field">
+		{$id_programa_vinculacion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_programa_vinculacion_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_programa_vinculacion_fieldblock}
+											
+{BEGIN nombre_programa_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombre_programa}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="nombre_programa" 
+	
+	data-signal-error-for="nombre_programa{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="nombre_programa" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nombre_programa}">
+		{$label tbl_proyecto_vinculacion nombre_programa }	</label>
+	<div class="r-search-option">
+		{$searchtype_nombre_programa}
+	</div>
+	<div class="r-search-field">
+		{$nombre_programa_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nombre_programa_editcontrol1}
+	</div>
+	
+</div>
+
+{END nombre_programa_fieldblock}
+											
+{BEGIN codigo_proyecto_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_codigo_proyecto}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="codigo_proyecto" 
+	
+	data-signal-error-for="codigo_proyecto{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="codigo_proyecto" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_codigo_proyecto}">
+		{$label tbl_proyecto_vinculacion codigo_proyecto }	</label>
+	<div class="r-search-option">
+		{$searchtype_codigo_proyecto}
+	</div>
+	<div class="r-search-field">
+		{$codigo_proyecto_editcontrol}	</div>
+	<div class="r-search-field">
+		{$codigo_proyecto_editcontrol1}
+	</div>
+	
+</div>
+
+{END codigo_proyecto_fieldblock}
+											
+{BEGIN nombre_proyecto_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombre_proyecto}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="nombre_proyecto" 
+	
+	data-signal-error-for="nombre_proyecto{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="nombre_proyecto" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nombre_proyecto}">
+		{$label tbl_proyecto_vinculacion nombre_proyecto }	</label>
+	<div class="r-search-option">
+		{$searchtype_nombre_proyecto}
+	</div>
+	<div class="r-search-field">
+		{$nombre_proyecto_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nombre_proyecto_editcontrol1}
+	</div>
+	
+</div>
+
+{END nombre_proyecto_fieldblock}
+											
+{BEGIN linea_investigacion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_linea_investigacion}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="linea_investigacion" 
+	
+	data-signal-error-for="linea_investigacion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="linea_investigacion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_linea_investigacion}">
+		{$label tbl_proyecto_vinculacion linea_investigacion }	</label>
+	<div class="r-search-option">
+		{$searchtype_linea_investigacion}
+	</div>
+	<div class="r-search-field">
+		{$linea_investigacion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$linea_investigacion_editcontrol1}
+	</div>
+	
+</div>
+
+{END linea_investigacion_fieldblock}
+											
+{BEGIN numero_beneficiarios_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_numero_beneficiarios}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="numero_beneficiarios" 
+	
+	data-signal-error-for="numero_beneficiarios{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="numero_beneficiarios" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_numero_beneficiarios}">
+		{$label tbl_proyecto_vinculacion numero_beneficiarios }	</label>
+	<div class="r-search-option">
+		{$searchtype_numero_beneficiarios}
+	</div>
+	<div class="r-search-field">
+		{$numero_beneficiarios_editcontrol}	</div>
+	<div class="r-search-field">
+		{$numero_beneficiarios_editcontrol1}
+	</div>
+	
+</div>
+
+{END numero_beneficiarios_fieldblock}
+											
+{BEGIN beneficiarios_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_beneficiarios}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="beneficiarios" 
+	
+	data-signal-error-for="beneficiarios{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="beneficiarios" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_beneficiarios}">
+		{$label tbl_proyecto_vinculacion beneficiarios }	</label>
+	<div class="r-search-option">
+		{$searchtype_beneficiarios}
+	</div>
+	<div class="r-search-field">
+		{$beneficiarios_editcontrol}	</div>
+	<div class="r-search-field">
+		{$beneficiarios_editcontrol1}
+	</div>
+	
+</div>
+
+{END beneficiarios_fieldblock}
+											
+{BEGIN coordinador_entidad_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_coordinador_entidad}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="coordinador_entidad" 
+	
+	data-signal-error-for="coordinador_entidad{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="coordinador_entidad" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_coordinador_entidad}">
+		{$label tbl_proyecto_vinculacion coordinador_entidad }	</label>
+	<div class="r-search-option">
+		{$searchtype_coordinador_entidad}
+	</div>
+	<div class="r-search-field">
+		{$coordinador_entidad_editcontrol}	</div>
+	<div class="r-search-field">
+		{$coordinador_entidad_editcontrol1}
+	</div>
+	
+</div>
+
+{END coordinador_entidad_fieldblock}
+											
+{BEGIN monto_proyecto_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_monto_proyecto}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="monto_proyecto" 
+	
+	data-signal-error-for="monto_proyecto{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="monto_proyecto" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_monto_proyecto}">
+		{$label tbl_proyecto_vinculacion monto_proyecto }	</label>
+	<div class="r-search-option">
+		{$searchtype_monto_proyecto}
+	</div>
+	<div class="r-search-field">
+		{$monto_proyecto_editcontrol}	</div>
+	<div class="r-search-field">
+		{$monto_proyecto_editcontrol1}
+	</div>
+	
+</div>
+
+{END monto_proyecto_fieldblock}
+											
+{BEGIN objetivo_general_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_objetivo_general}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="objetivo_general" 
+	
+	data-signal-error-for="objetivo_general{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="objetivo_general" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_objetivo_general}">
+		{$label tbl_proyecto_vinculacion objetivo_general }	</label>
+	<div class="r-search-option">
+		{$searchtype_objetivo_general}
+	</div>
+	<div class="r-search-field">
+		{$objetivo_general_editcontrol}	</div>
+	<div class="r-search-field">
+		{$objetivo_general_editcontrol1}
+	</div>
+	
+</div>
+
+{END objetivo_general_fieldblock}
+											
+{BEGIN objetivo_especifico_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_objetivo_especifico}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="objetivo_especifico" 
+	
+	data-signal-error-for="objetivo_especifico{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="objetivo_especifico" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_objetivo_especifico}">
+		{$label tbl_proyecto_vinculacion objetivo_especifico }	</label>
+	<div class="r-search-option">
+		{$searchtype_objetivo_especifico}
+	</div>
+	<div class="r-search-field">
+		{$objetivo_especifico_editcontrol}	</div>
+	<div class="r-search-field">
+		{$objetivo_especifico_editcontrol1}
+	</div>
+	
+</div>
+
+{END objetivo_especifico_fieldblock}
+											
+{BEGIN metas_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_metas}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="metas" 
+	
+	data-signal-error-for="metas{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="metas" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_metas}">
+		{$label tbl_proyecto_vinculacion metas }	</label>
+	<div class="r-search-option">
+		{$searchtype_metas}
+	</div>
+	<div class="r-search-field">
+		{$metas_editcontrol}	</div>
+	<div class="r-search-field">
+		{$metas_editcontrol1}
+	</div>
+	
+</div>
+
+{END metas_fieldblock}
+											
+{BEGIN fecha_inicio_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_inicio}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="fecha_inicio" 
+	
+	data-signal-error-for="fecha_inicio{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="fecha_inicio" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_inicio}">
+		{$label tbl_proyecto_vinculacion fecha_inicio }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_inicio}
+	</div>
+	<div class="r-search-field">
+		{$fecha_inicio_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_inicio_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_inicio_fieldblock}
+											
+{BEGIN fecha_fin_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_fin}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="fecha_fin" 
+	
+	data-signal-error-for="fecha_fin{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="fecha_fin" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_fin}">
+		{$label tbl_proyecto_vinculacion fecha_fin }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_fin}
+	</div>
+	<div class="r-search-field">
+		{$fecha_fin_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_fin_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_fin_fieldblock}
+											
+{BEGIN impacto_social_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_impacto_social}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="impacto_social" 
+	
+	data-signal-error-for="impacto_social{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="impacto_social" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_impacto_social}">
+		{$label tbl_proyecto_vinculacion impacto_social }	</label>
+	<div class="r-search-option">
+		{$searchtype_impacto_social}
+	</div>
+	<div class="r-search-field">
+		{$impacto_social_editcontrol}	</div>
+	<div class="r-search-field">
+		{$impacto_social_editcontrol1}
+	</div>
+	
+</div>
+
+{END impacto_social_fieldblock}
+											
+{BEGIN impacto_cientifico_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_impacto_cientifico}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="impacto_cientifico" 
+	
+	data-signal-error-for="impacto_cientifico{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="impacto_cientifico" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_impacto_cientifico}">
+		{$label tbl_proyecto_vinculacion impacto_cientifico }	</label>
+	<div class="r-search-option">
+		{$searchtype_impacto_cientifico}
+	</div>
+	<div class="r-search-field">
+		{$impacto_cientifico_editcontrol}	</div>
+	<div class="r-search-field">
+		{$impacto_cientifico_editcontrol1}
+	</div>
+	
+</div>
+
+{END impacto_cientifico_fieldblock}
+											
+{BEGIN impacto_economico_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_impacto_economico}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="impacto_economico" 
+	
+	data-signal-error-for="impacto_economico{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="impacto_economico" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_impacto_economico}">
+		{$label tbl_proyecto_vinculacion impacto_economico }	</label>
+	<div class="r-search-option">
+		{$searchtype_impacto_economico}
+	</div>
+	<div class="r-search-field">
+		{$impacto_economico_editcontrol}	</div>
+	<div class="r-search-field">
+		{$impacto_economico_editcontrol1}
+	</div>
+	
+</div>
+
+{END impacto_economico_fieldblock}
+											
+{BEGIN impacto_politico_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_impacto_politico}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="impacto_politico" 
+	
+	data-signal-error-for="impacto_politico{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="impacto_politico" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_impacto_politico}">
+		{$label tbl_proyecto_vinculacion impacto_politico }	</label>
+	<div class="r-search-option">
+		{$searchtype_impacto_politico}
+	</div>
+	<div class="r-search-field">
+		{$impacto_politico_editcontrol}	</div>
+	<div class="r-search-field">
+		{$impacto_politico_editcontrol1}
+	</div>
+	
+</div>
+
+{END impacto_politico_fieldblock}
+											
+{BEGIN otro_impacto_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_otro_impacto}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="otro_impacto" 
+	
+	data-signal-error-for="otro_impacto{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="otro_impacto" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_otro_impacto}">
+		{$label tbl_proyecto_vinculacion otro_impacto }	</label>
+	<div class="r-search-option">
+		{$searchtype_otro_impacto}
+	</div>
+	<div class="r-search-field">
+		{$otro_impacto_editcontrol}	</div>
+	<div class="r-search-field">
+		{$otro_impacto_editcontrol1}
+	</div>
+	
+</div>
+
+{END otro_impacto_fieldblock}
+											
+{BEGIN docente_responsable_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_docente_responsable}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="docente_responsable" 
+	
+	data-signal-error-for="docente_responsable{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="docente_responsable" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_docente_responsable}">
+		{$label tbl_proyecto_vinculacion docente_responsable }	</label>
+	<div class="r-search-option">
+		{$searchtype_docente_responsable}
+	</div>
+	<div class="r-search-field">
+		{$docente_responsable_editcontrol}	</div>
+	<div class="r-search-field">
+		{$docente_responsable_editcontrol1}
+	</div>
+	
+</div>
+
+{END docente_responsable_fieldblock}
+											
+{BEGIN docente_tutor_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_docente_tutor}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="docente_tutor" 
+	
+	data-signal-error-for="docente_tutor{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="docente_tutor" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_docente_tutor}">
+		{$label tbl_proyecto_vinculacion docente_tutor }	</label>
+	<div class="r-search-option">
+		{$searchtype_docente_tutor}
+	</div>
+	<div class="r-search-field">
+		{$docente_tutor_editcontrol}	</div>
+	<div class="r-search-field">
+		{$docente_tutor_editcontrol1}
+	</div>
+	
+</div>
+
+{END docente_tutor_fieldblock}
+											
+{BEGIN docente_participante_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_docente_participante}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="docente_participante" 
+	
+	data-signal-error-for="docente_participante{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="docente_participante" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_docente_participante}">
+		{$label tbl_proyecto_vinculacion docente_participante }	</label>
+	<div class="r-search-option">
+		{$searchtype_docente_participante}
+	</div>
+	<div class="r-search-field">
+		{$docente_participante_editcontrol}	</div>
+	<div class="r-search-field">
+		{$docente_participante_editcontrol1}
+	</div>
+	
+</div>
+
+{END docente_participante_fieldblock}
+											
+{BEGIN id_carrera_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_carrera}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_carrera" 
+	
+	data-signal-error-for="id_carrera{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="id_carrera" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_carrera}">
+		{$label tbl_proyecto_vinculacion id_carrera }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_carrera}
+	</div>
+	<div class="r-search-field">
+		{$id_carrera_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_carrera_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_carrera_fieldblock}
+											
+{BEGIN estado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estado}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="estado" 
+	
+	data-signal-error-for="estado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="estado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_estado}">
+		{$label tbl_proyecto_vinculacion estado }	</label>
+	<div class="r-search-option">
+		{$searchtype_estado}
+	</div>
+	<div class="r-search-field">
+		{$estado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$estado_editcontrol1}
+	</div>
+	
+</div>
+
+{END estado_fieldblock}
+											
+{BEGIN documento_proyecto_vinculacion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documento_proyecto_vinculacion}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="documento_proyecto_vinculacion" 
+	
+	data-signal-error-for="documento_proyecto_vinculacion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="documento_proyecto_vinculacion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_documento_proyecto_vinculacion}">
+		{$label tbl_proyecto_vinculacion documento_proyecto_vinculacion }	</label>
+	<div class="r-search-option">
+		{$searchtype_documento_proyecto_vinculacion}
+	</div>
+	<div class="r-search-field">
+		{$documento_proyecto_vinculacion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$documento_proyecto_vinculacion_editcontrol1}
+	</div>
+	
+</div>
+
+{END documento_proyecto_vinculacion_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -2904,6 +2904,18 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "tbl_persona" ] = "tbl_persona";
 	$projectEntities[ "tbl_distributivo_proyectos" ] = array( "url" => "tbl_distributivo_proyectos", "type" => 0 );
 	$projectEntitiesReverse[ "tbl_distributivo_proyectos" ] = "tbl_distributivo_proyectos";
+	$projectEntities[ "tbl_convenio" ] = array( "url" => "tbl_convenio", "type" => 0 );
+	$projectEntitiesReverse[ "tbl_convenio" ] = "tbl_convenio";
+	$projectEntities[ "tbl_institucion" ] = array( "url" => "tbl_institucion", "type" => 0 );
+	$projectEntitiesReverse[ "tbl_institucion" ] = "tbl_institucion";
+	$projectEntities[ "tbl_linea_investigacion" ] = array( "url" => "tbl_linea_investigacion", "type" => 0 );
+	$projectEntitiesReverse[ "tbl_linea_investigacion" ] = "tbl_linea_investigacion";
+	$projectEntities[ "tbl_programa_vinculacion" ] = array( "url" => "tbl_programa_vinculacion", "type" => 0 );
+	$projectEntitiesReverse[ "tbl_programa_vinculacion" ] = "tbl_programa_vinculacion";
+	$projectEntities[ "tbl_proyecto_vinculacion" ] = array( "url" => "tbl_proyecto_vinculacion", "type" => 0 );
+	$projectEntitiesReverse[ "tbl_proyecto_vinculacion" ] = "tbl_proyecto_vinculacion";
+	$projectEntities[ "tbl_vinculacion_estudiantes" ] = array( "url" => "tbl_vinculacion_estudiantes", "type" => 0 );
+	$projectEntitiesReverse[ "tbl_vinculacion_estudiantes" ] = "tbl_vinculacion_estudiantes";
 }
 
 function findTable( $table ) {

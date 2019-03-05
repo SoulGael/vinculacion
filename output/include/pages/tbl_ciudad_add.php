@@ -2,6 +2,8 @@
 			$optionsArray = array( 'details' => array( 'tbl_extension' => array( 'displayPreview' => 2,
 'previewPageId' => '' ),
 'tbl_persona' => array( 'displayPreview' => 2,
+'previewPageId' => '' ),
+'tbl_institucion' => array( 'displayPreview' => 2,
 'previewPageId' => '' ) ),
 'master' => array( 'tbl_provincia' => array( 'preview' => false ) ),
 'captcha' => array( 'captcha' => false ),
@@ -123,5 +125,5 @@
 'orientation' => 0 ) ),
 'dbProps' => array(  ),
 'version' => 2,
-'pageWidth' => 'full' );
+'pageWidth' => 'standard' );
 		?>

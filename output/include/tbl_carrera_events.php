@@ -44,7 +44,7 @@ function BeforeAdd(&$values, &$message, $inline, &$pageObject)
 
 //**********  Insert a record into another table  ************
 
-$sql = "INSERT INTO tbl_carrera(carrera, codigo, id_facultad, id_modalidad) values ('".$values['carrera']."', '".$values['codigo']."', ".$values['id_facultad'].", ".$values['id_modalidad'].")";
+$sql = "INSERT INTO tbl_carrera(carrera, codigo, id_facultad, id_modalidad) values ('".$values['carrera']."', '".$values['codigo']."', ".$values['id_facultad'].", '".$values['id_modalidad']."')";
 CustomQuery($sql);
 
 

@@ -71,28 +71,28 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelstbl_persona["Spanish"]["estado"] = "Estado";
 	$fieldToolTipstbl_persona["Spanish"]["estado"] = "";
 	$placeHolderstbl_persona["Spanish"]["estado"] = "";
-	$fieldLabelstbl_persona["Spanish"]["id_ciudad"] = "Id Ciudad";
+	$fieldLabelstbl_persona["Spanish"]["id_ciudad"] = "Ciudad";
 	$fieldToolTipstbl_persona["Spanish"]["id_ciudad"] = "";
 	$placeHolderstbl_persona["Spanish"]["id_ciudad"] = "";
-	$fieldLabelstbl_persona["Spanish"]["id_carrera"] = "Id Carrera";
+	$fieldLabelstbl_persona["Spanish"]["id_carrera"] = "Carrera";
 	$fieldToolTipstbl_persona["Spanish"]["id_carrera"] = "";
 	$placeHolderstbl_persona["Spanish"]["id_carrera"] = "";
-	$fieldLabelstbl_persona["Spanish"]["id_periodo"] = "Id Periodo";
+	$fieldLabelstbl_persona["Spanish"]["id_periodo"] = "Periodo";
 	$fieldToolTipstbl_persona["Spanish"]["id_periodo"] = "";
 	$placeHolderstbl_persona["Spanish"]["id_periodo"] = "";
-	$fieldLabelstbl_persona["Spanish"]["id_rol"] = "Id Rol";
+	$fieldLabelstbl_persona["Spanish"]["id_rol"] = "Rol";
 	$fieldToolTipstbl_persona["Spanish"]["id_rol"] = "";
 	$placeHolderstbl_persona["Spanish"]["id_rol"] = "";
-	$fieldLabelstbl_persona["Spanish"]["id_provincia"] = "Id Provincia";
+	$fieldLabelstbl_persona["Spanish"]["id_provincia"] = "Provincia";
 	$fieldToolTipstbl_persona["Spanish"]["id_provincia"] = "";
 	$placeHolderstbl_persona["Spanish"]["id_provincia"] = "";
-	$fieldLabelstbl_persona["Spanish"]["id_facultad"] = "Id Facultad";
+	$fieldLabelstbl_persona["Spanish"]["id_facultad"] = "Facultad";
 	$fieldToolTipstbl_persona["Spanish"]["id_facultad"] = "";
 	$placeHolderstbl_persona["Spanish"]["id_facultad"] = "";
-	$fieldLabelstbl_persona["Spanish"]["id_modalidad"] = "Id Modalidad";
+	$fieldLabelstbl_persona["Spanish"]["id_modalidad"] = "Modalidad";
 	$fieldToolTipstbl_persona["Spanish"]["id_modalidad"] = "";
 	$placeHolderstbl_persona["Spanish"]["id_modalidad"] = "";
-	$fieldLabelstbl_persona["Spanish"]["id_extension"] = "Id Extension";
+	$fieldLabelstbl_persona["Spanish"]["id_extension"] = "Extension";
 	$fieldToolTipstbl_persona["Spanish"]["id_extension"] = "";
 	$placeHolderstbl_persona["Spanish"]["id_extension"] = "";
 	if (count($fieldToolTipstbl_persona["Spanish"]))
@@ -206,7 +206,7 @@ $tdatatbl_persona[".rowHighlite"] = true;
 
 
 
-
+															
 $tdatatbl_persona[".flexibleSearch"] = true;
 
 
@@ -248,8 +248,8 @@ $tdatatbl_persona[".googleLikeFields"][] = "id_periodo";
 $tdatatbl_persona[".googleLikeFields"][] = "id_rol";
 $tdatatbl_persona[".googleLikeFields"][] = "id_provincia";
 $tdatatbl_persona[".googleLikeFields"][] = "id_facultad";
-$tdatatbl_persona[".googleLikeFields"][] = "id_modalidad";
 $tdatatbl_persona[".googleLikeFields"][] = "id_extension";
+$tdatatbl_persona[".googleLikeFields"][] = "id_modalidad";
 
 
 
@@ -287,7 +287,7 @@ $tdatatbl_persona[".strOrderBy"] = $tstrOrderBy;
 
 $tdatatbl_persona[".orderindexes"] = array();
 
-$tdatatbl_persona[".sqlHead"] = "SELECT tbl_persona.id_persona,  tbl_persona.cedula,  tbl_persona.nro_matricula,  tbl_persona.nombres,  tbl_persona.apellidos,  tbl_persona.telefono,  tbl_persona.email_institucional,  tbl_persona.email,  tbl_persona.direccion,  tbl_persona.pass,  tbl_persona.nivel,  tbl_persona.paralelo,  tbl_persona.foto,  tbl_persona.estado,  tbl_persona.id_ciudad,  tbl_persona.id_carrera,  tbl_persona.id_periodo,  tbl_persona.id_rol,  tbl_ciudad.id_provincia,  tbl_carrera.id_facultad,  tbl_carrera.id_modalidad,  tbl_facultad.id_extension";
+$tdatatbl_persona[".sqlHead"] = "SELECT tbl_persona.id_persona,  tbl_persona.cedula,  tbl_persona.nro_matricula,  tbl_persona.nombres,  tbl_persona.apellidos,  tbl_persona.telefono,  tbl_persona.email_institucional,  tbl_persona.email,  tbl_persona.direccion,  tbl_persona.pass,  tbl_persona.nivel,  tbl_persona.paralelo,  tbl_persona.foto,  tbl_persona.estado,  tbl_persona.id_ciudad,  tbl_persona.id_carrera,  tbl_persona.id_periodo,  tbl_persona.id_rol,  tbl_ciudad.id_provincia,  tbl_carrera.id_facultad,  tbl_facultad.id_extension,  tbl_persona.id_modalidad";
 $tdatatbl_persona[".sqlFrom"] = "FROM tbl_persona  INNER JOIN tbl_carrera ON tbl_persona.id_carrera = tbl_carrera.id_carrera  INNER JOIN tbl_ciudad ON tbl_persona.id_ciudad = tbl_ciudad.id_ciudad  LEFT OUTER JOIN tbl_facultad ON tbl_carrera.id_facultad = tbl_facultad.id_facultad";
 $tdatatbl_persona[".sqlWhereExpr"] = "";
 $tdatatbl_persona[".sqlTail"] = "";
@@ -2260,7 +2260,8 @@ $tdatatbl_persona[".hideMobileList"] = array();
 //Filters settings
 	$fdata["filterTotals"] = 0;
 		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
+		$fdata["filterTotalFields"] = "id_persona";
+		$fdata["filterFormat"] = "Values list";
 		$fdata["showCollapsed"] = false;
 
 		$fdata["sortValueType"] = 0;
@@ -2354,7 +2355,6 @@ $tdatatbl_persona[".hideMobileList"] = array();
 		$edata["UseCategory"] = true;
 	$edata["categoryFields"] = array();
 	$edata["categoryFields"][] = array( "main" => "id_facultad", "lookup" => "id_facultad" );
-	$edata["categoryFields"][] = array( "main" => "id_modalidad", "lookup" => "id_modalidad" );
 
 	
 	
@@ -2416,7 +2416,8 @@ $tdatatbl_persona[".hideMobileList"] = array();
 //Filters settings
 	$fdata["filterTotals"] = 0;
 		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
+		$fdata["filterTotalFields"] = "id_persona";
+		$fdata["filterFormat"] = "Values list";
 		$fdata["showCollapsed"] = false;
 
 		$fdata["sortValueType"] = 0;
@@ -3048,165 +3049,10 @@ $tdatatbl_persona[".hideMobileList"] = array();
 
 	$tdatatbl_persona["id_facultad"] = $fdata;
 		$tdatatbl_persona[".searchableFields"][] = "id_facultad";
-//	id_modalidad
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 21;
-	$fdata["strName"] = "id_modalidad";
-	$fdata["GoodName"] = "id_modalidad";
-	$fdata["ownerTable"] = "tbl_carrera";
-	$fdata["Label"] = GetFieldLabel("tbl_persona","id_modalidad");
-	$fdata["FieldType"] = 3;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "id_modalidad";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "tbl_carrera.id_modalidad";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Lookup wizard");
-
-	
-	
-	
-
-// Begin Lookup settings
-				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "tbl_modalidad";
-		$edata["autoCompleteFieldsOnEdit"] = 0;
-	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
-
-	
-		
-	$edata["LinkField"] = "id_modalidad";
-	$edata["LinkFieldType"] = 0;
-	$edata["DisplayField"] = "modalidad";
-
-				$edata["LookupWhere"] = "tbl_modalidad.estado='Activo'";
-
-
-	
-	$edata["LookupOrderBy"] = "modalidad";
-
-	
-	
-	
-	
-				//dependent dropdowns @deprecated data ?
-	$edata["DependentLookups"] = array();
-	$edata["DependentLookups"][] = "id_carrera";
-
-	
-	
-		$edata["SelectSize"] = 1;
-
-// End Lookup Settings
-
-
-		$edata["IsRequired"] = true;
-
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-			
-	
-	
-//end of Filters settings
-
-
-	$tdatatbl_persona["id_modalidad"] = $fdata;
-		$tdatatbl_persona[".searchableFields"][] = "id_modalidad";
 //	id_extension
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 22;
+	$fdata["Index"] = 21;
 	$fdata["strName"] = "id_extension";
 	$fdata["GoodName"] = "id_extension";
 	$fdata["ownerTable"] = "tbl_facultad";
@@ -3358,6 +3204,158 @@ $tdatatbl_persona[".hideMobileList"] = array();
 
 	$tdatatbl_persona["id_extension"] = $fdata;
 		$tdatatbl_persona[".searchableFields"][] = "id_extension";
+//	id_modalidad
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 22;
+	$fdata["strName"] = "id_modalidad";
+	$fdata["GoodName"] = "id_modalidad";
+	$fdata["ownerTable"] = "tbl_persona";
+	$fdata["Label"] = GetFieldLabel("tbl_persona","id_modalidad");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "id_modalidad";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "tbl_persona.id_modalidad";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "tbl_modalidad";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id_modalidad";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "modalidad";
+
+				$edata["LookupWhere"] = "tbl_modalidad.estado='Activo'";
+
+
+	
+	$edata["LookupOrderBy"] = "modalidad";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+			
+	
+	
+//end of Filters settings
+
+
+	$tdatatbl_persona["id_modalidad"] = $fdata;
+		$tdatatbl_persona[".searchableFields"][] = "id_modalidad";
 
 
 $tables_data["tbl_persona"]=&$tdatatbl_persona;
@@ -3486,7 +3484,7 @@ function createSqlQuery_tbl_persona()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "tbl_persona.id_persona,  tbl_persona.cedula,  tbl_persona.nro_matricula,  tbl_persona.nombres,  tbl_persona.apellidos,  tbl_persona.telefono,  tbl_persona.email_institucional,  tbl_persona.email,  tbl_persona.direccion,  tbl_persona.pass,  tbl_persona.nivel,  tbl_persona.paralelo,  tbl_persona.foto,  tbl_persona.estado,  tbl_persona.id_ciudad,  tbl_persona.id_carrera,  tbl_persona.id_periodo,  tbl_persona.id_rol,  tbl_ciudad.id_provincia,  tbl_carrera.id_facultad,  tbl_carrera.id_modalidad,  tbl_facultad.id_extension";
+$proto0["m_strFieldList"] = "tbl_persona.id_persona,  tbl_persona.cedula,  tbl_persona.nro_matricula,  tbl_persona.nombres,  tbl_persona.apellidos,  tbl_persona.telefono,  tbl_persona.email_institucional,  tbl_persona.email,  tbl_persona.direccion,  tbl_persona.pass,  tbl_persona.nivel,  tbl_persona.paralelo,  tbl_persona.foto,  tbl_persona.estado,  tbl_persona.id_ciudad,  tbl_persona.id_carrera,  tbl_persona.id_periodo,  tbl_persona.id_rol,  tbl_ciudad.id_provincia,  tbl_carrera.id_facultad,  tbl_facultad.id_extension,  tbl_persona.id_modalidad";
 $proto0["m_strFrom"] = "FROM tbl_persona  INNER JOIN tbl_carrera ON tbl_persona.id_carrera = tbl_carrera.id_carrera  INNER JOIN tbl_ciudad ON tbl_persona.id_ciudad = tbl_ciudad.id_ciudad  LEFT OUTER JOIN tbl_facultad ON tbl_carrera.id_facultad = tbl_facultad.id_facultad";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -3808,12 +3806,12 @@ $obj = new SQLFieldListItem($proto44);
 $proto0["m_fieldlist"][]=$obj;
 						$proto46=array();
 			$obj = new SQLField(array(
-	"m_strName" => "id_modalidad",
-	"m_strTable" => "tbl_carrera",
+	"m_strName" => "id_extension",
+	"m_strTable" => "tbl_facultad",
 	"m_srcTableName" => "tbl_persona"
 ));
 
-$proto46["m_sql"] = "tbl_carrera.id_modalidad";
+$proto46["m_sql"] = "tbl_facultad.id_extension";
 $proto46["m_srcTableName"] = "tbl_persona";
 $proto46["m_expr"]=$obj;
 $proto46["m_alias"] = "";
@@ -3822,12 +3820,12 @@ $obj = new SQLFieldListItem($proto46);
 $proto0["m_fieldlist"][]=$obj;
 						$proto48=array();
 			$obj = new SQLField(array(
-	"m_strName" => "id_extension",
-	"m_strTable" => "tbl_facultad",
+	"m_strName" => "id_modalidad",
+	"m_strTable" => "tbl_persona",
 	"m_srcTableName" => "tbl_persona"
 ));
 
-$proto48["m_sql"] = "tbl_facultad.id_extension";
+$proto48["m_sql"] = "tbl_persona.id_modalidad";
 $proto48["m_srcTableName"] = "tbl_persona";
 $proto48["m_expr"]=$obj;
 $proto48["m_alias"] = "";
@@ -3859,6 +3857,7 @@ $proto51["m_columns"][] = "id_ciudad";
 $proto51["m_columns"][] = "id_carrera";
 $proto51["m_columns"][] = "id_periodo";
 $proto51["m_columns"][] = "id_rol";
+$proto51["m_columns"][] = "id_modalidad";
 $obj = new SQLTable($proto51);
 
 $proto50["m_table"] = $obj;

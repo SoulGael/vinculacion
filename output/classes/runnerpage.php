@@ -3911,14 +3911,22 @@ class RunnerPage
 					"include/runnerJS/button.js");
 			}
 
+				if ($this->pageType == PAGE_MENU || $this->pageType == PAGE_REGISTER || $this->pageType == PAGE_LOGIN || $this->pageType == PAGE_CHANGEPASS || $this->pageType == PAGE_REMIND)
+			{
+				$this->AddJSFile("include/runnerJS/events/globalevents.js", "include/runnerJS/pages/PageSettings.js", "include/runnerJS/button.js");
 			}
+		}
 		else
 		{
 			if ($this->pSet->isAddPageEvents() && $this->pageType != PAGE_LOGIN && $this->shortTableName != "")
 			{
 				$this->AddJSFile("include/runnerJS/events/pageevents_".$this->shortTableName.".js");
 			}
+				if ($this->pageType == PAGE_MENU || $this->pageType == PAGE_REGISTER || $this->pageType == PAGE_LOGIN || $this->pageType == PAGE_CHANGEPASS || $this->pageType == PAGE_REMIND)
+			{
+				$this->AddJSFile("include/runnerJS/events/globalevents.js");
 			}
+		}
 
 		if ( !$this->isBootstrap() )
 			$this->AddJSFile("include/yui/yui-min.js");

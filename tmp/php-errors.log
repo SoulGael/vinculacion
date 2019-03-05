@@ -1,0 +1,1 @@
+[05-Mar-2019 16:53:11 America/New_York] PHP Fatal error:  Access denied for user 'adsoftweb_marco'@'localhost' (using password: YES) in C:\Users\ggabr\Documents\PHPRunnerProjects\vinculacion\output\connections\Connection.php on line 661

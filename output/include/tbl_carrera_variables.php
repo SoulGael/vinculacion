@@ -4,7 +4,7 @@ $_SESSION["OwnerID"] = $_SESSION["_".$strTableName."_OwnerID"];
 
 $strOriginalTableName="tbl_carrera";
 
-$gstrOrderBy="ORDER BY tbl_extension.extension, tbl_facultad.facultad, tbl_modalidad.modalidad, tbl_carrera.carrera";
+$gstrOrderBy="ORDER BY tbl_facultad.id_extension, tbl_carrera.id_facultad, tbl_carrera.carrera";
 if(strlen($gstrOrderBy) && strtolower(substr($gstrOrderBy,0,8))!="order by")
 	$gstrOrderBy="order by ".$gstrOrderBy;
 

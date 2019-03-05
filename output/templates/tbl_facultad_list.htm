@@ -265,34 +265,36 @@
 
 		 	
 
-		{BEGIN filter_control_extension}
-		<div class="panel panel-info filter-field filter-extension-container">
+		{BEGIN filter_control_facultad}
+		<div class="panel panel-info filter-field filter-facultad-container">
 			<div class="panel-heading filter-expander">
 																	<span class="filter-indicator glyphicon glyphicon-triangle-bottom"></span>	
 
 			
-				<label>{$label tbl_facultad extension }</label>
+				<label>{$label tbl_facultad facultad }</label>
 
-				{BEGIN clearLink_extension}
-				<a href="#" class="filter-clear filter-clear-extension">borrar</a>
-				{END clearLink_extension}				
+				{BEGIN clearLink_facultad}
+				<a href="#" class="filter-clear filter-clear-facultad">borrar</a>
+				{END clearLink_facultad}				
 			</div>
 
 			<ul class="list-group">
-				{BEGIN filterCtrlBlock_extension}
-				<li class="list-group-item filter-values filter-values-extension {$collapsedClass_extension} {$visibilityClass_extension}">
-					{$extension_filter}
+				{BEGIN filterCtrlBlock_facultad}
+				<li class="list-group-item filter-values filter-values-facultad {$collapsedClass_facultad} {$visibilityClass_facultad}">
+					{$facultad_filter}
 								
 			
 			
+			
+			
 				</li>				
-				{END filterCtrlBlock_extension}
+				{END filterCtrlBlock_facultad}
 
-							{BEGIN filter_button_showmore_extension}
-				<li class="list-group-item filter-show-more {$collapsedClass_extension} {$showMoreBtnClass_extension}">
-					<a class="filter-show-more-link filterShowMore_extension" href="#">{$show_n_more_extension}</a>
+							{BEGIN filter_button_showmore_facultad}
+				<li class="list-group-item filter-show-more {$collapsedClass_facultad} {$showMoreBtnClass_facultad}">
+					<a class="filter-show-more-link filterShowMore_facultad" href="#">{$show_n_more_facultad}</a>
 				</li>
-				{END filter_button_showmore_extension}			
+				{END filter_button_showmore_facultad}			
 			
 
 
@@ -302,7 +304,57 @@
 	
 			</ul>			
 		</div>
-		{END filter_control_extension}
+		{END filter_control_facultad}
+	 
+			
+	 	
+
+		
+		 
+		 
+
+		 	
+
+		{BEGIN filter_control_id_extension}
+		<div class="panel panel-info filter-field filter-id_extension-container">
+			<div class="panel-heading filter-expander">
+																	<span class="filter-indicator glyphicon glyphicon-triangle-bottom"></span>	
+
+			
+				<label>{$label tbl_facultad id_extension }</label>
+
+				{BEGIN clearLink_id_extension}
+				<a href="#" class="filter-clear filter-clear-id_extension">borrar</a>
+				{END clearLink_id_extension}				
+			</div>
+
+			<ul class="list-group">
+				{BEGIN filterCtrlBlock_id_extension}
+				<li class="list-group-item filter-values filter-values-id_extension {$collapsedClass_id_extension} {$visibilityClass_id_extension}">
+					{$id_extension_filter}
+								
+			
+			
+			
+			
+				</li>				
+				{END filterCtrlBlock_id_extension}
+
+							{BEGIN filter_button_showmore_id_extension}
+				<li class="list-group-item filter-show-more {$collapsedClass_id_extension} {$showMoreBtnClass_id_extension}">
+					<a class="filter-show-more-link filterShowMore_id_extension" href="#">{$show_n_more_id_extension}</a>
+				</li>
+				{END filter_button_showmore_id_extension}			
+			
+
+
+			
+
+				
+	
+			</ul>			
+		</div>
+		{END filter_control_id_extension}
 	 
 	</div>
 </div></td>

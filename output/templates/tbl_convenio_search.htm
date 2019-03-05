@@ -1,0 +1,433 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		
+		<div class="container r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel tbl_convenio search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_convenio_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_convenio}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_convenio" 
+	
+	data-signal-error-for="id_convenio{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id_convenio" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_convenio}">
+		{$label tbl_convenio id_convenio }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_convenio}
+	</div>
+	<div class="r-search-field">
+		{$id_convenio_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_convenio_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_convenio_fieldblock}
+											
+{BEGIN convenio_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_convenio}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="convenio" 
+	
+	data-signal-error-for="convenio{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="convenio" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_convenio}">
+		{$label tbl_convenio convenio }	</label>
+	<div class="r-search-option">
+		{$searchtype_convenio}
+	</div>
+	<div class="r-search-field">
+		{$convenio_editcontrol}	</div>
+	<div class="r-search-field">
+		{$convenio_editcontrol1}
+	</div>
+	
+</div>
+
+{END convenio_fieldblock}
+											
+{BEGIN objeto_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_objeto}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="objeto" 
+	
+	data-signal-error-for="objeto{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="objeto" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_objeto}">
+		{$label tbl_convenio objeto }	</label>
+	<div class="r-search-option">
+		{$searchtype_objeto}
+	</div>
+	<div class="r-search-field">
+		{$objeto_editcontrol}	</div>
+	<div class="r-search-field">
+		{$objeto_editcontrol1}
+	</div>
+	
+</div>
+
+{END objeto_fieldblock}
+											
+{BEGIN duracion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_duracion}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="duracion" 
+	
+	data-signal-error-for="duracion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="duracion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_duracion}">
+		{$label tbl_convenio duracion }	</label>
+	<div class="r-search-option">
+		{$searchtype_duracion}
+	</div>
+	<div class="r-search-field">
+		{$duracion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$duracion_editcontrol1}
+	</div>
+	
+</div>
+
+{END duracion_fieldblock}
+											
+{BEGIN fecha_inicio_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_inicio}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="fecha_inicio" 
+	
+	data-signal-error-for="fecha_inicio{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="fecha_inicio" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_inicio}">
+		{$label tbl_convenio fecha_inicio }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_inicio}
+	</div>
+	<div class="r-search-field">
+		{$fecha_inicio_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_inicio_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_inicio_fieldblock}
+											
+{BEGIN fecha_fin_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_fin}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="fecha_fin" 
+	
+	data-signal-error-for="fecha_fin{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="fecha_fin" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_fin}">
+		{$label tbl_convenio fecha_fin }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_fin}
+	</div>
+	<div class="r-search-field">
+		{$fecha_fin_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_fin_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_fin_fieldblock}
+											
+{BEGIN tipo_convenio_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tipo_convenio}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="tipo_convenio" 
+	
+	data-signal-error-for="tipo_convenio{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="tipo_convenio" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tipo_convenio}">
+		{$label tbl_convenio tipo_convenio }	</label>
+	<div class="r-search-option">
+		{$searchtype_tipo_convenio}
+	</div>
+	<div class="r-search-field">
+		{$tipo_convenio_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tipo_convenio_editcontrol1}
+	</div>
+	
+</div>
+
+{END tipo_convenio_fieldblock}
+											
+{BEGIN documentos_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documentos}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="documentos" 
+	
+	data-signal-error-for="documentos{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="documentos" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_documentos}">
+		{$label tbl_convenio documentos }	</label>
+	<div class="r-search-option">
+		{$searchtype_documentos}
+	</div>
+	<div class="r-search-field">
+		{$documentos_editcontrol}	</div>
+	<div class="r-search-field">
+		{$documentos_editcontrol1}
+	</div>
+	
+</div>
+
+{END documentos_fieldblock}
+											
+{BEGIN areas_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_areas}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="areas" 
+	
+	data-signal-error-for="areas{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="areas" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_areas}">
+		{$label tbl_convenio areas }	</label>
+	<div class="r-search-option">
+		{$searchtype_areas}
+	</div>
+	<div class="r-search-field">
+		{$areas_editcontrol}	</div>
+	<div class="r-search-field">
+		{$areas_editcontrol1}
+	</div>
+	
+</div>
+
+{END areas_fieldblock}
+											
+{BEGIN id_institucion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_institucion}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_institucion" 
+	
+	data-signal-error-for="id_institucion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="id_institucion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_institucion}">
+		{$label tbl_convenio id_institucion }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_institucion}
+	</div>
+	<div class="r-search-field">
+		{$id_institucion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_institucion_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_institucion_fieldblock}
+											
+{BEGIN estado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estado}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="estado" 
+	
+	data-signal-error-for="estado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="estado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_estado}">
+		{$label tbl_convenio estado }	</label>
+	<div class="r-search-option">
+		{$searchtype_estado}
+	</div>
+	<div class="r-search-field">
+		{$estado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$estado_editcontrol1}
+	</div>
+	
+</div>
+
+{END estado_fieldblock}
+											
+{BEGIN id_extension_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_extension}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_extension" 
+	
+	data-signal-error-for="id_extension{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="id_extension" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_extension}">
+		{$label tbl_convenio id_extension }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_extension}
+	</div>
+	<div class="r-search-field">
+		{$id_extension_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_extension_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_extension_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -326,6 +326,12 @@ class ConnectionManager
 		$connectionsIds["tbl_provincia"] = "vinculacion_at_localhost";
 		$connectionsIds["tbl_persona"] = "vinculacion_at_localhost";
 		$connectionsIds["tbl_distributivo_proyectos"] = "vinculacion_at_localhost";
+		$connectionsIds["tbl_convenio"] = "vinculacion_at_localhost";
+		$connectionsIds["tbl_institucion"] = "vinculacion_at_localhost";
+		$connectionsIds["tbl_linea_investigacion"] = "vinculacion_at_localhost";
+		$connectionsIds["tbl_programa_vinculacion"] = "vinculacion_at_localhost";
+		$connectionsIds["tbl_proyecto_vinculacion"] = "vinculacion_at_localhost";
+		$connectionsIds["tbl_vinculacion_estudiantes"] = "vinculacion_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

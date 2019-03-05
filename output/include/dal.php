@@ -49,14 +49,20 @@ class tDAL
 {
 	var $tblvinculacion_at_localhost__tbl_carrera;
 	var $tblvinculacion_at_localhost__tbl_ciudad;
+	var $tblvinculacion_at_localhost__tbl_convenio;
 	var $tblvinculacion_at_localhost__tbl_distributivo_proyectos;
 	var $tblvinculacion_at_localhost__tbl_extension;
 	var $tblvinculacion_at_localhost__tbl_facultad;
+	var $tblvinculacion_at_localhost__tbl_institucion;
+	var $tblvinculacion_at_localhost__tbl_linea_investigacion;
 	var $tblvinculacion_at_localhost__tbl_modalidad;
 	var $tblvinculacion_at_localhost__tbl_periodo;
 	var $tblvinculacion_at_localhost__tbl_persona;
+	var $tblvinculacion_at_localhost__tbl_programa_vinculacion;
 	var $tblvinculacion_at_localhost__tbl_provincia;
+	var $tblvinculacion_at_localhost__tbl_proyecto_vinculacion;
 	var $tblvinculacion_at_localhost__tbl_rol;
+	var $tblvinculacion_at_localhost__tbl_vinculacion_estudiantes;
 	var $lstTables;
 	var $Table = array();
 
@@ -66,14 +72,20 @@ class tDAL
 			return;
 		$this->lstTables[] = array("name" => "tbl_carrera", "varname" => "vinculacion_at_localhost__tbl_carrera", "altvarname" => "tbl_carrera", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 		$this->lstTables[] = array("name" => "tbl_ciudad", "varname" => "vinculacion_at_localhost__tbl_ciudad", "altvarname" => "tbl_ciudad", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
+		$this->lstTables[] = array("name" => "tbl_convenio", "varname" => "vinculacion_at_localhost__tbl_convenio", "altvarname" => "tbl_convenio", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 		$this->lstTables[] = array("name" => "tbl_distributivo_proyectos", "varname" => "vinculacion_at_localhost__tbl_distributivo_proyectos", "altvarname" => "tbl_distributivo_proyectos", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 		$this->lstTables[] = array("name" => "tbl_extension", "varname" => "vinculacion_at_localhost__tbl_extension", "altvarname" => "tbl_extension", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 		$this->lstTables[] = array("name" => "tbl_facultad", "varname" => "vinculacion_at_localhost__tbl_facultad", "altvarname" => "tbl_facultad", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
+		$this->lstTables[] = array("name" => "tbl_institucion", "varname" => "vinculacion_at_localhost__tbl_institucion", "altvarname" => "tbl_institucion", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
+		$this->lstTables[] = array("name" => "tbl_linea_investigacion", "varname" => "vinculacion_at_localhost__tbl_linea_investigacion", "altvarname" => "tbl_linea_investigacion", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 		$this->lstTables[] = array("name" => "tbl_modalidad", "varname" => "vinculacion_at_localhost__tbl_modalidad", "altvarname" => "tbl_modalidad", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 		$this->lstTables[] = array("name" => "tbl_periodo", "varname" => "vinculacion_at_localhost__tbl_periodo", "altvarname" => "tbl_periodo", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 		$this->lstTables[] = array("name" => "tbl_persona", "varname" => "vinculacion_at_localhost__tbl_persona", "altvarname" => "tbl_persona", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
+		$this->lstTables[] = array("name" => "tbl_programa_vinculacion", "varname" => "vinculacion_at_localhost__tbl_programa_vinculacion", "altvarname" => "tbl_programa_vinculacion", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 		$this->lstTables[] = array("name" => "tbl_provincia", "varname" => "vinculacion_at_localhost__tbl_provincia", "altvarname" => "tbl_provincia", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
+		$this->lstTables[] = array("name" => "tbl_proyecto_vinculacion", "varname" => "vinculacion_at_localhost__tbl_proyecto_vinculacion", "altvarname" => "tbl_proyecto_vinculacion", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 		$this->lstTables[] = array("name" => "tbl_rol", "varname" => "vinculacion_at_localhost__tbl_rol", "altvarname" => "tbl_rol", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
+		$this->lstTables[] = array("name" => "tbl_vinculacion_estudiantes", "varname" => "vinculacion_at_localhost__tbl_vinculacion_estudiantes", "altvarname" => "tbl_vinculacion_estudiantes", "connId" => "vinculacion_at_localhost", "schema" => "", "connName" => "vinculacion at localhost");
 	}
 
 	/**

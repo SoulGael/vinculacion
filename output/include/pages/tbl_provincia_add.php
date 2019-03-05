@@ -104,5 +104,6 @@
 'type' => 'integrated_edit_field',
 'orientation' => 0 ) ),
 'dbProps' => array(  ),
-'version' => 2 );
+'version' => 2,
+'pageWidth' => 'standard' );
 		?>

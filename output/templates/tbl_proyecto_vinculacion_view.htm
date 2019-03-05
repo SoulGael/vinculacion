@@ -1,0 +1,653 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		
+		<div class="container r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel tbl_proyecto_vinculacion view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN poa_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_poa}  r-vertical-field" data-fieldname="poa" data-signal-error-for="poa{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="poa" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_poa}">
+		
+		{BEGIN poa_label}{$label tbl_proyecto_vinculacion poa }{END poa_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$poa_value}	</div>
+
+		
+</div>
+
+
+{END poa_fieldblock}
+											
+{BEGIN id_programa_vinculacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_programa_vinculacion}  r-vertical-field" data-fieldname="id_programa_vinculacion" data-signal-error-for="id_programa_vinculacion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="id_programa_vinculacion" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_programa_vinculacion}">
+		
+		{BEGIN id_programa_vinculacion_label}{$label tbl_proyecto_vinculacion id_programa_vinculacion }{END id_programa_vinculacion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_programa_vinculacion_value}	</div>
+
+		
+</div>
+
+
+{END id_programa_vinculacion_fieldblock}
+											
+{BEGIN nombre_programa_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombre_programa}  r-vertical-field" data-fieldname="nombre_programa" data-signal-error-for="nombre_programa{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="nombre_programa" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nombre_programa}">
+		
+		{BEGIN nombre_programa_label}{$label tbl_proyecto_vinculacion nombre_programa }{END nombre_programa_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nombre_programa_value}	</div>
+
+		
+</div>
+
+
+{END nombre_programa_fieldblock}
+											
+{BEGIN codigo_proyecto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_codigo_proyecto}  r-vertical-field" data-fieldname="codigo_proyecto" data-signal-error-for="codigo_proyecto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="codigo_proyecto" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_codigo_proyecto}">
+		
+		{BEGIN codigo_proyecto_label}{$label tbl_proyecto_vinculacion codigo_proyecto }{END codigo_proyecto_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$codigo_proyecto_value}	</div>
+
+		
+</div>
+
+
+{END codigo_proyecto_fieldblock}
+											
+{BEGIN nombre_proyecto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombre_proyecto}  r-vertical-field" data-fieldname="nombre_proyecto" data-signal-error-for="nombre_proyecto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="nombre_proyecto" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nombre_proyecto}">
+		
+		{BEGIN nombre_proyecto_label}{$label tbl_proyecto_vinculacion nombre_proyecto }{END nombre_proyecto_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nombre_proyecto_value}	</div>
+
+		
+</div>
+
+
+{END nombre_proyecto_fieldblock}
+											
+{BEGIN linea_investigacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_linea_investigacion}  r-vertical-field" data-fieldname="linea_investigacion" data-signal-error-for="linea_investigacion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="linea_investigacion" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_linea_investigacion}">
+		
+		{BEGIN linea_investigacion_label}{$label tbl_proyecto_vinculacion linea_investigacion }{END linea_investigacion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$linea_investigacion_value}	</div>
+
+		
+</div>
+
+
+{END linea_investigacion_fieldblock}
+											
+{BEGIN numero_beneficiarios_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_numero_beneficiarios}  r-vertical-field" data-fieldname="numero_beneficiarios" data-signal-error-for="numero_beneficiarios{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="numero_beneficiarios" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_numero_beneficiarios}">
+		
+		{BEGIN numero_beneficiarios_label}{$label tbl_proyecto_vinculacion numero_beneficiarios }{END numero_beneficiarios_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$numero_beneficiarios_value}	</div>
+
+		
+</div>
+
+
+{END numero_beneficiarios_fieldblock}
+											
+{BEGIN beneficiarios_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_beneficiarios}  r-vertical-field" data-fieldname="beneficiarios" data-signal-error-for="beneficiarios{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="beneficiarios" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_beneficiarios}">
+		
+		{BEGIN beneficiarios_label}{$label tbl_proyecto_vinculacion beneficiarios }{END beneficiarios_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$beneficiarios_value}	</div>
+
+		
+</div>
+
+
+{END beneficiarios_fieldblock}
+											
+{BEGIN coordinador_entidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_coordinador_entidad}  r-vertical-field" data-fieldname="coordinador_entidad" data-signal-error-for="coordinador_entidad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="coordinador_entidad" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_coordinador_entidad}">
+		
+		{BEGIN coordinador_entidad_label}{$label tbl_proyecto_vinculacion coordinador_entidad }{END coordinador_entidad_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$coordinador_entidad_value}	</div>
+
+		
+</div>
+
+
+{END coordinador_entidad_fieldblock}
+											
+{BEGIN monto_proyecto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_monto_proyecto}  r-vertical-field" data-fieldname="monto_proyecto" data-signal-error-for="monto_proyecto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="monto_proyecto" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_monto_proyecto}">
+		
+		{BEGIN monto_proyecto_label}{$label tbl_proyecto_vinculacion monto_proyecto }{END monto_proyecto_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$monto_proyecto_value}	</div>
+
+		
+</div>
+
+
+{END monto_proyecto_fieldblock}
+											
+{BEGIN objetivo_general_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_objetivo_general}  r-vertical-field" data-fieldname="objetivo_general" data-signal-error-for="objetivo_general{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="objetivo_general" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_objetivo_general}">
+		
+		{BEGIN objetivo_general_label}{$label tbl_proyecto_vinculacion objetivo_general }{END objetivo_general_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$objetivo_general_value}	</div>
+
+		
+</div>
+
+
+{END objetivo_general_fieldblock}
+											
+{BEGIN objetivo_especifico_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_objetivo_especifico}  r-vertical-field" data-fieldname="objetivo_especifico" data-signal-error-for="objetivo_especifico{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="objetivo_especifico" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_objetivo_especifico}">
+		
+		{BEGIN objetivo_especifico_label}{$label tbl_proyecto_vinculacion objetivo_especifico }{END objetivo_especifico_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$objetivo_especifico_value}	</div>
+
+		
+</div>
+
+
+{END objetivo_especifico_fieldblock}
+											
+{BEGIN metas_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_metas}  r-vertical-field" data-fieldname="metas" data-signal-error-for="metas{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="metas" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_metas}">
+		
+		{BEGIN metas_label}{$label tbl_proyecto_vinculacion metas }{END metas_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$metas_value}	</div>
+
+		
+</div>
+
+
+{END metas_fieldblock}
+											
+{BEGIN fecha_inicio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_inicio}  r-vertical-field" data-fieldname="fecha_inicio" data-signal-error-for="fecha_inicio{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="fecha_inicio" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fecha_inicio}">
+		
+		{BEGIN fecha_inicio_label}{$label tbl_proyecto_vinculacion fecha_inicio }{END fecha_inicio_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fecha_inicio_value}	</div>
+
+		
+</div>
+
+
+{END fecha_inicio_fieldblock}
+											
+{BEGIN fecha_fin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_fin}  r-vertical-field" data-fieldname="fecha_fin" data-signal-error-for="fecha_fin{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="fecha_fin" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fecha_fin}">
+		
+		{BEGIN fecha_fin_label}{$label tbl_proyecto_vinculacion fecha_fin }{END fecha_fin_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fecha_fin_value}	</div>
+
+		
+</div>
+
+
+{END fecha_fin_fieldblock}
+											
+{BEGIN impacto_social_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_impacto_social}  r-vertical-field" data-fieldname="impacto_social" data-signal-error-for="impacto_social{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="impacto_social" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_impacto_social}">
+		
+		{BEGIN impacto_social_label}{$label tbl_proyecto_vinculacion impacto_social }{END impacto_social_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$impacto_social_value}	</div>
+
+		
+</div>
+
+
+{END impacto_social_fieldblock}
+											
+{BEGIN impacto_cientifico_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_impacto_cientifico}  r-vertical-field" data-fieldname="impacto_cientifico" data-signal-error-for="impacto_cientifico{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="impacto_cientifico" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_impacto_cientifico}">
+		
+		{BEGIN impacto_cientifico_label}{$label tbl_proyecto_vinculacion impacto_cientifico }{END impacto_cientifico_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$impacto_cientifico_value}	</div>
+
+		
+</div>
+
+
+{END impacto_cientifico_fieldblock}
+											
+{BEGIN impacto_economico_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_impacto_economico}  r-vertical-field" data-fieldname="impacto_economico" data-signal-error-for="impacto_economico{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="impacto_economico" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_impacto_economico}">
+		
+		{BEGIN impacto_economico_label}{$label tbl_proyecto_vinculacion impacto_economico }{END impacto_economico_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$impacto_economico_value}	</div>
+
+		
+</div>
+
+
+{END impacto_economico_fieldblock}
+											
+{BEGIN impacto_politico_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_impacto_politico}  r-vertical-field" data-fieldname="impacto_politico" data-signal-error-for="impacto_politico{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="impacto_politico" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_impacto_politico}">
+		
+		{BEGIN impacto_politico_label}{$label tbl_proyecto_vinculacion impacto_politico }{END impacto_politico_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$impacto_politico_value}	</div>
+
+		
+</div>
+
+
+{END impacto_politico_fieldblock}
+											
+{BEGIN otro_impacto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_otro_impacto}  r-vertical-field" data-fieldname="otro_impacto" data-signal-error-for="otro_impacto{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="otro_impacto" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_otro_impacto}">
+		
+		{BEGIN otro_impacto_label}{$label tbl_proyecto_vinculacion otro_impacto }{END otro_impacto_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$otro_impacto_value}	</div>
+
+		
+</div>
+
+
+{END otro_impacto_fieldblock}
+											
+{BEGIN docente_responsable_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_docente_responsable}  r-vertical-field" data-fieldname="docente_responsable" data-signal-error-for="docente_responsable{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="docente_responsable" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_docente_responsable}">
+		
+		{BEGIN docente_responsable_label}{$label tbl_proyecto_vinculacion docente_responsable }{END docente_responsable_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$docente_responsable_value}	</div>
+
+		
+</div>
+
+
+{END docente_responsable_fieldblock}
+											
+{BEGIN docente_tutor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_docente_tutor}  r-vertical-field" data-fieldname="docente_tutor" data-signal-error-for="docente_tutor{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="docente_tutor" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_docente_tutor}">
+		
+		{BEGIN docente_tutor_label}{$label tbl_proyecto_vinculacion docente_tutor }{END docente_tutor_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$docente_tutor_value}	</div>
+
+		
+</div>
+
+
+{END docente_tutor_fieldblock}
+											
+{BEGIN docente_participante_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_docente_participante}  r-vertical-field" data-fieldname="docente_participante" data-signal-error-for="docente_participante{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="docente_participante" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_docente_participante}">
+		
+		{BEGIN docente_participante_label}{$label tbl_proyecto_vinculacion docente_participante }{END docente_participante_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$docente_participante_value}	</div>
+
+		
+</div>
+
+
+{END docente_participante_fieldblock}
+											
+{BEGIN id_carrera_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_carrera}  r-vertical-field" data-fieldname="id_carrera" data-signal-error-for="id_carrera{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="id_carrera" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_carrera}">
+		
+		{BEGIN id_carrera_label}{$label tbl_proyecto_vinculacion id_carrera }{END id_carrera_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_carrera_value}	</div>
+
+		
+</div>
+
+
+{END id_carrera_fieldblock}
+											
+{BEGIN estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estado}  r-vertical-field" data-fieldname="estado" data-signal-error-for="estado{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="estado" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_estado}">
+		
+		{BEGIN estado_label}{$label tbl_proyecto_vinculacion estado }{END estado_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$estado_value}	</div>
+
+		
+</div>
+
+
+{END estado_fieldblock}
+											
+{BEGIN documento_proyecto_vinculacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documento_proyecto_vinculacion}  r-vertical-field" data-fieldname="documento_proyecto_vinculacion" data-signal-error-for="documento_proyecto_vinculacion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="documento_proyecto_vinculacion" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_documento_proyecto_vinculacion}">
+		
+		{BEGIN documento_proyecto_vinculacion_label}{$label tbl_proyecto_vinculacion documento_proyecto_vinculacion }{END documento_proyecto_vinculacion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$documento_proyecto_vinculacion_value}	</div>
+
+		
+</div>
+
+
+{END documento_proyecto_vinculacion_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-button-item>
+	<a type="button" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-button-item>
+	<span class="dropdown">
+		<button type="button" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" >
+				<a  href="#" {$edit_page_button_attrs} >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+								<li data-itemtype="view_pdf" data-itemid="view_pdf" {$item_view_pdf} data-pageid="{$pageid}" >
+				<a class="pdflink" {$pdflink_attrs} >
+				
+		Vista PDF		
+		</a>
+	</li>
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

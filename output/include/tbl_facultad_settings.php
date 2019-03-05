@@ -38,10 +38,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelstbl_facultad["Spanish"]["estado"] = "Estado";
 	$fieldToolTipstbl_facultad["Spanish"]["estado"] = "";
 	$placeHolderstbl_facultad["Spanish"]["estado"] = "";
-	$fieldLabelstbl_facultad["Spanish"]["id_extension"] = "Id Extension";
+	$fieldLabelstbl_facultad["Spanish"]["id_extension"] = "Extension";
 	$fieldToolTipstbl_facultad["Spanish"]["id_extension"] = "";
 	$placeHolderstbl_facultad["Spanish"]["id_extension"] = "";
-	$fieldLabelstbl_facultad["Spanish"]["extension"] = "Extension";
+	$fieldLabelstbl_facultad["Spanish"]["extension"] = "Extensiones";
 	$fieldToolTipstbl_facultad["Spanish"]["extension"] = "";
 	$placeHolderstbl_facultad["Spanish"]["extension"] = "";
 	if (count($fieldToolTipstbl_facultad["Spanish"]))
@@ -155,7 +155,7 @@ $tdatatbl_facultad[".rowHighlite"] = true;
 
 
 
-
+						
 $tdatatbl_facultad[".flexibleSearch"] = true;
 
 

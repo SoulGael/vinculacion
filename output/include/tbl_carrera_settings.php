@@ -41,22 +41,13 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelstbl_carrera["Spanish"]["estado"] = "Estado";
 	$fieldToolTipstbl_carrera["Spanish"]["estado"] = "";
 	$placeHolderstbl_carrera["Spanish"]["estado"] = "";
-	$fieldLabelstbl_carrera["Spanish"]["id_facultad"] = "Id Facultad";
+	$fieldLabelstbl_carrera["Spanish"]["id_facultad"] = "Facultad";
 	$fieldToolTipstbl_carrera["Spanish"]["id_facultad"] = "";
 	$placeHolderstbl_carrera["Spanish"]["id_facultad"] = "";
-	$fieldLabelstbl_carrera["Spanish"]["id_modalidad"] = "Id Modalidad";
+	$fieldLabelstbl_carrera["Spanish"]["id_modalidad"] = "Modalidad";
 	$fieldToolTipstbl_carrera["Spanish"]["id_modalidad"] = "";
 	$placeHolderstbl_carrera["Spanish"]["id_modalidad"] = "";
-	$fieldLabelstbl_carrera["Spanish"]["facultad"] = "Facultad";
-	$fieldToolTipstbl_carrera["Spanish"]["facultad"] = "";
-	$placeHolderstbl_carrera["Spanish"]["facultad"] = "";
-	$fieldLabelstbl_carrera["Spanish"]["modalidad"] = "Modalidad";
-	$fieldToolTipstbl_carrera["Spanish"]["modalidad"] = "";
-	$placeHolderstbl_carrera["Spanish"]["modalidad"] = "";
-	$fieldLabelstbl_carrera["Spanish"]["extension"] = "Extension";
-	$fieldToolTipstbl_carrera["Spanish"]["extension"] = "";
-	$placeHolderstbl_carrera["Spanish"]["extension"] = "";
-	$fieldLabelstbl_carrera["Spanish"]["id_extension"] = "Id Extension";
+	$fieldLabelstbl_carrera["Spanish"]["id_extension"] = "Extension";
 	$fieldToolTipstbl_carrera["Spanish"]["id_extension"] = "";
 	$placeHolderstbl_carrera["Spanish"]["id_extension"] = "";
 	if (count($fieldToolTipstbl_carrera["Spanish"]))
@@ -170,7 +161,7 @@ $tdatatbl_carrera[".rowHighlite"] = true;
 
 
 
-
+									
 $tdatatbl_carrera[".flexibleSearch"] = true;
 
 
@@ -197,11 +188,8 @@ $tdatatbl_carrera[".googleLikeFields"][] = "carrera";
 $tdatatbl_carrera[".googleLikeFields"][] = "codigo";
 $tdatatbl_carrera[".googleLikeFields"][] = "estado";
 $tdatatbl_carrera[".googleLikeFields"][] = "id_facultad";
-$tdatatbl_carrera[".googleLikeFields"][] = "id_modalidad";
-$tdatatbl_carrera[".googleLikeFields"][] = "facultad";
-$tdatatbl_carrera[".googleLikeFields"][] = "modalidad";
-$tdatatbl_carrera[".googleLikeFields"][] = "extension";
 $tdatatbl_carrera[".googleLikeFields"][] = "id_extension";
+$tdatatbl_carrera[".googleLikeFields"][] = "id_modalidad";
 
 
 
@@ -232,23 +220,21 @@ $tdatatbl_carrera[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "ORDER BY tbl_extension.extension, tbl_facultad.facultad, tbl_modalidad.modalidad, tbl_carrera.carrera";
+$tstrOrderBy = "ORDER BY tbl_facultad.id_extension, tbl_carrera.id_facultad, tbl_carrera.carrera";
 if(strlen($tstrOrderBy) && strtolower(substr($tstrOrderBy,0,8))!="order by")
 	$tstrOrderBy = "order by ".$tstrOrderBy;
 $tdatatbl_carrera[".strOrderBy"] = $tstrOrderBy;
 
 $tdatatbl_carrera[".orderindexes"] = array();
-	$tdatatbl_carrera[".orderindexes"][] = array(9, (1 ? "ASC" : "DESC"), "tbl_extension.extension");
+	$tdatatbl_carrera[".orderindexes"][] = array(6, (1 ? "ASC" : "DESC"), "tbl_facultad.id_extension");
 
-	$tdatatbl_carrera[".orderindexes"][] = array(7, (1 ? "ASC" : "DESC"), "tbl_facultad.facultad");
-
-	$tdatatbl_carrera[".orderindexes"][] = array(8, (1 ? "ASC" : "DESC"), "tbl_modalidad.modalidad");
+	$tdatatbl_carrera[".orderindexes"][] = array(5, (1 ? "ASC" : "DESC"), "tbl_carrera.id_facultad");
 
 	$tdatatbl_carrera[".orderindexes"][] = array(2, (1 ? "ASC" : "DESC"), "tbl_carrera.carrera");
 
 
-$tdatatbl_carrera[".sqlHead"] = "SELECT tbl_carrera.id_carrera,  tbl_carrera.carrera,  tbl_carrera.codigo,  tbl_carrera.estado,  tbl_carrera.id_facultad,  tbl_carrera.id_modalidad,  tbl_facultad.facultad,  tbl_modalidad.modalidad,  tbl_extension.extension,  tbl_facultad.id_extension";
-$tdatatbl_carrera[".sqlFrom"] = "FROM tbl_carrera  INNER JOIN tbl_facultad ON tbl_carrera.id_facultad = tbl_facultad.id_facultad  INNER JOIN tbl_modalidad ON tbl_carrera.id_modalidad = tbl_modalidad.id_modalidad  INNER JOIN tbl_extension ON tbl_facultad.id_extension = tbl_extension.id_extension";
+$tdatatbl_carrera[".sqlHead"] = "SELECT tbl_carrera.id_carrera,  tbl_carrera.carrera,  tbl_carrera.codigo,  tbl_carrera.estado,  tbl_carrera.id_facultad,  tbl_facultad.id_extension,  tbl_carrera.id_modalidad";
+$tdatatbl_carrera[".sqlFrom"] = "FROM tbl_carrera  INNER JOIN tbl_facultad ON tbl_carrera.id_facultad = tbl_facultad.id_facultad";
 $tdatatbl_carrera[".sqlWhereExpr"] = "";
 $tdatatbl_carrera[".sqlTail"] = "";
 
@@ -966,532 +952,10 @@ $tdatatbl_carrera[".hideMobileList"] = array();
 
 	$tdatatbl_carrera["id_facultad"] = $fdata;
 		$tdatatbl_carrera[".searchableFields"][] = "id_facultad";
-//	id_modalidad
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 6;
-	$fdata["strName"] = "id_modalidad";
-	$fdata["GoodName"] = "id_modalidad";
-	$fdata["ownerTable"] = "tbl_carrera";
-	$fdata["Label"] = GetFieldLabel("tbl_carrera","id_modalidad");
-	$fdata["FieldType"] = 3;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "id_modalidad";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "tbl_carrera.id_modalidad";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Lookup wizard");
-
-	
-	
-	
-
-// Begin Lookup settings
-				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "tbl_modalidad";
-		$edata["autoCompleteFieldsOnEdit"] = 0;
-	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
-
-	
-		
-	$edata["LinkField"] = "id_modalidad";
-	$edata["LinkFieldType"] = 3;
-	$edata["DisplayField"] = "modalidad";
-
-				$edata["LookupWhere"] = "tbl_modalidad.estado='Activo'";
-
-
-	
-	$edata["LookupOrderBy"] = "modalidad";
-
-	
-	
-		$edata["AllowToAdd"] = true;
-
-	
-
-	
-	
-		$edata["SelectSize"] = 1;
-
-// End Lookup Settings
-
-
-		$edata["IsRequired"] = true;
-
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-			
-	
-	
-//end of Filters settings
-
-
-	$tdatatbl_carrera["id_modalidad"] = $fdata;
-		$tdatatbl_carrera[".searchableFields"][] = "id_modalidad";
-//	facultad
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 7;
-	$fdata["strName"] = "facultad";
-	$fdata["GoodName"] = "facultad";
-	$fdata["ownerTable"] = "tbl_facultad";
-	$fdata["Label"] = GetFieldLabel("tbl_carrera","facultad");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "facultad";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "tbl_facultad.facultad";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-	
-
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-			
-	
-	
-//end of Filters settings
-
-
-	$tdatatbl_carrera["facultad"] = $fdata;
-		$tdatatbl_carrera[".searchableFields"][] = "facultad";
-//	modalidad
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 8;
-	$fdata["strName"] = "modalidad";
-	$fdata["GoodName"] = "modalidad";
-	$fdata["ownerTable"] = "tbl_modalidad";
-	$fdata["Label"] = GetFieldLabel("tbl_carrera","modalidad");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "modalidad";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "tbl_modalidad.modalidad";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-	
-
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-			
-	
-	
-//end of Filters settings
-
-
-	$tdatatbl_carrera["modalidad"] = $fdata;
-		$tdatatbl_carrera[".searchableFields"][] = "modalidad";
-//	extension
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 9;
-	$fdata["strName"] = "extension";
-	$fdata["GoodName"] = "extension";
-	$fdata["ownerTable"] = "tbl_extension";
-	$fdata["Label"] = GetFieldLabel("tbl_carrera","extension");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "extension";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "tbl_extension.extension";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-	
-	
-
-
-
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-			
-	
-	
-//end of Filters settings
-
-
-	$tdatatbl_carrera["extension"] = $fdata;
-		$tdatatbl_carrera[".searchableFields"][] = "extension";
 //	id_extension
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 10;
+	$fdata["Index"] = 6;
 	$fdata["strName"] = "id_extension";
 	$fdata["GoodName"] = "id_extension";
 	$fdata["ownerTable"] = "tbl_facultad";
@@ -1644,6 +1108,159 @@ $tdatatbl_carrera[".hideMobileList"] = array();
 
 	$tdatatbl_carrera["id_extension"] = $fdata;
 		$tdatatbl_carrera[".searchableFields"][] = "id_extension";
+//	id_modalidad
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 7;
+	$fdata["strName"] = "id_modalidad";
+	$fdata["GoodName"] = "id_modalidad";
+	$fdata["ownerTable"] = "tbl_carrera";
+	$fdata["Label"] = GetFieldLabel("tbl_carrera","id_modalidad");
+	$fdata["FieldType"] = 201;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "id_modalidad";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "tbl_carrera.id_modalidad";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "tbl_modalidad";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 3;
+
+		$edata["HorizontalLookup"] = true;
+
+		
+	$edata["LinkField"] = "id_modalidad";
+	$edata["LinkFieldType"] = 3;
+	$edata["DisplayField"] = "modalidad";
+
+				$edata["LookupWhere"] = "tbl_modalidad.estado='Activo'";
+
+
+	
+	$edata["LookupOrderBy"] = "modalidad";
+
+	
+	
+	
+	
+
+	
+		$edata["Multiselect"] = true;
+
+	
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+			
+	
+	
+//end of Filters settings
+
+
+	$tdatatbl_carrera["id_modalidad"] = $fdata;
+		$tdatatbl_carrera[".searchableFields"][] = "id_modalidad";
 
 
 $tables_data["tbl_carrera"]=&$tdatatbl_carrera;
@@ -1669,6 +1286,93 @@ $detailsTablesData["tbl_carrera"] = array();
 				$detailsParam["dType"]=PAGE_LIST;
 	$detailsParam["dShortTable"] = "tbl_persona";
 	$detailsParam["dCaptionTable"] = GetTableCaption("tbl_persona");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["tbl_carrera"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["tbl_carrera"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["tbl_carrera"][$dIndex]["masterKeys"][]="id_carrera";
+
+				$detailsTablesData["tbl_carrera"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["tbl_carrera"][$dIndex]["detailKeys"][]="id_carrera";
+//	tbl_linea_investigacion
+	
+	
+
+		$dIndex = 1;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="tbl_linea_investigacion";
+		$detailsParam["dOriginalTable"] = "tbl_linea_investigacion";
+
+
+	
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "tbl_linea_investigacion";
+	$detailsParam["dCaptionTable"] = GetTableCaption("tbl_linea_investigacion");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["tbl_carrera"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["tbl_carrera"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["tbl_carrera"][$dIndex]["masterKeys"][]="id_carrera";
+
+				$detailsTablesData["tbl_carrera"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["tbl_carrera"][$dIndex]["detailKeys"][]="id_carrera";
+//	tbl_programa_vinculacion
+	
+	
+
+		$dIndex = 2;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="tbl_programa_vinculacion";
+		$detailsParam["dOriginalTable"] = "tbl_programa_vinculacion";
+
+
+	
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "tbl_programa_vinculacion";
+	$detailsParam["dCaptionTable"] = GetTableCaption("tbl_programa_vinculacion");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["tbl_carrera"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["tbl_carrera"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["tbl_carrera"][$dIndex]["masterKeys"][]="id_carrera";
+
+				$detailsTablesData["tbl_carrera"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["tbl_carrera"][$dIndex]["detailKeys"][]="id_carrera";
+//	tbl_proyecto_vinculacion
+	
+	
+
+		$dIndex = 3;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="tbl_proyecto_vinculacion";
+		$detailsParam["dOriginalTable"] = "tbl_proyecto_vinculacion";
+
+
+	
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "tbl_proyecto_vinculacion";
+	$detailsParam["dCaptionTable"] = GetTableCaption("tbl_proyecto_vinculacion");
 	$detailsParam["masterKeys"] =array();
 	$detailsParam["detailKeys"] =array();
 
@@ -1740,10 +1444,10 @@ function createSqlQuery_tbl_carrera()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "tbl_carrera.id_carrera,  tbl_carrera.carrera,  tbl_carrera.codigo,  tbl_carrera.estado,  tbl_carrera.id_facultad,  tbl_carrera.id_modalidad,  tbl_facultad.facultad,  tbl_modalidad.modalidad,  tbl_extension.extension,  tbl_facultad.id_extension";
-$proto0["m_strFrom"] = "FROM tbl_carrera  INNER JOIN tbl_facultad ON tbl_carrera.id_facultad = tbl_facultad.id_facultad  INNER JOIN tbl_modalidad ON tbl_carrera.id_modalidad = tbl_modalidad.id_modalidad  INNER JOIN tbl_extension ON tbl_facultad.id_extension = tbl_extension.id_extension";
+$proto0["m_strFieldList"] = "tbl_carrera.id_carrera,  tbl_carrera.carrera,  tbl_carrera.codigo,  tbl_carrera.estado,  tbl_carrera.id_facultad,  tbl_facultad.id_extension,  tbl_carrera.id_modalidad";
+$proto0["m_strFrom"] = "FROM tbl_carrera  INNER JOIN tbl_facultad ON tbl_carrera.id_facultad = tbl_facultad.id_facultad";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "ORDER BY tbl_extension.extension, tbl_facultad.facultad, tbl_modalidad.modalidad, tbl_carrera.carrera";
+$proto0["m_strOrderBy"] = "ORDER BY tbl_facultad.id_extension, tbl_carrera.id_facultad, tbl_carrera.carrera";
 	
 		;
 			$proto0["cipherer"] = null;
@@ -1852,12 +1556,12 @@ $obj = new SQLFieldListItem($proto14);
 $proto0["m_fieldlist"][]=$obj;
 						$proto16=array();
 			$obj = new SQLField(array(
-	"m_strName" => "id_modalidad",
-	"m_strTable" => "tbl_carrera",
+	"m_strName" => "id_extension",
+	"m_strTable" => "tbl_facultad",
 	"m_srcTableName" => "tbl_carrera"
 ));
 
-$proto16["m_sql"] = "tbl_carrera.id_modalidad";
+$proto16["m_sql"] = "tbl_facultad.id_extension";
 $proto16["m_srcTableName"] = "tbl_carrera";
 $proto16["m_expr"]=$obj;
 $proto16["m_alias"] = "";
@@ -1866,261 +1570,132 @@ $obj = new SQLFieldListItem($proto16);
 $proto0["m_fieldlist"][]=$obj;
 						$proto18=array();
 			$obj = new SQLField(array(
-	"m_strName" => "facultad",
-	"m_strTable" => "tbl_facultad",
+	"m_strName" => "id_modalidad",
+	"m_strTable" => "tbl_carrera",
 	"m_srcTableName" => "tbl_carrera"
 ));
 
-$proto18["m_sql"] = "tbl_facultad.facultad";
+$proto18["m_sql"] = "tbl_carrera.id_modalidad";
 $proto18["m_srcTableName"] = "tbl_carrera";
 $proto18["m_expr"]=$obj;
 $proto18["m_alias"] = "";
 $obj = new SQLFieldListItem($proto18);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto20=array();
-			$obj = new SQLField(array(
-	"m_strName" => "modalidad",
-	"m_strTable" => "tbl_modalidad",
-	"m_srcTableName" => "tbl_carrera"
-));
-
-$proto20["m_sql"] = "tbl_modalidad.modalidad";
-$proto20["m_srcTableName"] = "tbl_carrera";
-$proto20["m_expr"]=$obj;
-$proto20["m_alias"] = "";
-$obj = new SQLFieldListItem($proto20);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto22=array();
-			$obj = new SQLField(array(
-	"m_strName" => "extension",
-	"m_strTable" => "tbl_extension",
-	"m_srcTableName" => "tbl_carrera"
-));
-
-$proto22["m_sql"] = "tbl_extension.extension";
-$proto22["m_srcTableName"] = "tbl_carrera";
-$proto22["m_expr"]=$obj;
-$proto22["m_alias"] = "";
-$obj = new SQLFieldListItem($proto22);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto24=array();
-			$obj = new SQLField(array(
-	"m_strName" => "id_extension",
-	"m_strTable" => "tbl_facultad",
-	"m_srcTableName" => "tbl_carrera"
-));
-
-$proto24["m_sql"] = "tbl_facultad.id_extension";
-$proto24["m_srcTableName"] = "tbl_carrera";
-$proto24["m_expr"]=$obj;
-$proto24["m_alias"] = "";
-$obj = new SQLFieldListItem($proto24);
-
-$proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto26=array();
-$proto26["m_link"] = "SQLL_MAIN";
-			$proto27=array();
-$proto27["m_strName"] = "tbl_carrera";
-$proto27["m_srcTableName"] = "tbl_carrera";
-$proto27["m_columns"] = array();
-$proto27["m_columns"][] = "id_carrera";
-$proto27["m_columns"][] = "carrera";
-$proto27["m_columns"][] = "codigo";
-$proto27["m_columns"][] = "estado";
-$proto27["m_columns"][] = "id_facultad";
-$proto27["m_columns"][] = "id_modalidad";
-$obj = new SQLTable($proto27);
+												$proto20=array();
+$proto20["m_link"] = "SQLL_MAIN";
+			$proto21=array();
+$proto21["m_strName"] = "tbl_carrera";
+$proto21["m_srcTableName"] = "tbl_carrera";
+$proto21["m_columns"] = array();
+$proto21["m_columns"][] = "id_carrera";
+$proto21["m_columns"][] = "carrera";
+$proto21["m_columns"][] = "codigo";
+$proto21["m_columns"][] = "estado";
+$proto21["m_columns"][] = "id_facultad";
+$proto21["m_columns"][] = "id_modalidad";
+$obj = new SQLTable($proto21);
 
-$proto26["m_table"] = $obj;
-$proto26["m_sql"] = "tbl_carrera";
-$proto26["m_alias"] = "";
-$proto26["m_srcTableName"] = "tbl_carrera";
-$proto28=array();
-$proto28["m_sql"] = "";
-$proto28["m_uniontype"] = "SQLL_UNKNOWN";
+$proto20["m_table"] = $obj;
+$proto20["m_sql"] = "tbl_carrera";
+$proto20["m_alias"] = "";
+$proto20["m_srcTableName"] = "tbl_carrera";
+$proto22=array();
+$proto22["m_sql"] = "";
+$proto22["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto28["m_column"]=$obj;
-$proto28["m_contained"] = array();
-$proto28["m_strCase"] = "";
-$proto28["m_havingmode"] = false;
-$proto28["m_inBrackets"] = false;
-$proto28["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto28);
+$proto22["m_column"]=$obj;
+$proto22["m_contained"] = array();
+$proto22["m_strCase"] = "";
+$proto22["m_havingmode"] = false;
+$proto22["m_inBrackets"] = false;
+$proto22["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto22);
 
-$proto26["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto26);
+$proto20["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto20);
 
 $proto0["m_fromlist"][]=$obj;
-												$proto30=array();
-$proto30["m_link"] = "SQLL_INNERJOIN";
-			$proto31=array();
-$proto31["m_strName"] = "tbl_facultad";
-$proto31["m_srcTableName"] = "tbl_carrera";
-$proto31["m_columns"] = array();
-$proto31["m_columns"][] = "id_facultad";
-$proto31["m_columns"][] = "facultad";
-$proto31["m_columns"][] = "estado";
-$proto31["m_columns"][] = "id_extension";
-$obj = new SQLTable($proto31);
+												$proto24=array();
+$proto24["m_link"] = "SQLL_INNERJOIN";
+			$proto25=array();
+$proto25["m_strName"] = "tbl_facultad";
+$proto25["m_srcTableName"] = "tbl_carrera";
+$proto25["m_columns"] = array();
+$proto25["m_columns"][] = "id_facultad";
+$proto25["m_columns"][] = "facultad";
+$proto25["m_columns"][] = "estado";
+$proto25["m_columns"][] = "id_extension";
+$obj = new SQLTable($proto25);
 
-$proto30["m_table"] = $obj;
-$proto30["m_sql"] = "INNER JOIN tbl_facultad ON tbl_carrera.id_facultad = tbl_facultad.id_facultad";
-$proto30["m_alias"] = "";
-$proto30["m_srcTableName"] = "tbl_carrera";
-$proto32=array();
-$proto32["m_sql"] = "tbl_carrera.id_facultad = tbl_facultad.id_facultad";
-$proto32["m_uniontype"] = "SQLL_UNKNOWN";
+$proto24["m_table"] = $obj;
+$proto24["m_sql"] = "INNER JOIN tbl_facultad ON tbl_carrera.id_facultad = tbl_facultad.id_facultad";
+$proto24["m_alias"] = "";
+$proto24["m_srcTableName"] = "tbl_carrera";
+$proto26=array();
+$proto26["m_sql"] = "tbl_carrera.id_facultad = tbl_facultad.id_facultad";
+$proto26["m_uniontype"] = "SQLL_UNKNOWN";
 						$obj = new SQLField(array(
 	"m_strName" => "id_facultad",
 	"m_strTable" => "tbl_carrera",
 	"m_srcTableName" => "tbl_carrera"
 ));
 
-$proto32["m_column"]=$obj;
-$proto32["m_contained"] = array();
-$proto32["m_strCase"] = "= tbl_facultad.id_facultad";
-$proto32["m_havingmode"] = false;
-$proto32["m_inBrackets"] = false;
-$proto32["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto32);
+$proto26["m_column"]=$obj;
+$proto26["m_contained"] = array();
+$proto26["m_strCase"] = "= tbl_facultad.id_facultad";
+$proto26["m_havingmode"] = false;
+$proto26["m_inBrackets"] = false;
+$proto26["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto26);
 
-$proto30["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto30);
-
-$proto0["m_fromlist"][]=$obj;
-												$proto34=array();
-$proto34["m_link"] = "SQLL_INNERJOIN";
-			$proto35=array();
-$proto35["m_strName"] = "tbl_modalidad";
-$proto35["m_srcTableName"] = "tbl_carrera";
-$proto35["m_columns"] = array();
-$proto35["m_columns"][] = "id_modalidad";
-$proto35["m_columns"][] = "modalidad";
-$proto35["m_columns"][] = "estado";
-$obj = new SQLTable($proto35);
-
-$proto34["m_table"] = $obj;
-$proto34["m_sql"] = "INNER JOIN tbl_modalidad ON tbl_carrera.id_modalidad = tbl_modalidad.id_modalidad";
-$proto34["m_alias"] = "";
-$proto34["m_srcTableName"] = "tbl_carrera";
-$proto36=array();
-$proto36["m_sql"] = "tbl_carrera.id_modalidad = tbl_modalidad.id_modalidad";
-$proto36["m_uniontype"] = "SQLL_UNKNOWN";
-						$obj = new SQLField(array(
-	"m_strName" => "id_modalidad",
-	"m_strTable" => "tbl_carrera",
-	"m_srcTableName" => "tbl_carrera"
-));
-
-$proto36["m_column"]=$obj;
-$proto36["m_contained"] = array();
-$proto36["m_strCase"] = "= tbl_modalidad.id_modalidad";
-$proto36["m_havingmode"] = false;
-$proto36["m_inBrackets"] = false;
-$proto36["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto36);
-
-$proto34["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto34);
+$proto24["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto24);
 
 $proto0["m_fromlist"][]=$obj;
-												$proto38=array();
-$proto38["m_link"] = "SQLL_INNERJOIN";
-			$proto39=array();
-$proto39["m_strName"] = "tbl_extension";
-$proto39["m_srcTableName"] = "tbl_carrera";
-$proto39["m_columns"] = array();
-$proto39["m_columns"][] = "id_extension";
-$proto39["m_columns"][] = "extension";
-$proto39["m_columns"][] = "estado";
-$proto39["m_columns"][] = "codigo_u";
-$proto39["m_columns"][] = "id_ciudad";
-$obj = new SQLTable($proto39);
-
-$proto38["m_table"] = $obj;
-$proto38["m_sql"] = "INNER JOIN tbl_extension ON tbl_facultad.id_extension = tbl_extension.id_extension";
-$proto38["m_alias"] = "";
-$proto38["m_srcTableName"] = "tbl_carrera";
-$proto40=array();
-$proto40["m_sql"] = "tbl_facultad.id_extension = tbl_extension.id_extension";
-$proto40["m_uniontype"] = "SQLL_UNKNOWN";
+$proto0["m_groupby"] = array();
+$proto0["m_orderby"] = array();
+												$proto28=array();
 						$obj = new SQLField(array(
 	"m_strName" => "id_extension",
 	"m_strTable" => "tbl_facultad",
 	"m_srcTableName" => "tbl_carrera"
 ));
 
-$proto40["m_column"]=$obj;
-$proto40["m_contained"] = array();
-$proto40["m_strCase"] = "= tbl_extension.id_extension";
-$proto40["m_havingmode"] = false;
-$proto40["m_inBrackets"] = false;
-$proto40["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto40);
+$proto28["m_column"]=$obj;
+$proto28["m_bAsc"] = 1;
+$proto28["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto28);
 
-$proto38["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto38);
-
-$proto0["m_fromlist"][]=$obj;
-$proto0["m_groupby"] = array();
-$proto0["m_orderby"] = array();
-												$proto42=array();
+$proto0["m_orderby"][]=$obj;					
+												$proto30=array();
 						$obj = new SQLField(array(
-	"m_strName" => "extension",
-	"m_strTable" => "tbl_extension",
+	"m_strName" => "id_facultad",
+	"m_strTable" => "tbl_carrera",
 	"m_srcTableName" => "tbl_carrera"
 ));
 
-$proto42["m_column"]=$obj;
-$proto42["m_bAsc"] = 1;
-$proto42["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto42);
+$proto30["m_column"]=$obj;
+$proto30["m_bAsc"] = 1;
+$proto30["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto30);
 
 $proto0["m_orderby"][]=$obj;					
-												$proto44=array();
-						$obj = new SQLField(array(
-	"m_strName" => "facultad",
-	"m_strTable" => "tbl_facultad",
-	"m_srcTableName" => "tbl_carrera"
-));
-
-$proto44["m_column"]=$obj;
-$proto44["m_bAsc"] = 1;
-$proto44["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto44);
-
-$proto0["m_orderby"][]=$obj;					
-												$proto46=array();
-						$obj = new SQLField(array(
-	"m_strName" => "modalidad",
-	"m_strTable" => "tbl_modalidad",
-	"m_srcTableName" => "tbl_carrera"
-));
-
-$proto46["m_column"]=$obj;
-$proto46["m_bAsc"] = 1;
-$proto46["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto46);
-
-$proto0["m_orderby"][]=$obj;					
-												$proto48=array();
+												$proto32=array();
 						$obj = new SQLField(array(
 	"m_strName" => "carrera",
 	"m_strTable" => "tbl_carrera",
 	"m_srcTableName" => "tbl_carrera"
 ));
 
-$proto48["m_column"]=$obj;
-$proto48["m_bAsc"] = 1;
-$proto48["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto48);
+$proto32["m_column"]=$obj;
+$proto32["m_bAsc"] = 1;
+$proto32["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto32);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="tbl_carrera";		
@@ -2134,7 +1709,7 @@ $queryData_tbl_carrera = createSqlQuery_tbl_carrera();
 	
 		;
 
-										
+							
 
 $tdatatbl_carrera[".sqlquery"] = $queryData_tbl_carrera;
 

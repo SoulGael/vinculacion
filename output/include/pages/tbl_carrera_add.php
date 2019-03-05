@@ -1,5 +1,11 @@
 <?php
 			$optionsArray = array( 'details' => array( 'tbl_persona' => array( 'displayPreview' => 2,
+'previewPageId' => '' ),
+'tbl_linea_investigacion' => array( 'displayPreview' => 2,
+'previewPageId' => '' ),
+'tbl_programa_vinculacion' => array( 'displayPreview' => 2,
+'previewPageId' => '' ),
+'tbl_proyecto_vinculacion' => array( 'displayPreview' => 2,
 'previewPageId' => '' ) ),
 'master' => array( 'tbl_facultad' => array( 'preview' => false ),
 'tbl_modalidad' => array( 'preview' => false ) ),
@@ -154,5 +160,6 @@
 'type' => 'integrated_edit_field',
 'orientation' => 0 ) ),
 'dbProps' => array(  ),
-'version' => 2 );
+'version' => 2,
+'pageWidth' => 'standard' );
 		?>

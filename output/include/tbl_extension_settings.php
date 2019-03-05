@@ -41,16 +41,16 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelstbl_extension["Spanish"]["codigo_u"] = "Codigo U";
 	$fieldToolTipstbl_extension["Spanish"]["codigo_u"] = "";
 	$placeHolderstbl_extension["Spanish"]["codigo_u"] = "";
-	$fieldLabelstbl_extension["Spanish"]["id_ciudad"] = "Id Ciudad";
+	$fieldLabelstbl_extension["Spanish"]["id_ciudad"] = "Ciudad";
 	$fieldToolTipstbl_extension["Spanish"]["id_ciudad"] = "";
 	$placeHolderstbl_extension["Spanish"]["id_ciudad"] = "";
-	$fieldLabelstbl_extension["Spanish"]["ciudad"] = "Ciudad";
+	$fieldLabelstbl_extension["Spanish"]["ciudad"] = "Ciudades";
 	$fieldToolTipstbl_extension["Spanish"]["ciudad"] = "";
 	$placeHolderstbl_extension["Spanish"]["ciudad"] = "";
-	$fieldLabelstbl_extension["Spanish"]["id_provincia"] = "Id Provincia";
+	$fieldLabelstbl_extension["Spanish"]["id_provincia"] = "Provincia";
 	$fieldToolTipstbl_extension["Spanish"]["id_provincia"] = "";
 	$placeHolderstbl_extension["Spanish"]["id_provincia"] = "";
-	$fieldLabelstbl_extension["Spanish"]["provincia"] = "Provincia";
+	$fieldLabelstbl_extension["Spanish"]["provincia"] = "Provincias";
 	$fieldToolTipstbl_extension["Spanish"]["provincia"] = "";
 	$placeHolderstbl_extension["Spanish"]["provincia"] = "";
 	if (count($fieldToolTipstbl_extension["Spanish"]))
@@ -170,7 +170,7 @@ $tdatatbl_extension[".rowHighlite"] = true;
 
 
 
-
+						
 $tdatatbl_extension[".flexibleSearch"] = true;
 
 

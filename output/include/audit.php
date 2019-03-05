@@ -342,6 +342,30 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="tbl_convenio")
+		{
+			return false;
+		}
+		if($table=="tbl_institucion")
+		{
+			return false;
+		}
+		if($table=="tbl_linea_investigacion")
+		{
+			return false;
+		}
+		if($table=="tbl_programa_vinculacion")
+		{
+			return false;
+		}
+		if($table=="tbl_proyecto_vinculacion")
+		{
+			return false;
+		}
+		if($table=="tbl_vinculacion_estudiantes")
+		{
+			return false;
+		}
 	}
 	
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -687,6 +711,30 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="tbl_distributivo_proyectos")
+		{
+			return false;
+		}
+		if($table=="tbl_convenio")
+		{
+			return false;
+		}
+		if($table=="tbl_institucion")
+		{
+			return false;
+		}
+		if($table=="tbl_linea_investigacion")
+		{
+			return false;
+		}
+		if($table=="tbl_programa_vinculacion")
+		{
+			return false;
+		}
+		if($table=="tbl_proyecto_vinculacion")
+		{
+			return false;
+		}
+		if($table=="tbl_vinculacion_estudiantes")
 		{
 			return false;
 		}

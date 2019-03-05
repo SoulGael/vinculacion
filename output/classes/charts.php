@@ -507,6 +507,18 @@ class Chart
 			return true;
 		if("tbl_distributivo_proyectos" == $this->chrt_array['tables'][0])
 			return true;
+		if("tbl_convenio" == $this->chrt_array['tables'][0])
+			return true;
+		if("tbl_institucion" == $this->chrt_array['tables'][0])
+			return true;
+		if("tbl_linea_investigacion" == $this->chrt_array['tables'][0])
+			return true;
+		if("tbl_programa_vinculacion" == $this->chrt_array['tables'][0])
+			return true;
+		if("tbl_proyecto_vinculacion" == $this->chrt_array['tables'][0])
+			return true;
+		if("tbl_vinculacion_estudiantes" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

@@ -16,6 +16,8 @@
 
 		$this->events["BeforeEdit"]=true;
 
+		$this->events["BeforeInsert"]=true;
+
 
 	}
 
@@ -41,14 +43,29 @@ function BeforeAdd(&$values, &$message, $inline, &$pageObject)
 		$values['nombres'] = strtoupper($values['nombres']);
 $values['apellidos'] = strtoupper($values['apellidos']);
 
+//Nullos
+//$values['nro_matricula'] = $values['nro_matricula']!="" ? $values['nro_matricula']: "null";
+//$values['telefono'] = $values['telefono']!="" ? $values['telefono']: "null";
+//$values['email'] = $values['email']!="" ? $values['email']: "null";
+//$values['email_institucional'] = $values['email_institucional']!="" ? $values['email_institucional']: "null";
+//$values['direccion'] = $values['direccion']!="" ? $values['direccion']: "null";
+//$values['nivel'] = $values['nivel']!="" ? $values['nivel']: "null";
+//$values['paralelo'] = $values['paralelo']!="" ? $values['paralelo']: "null";
+
 // Place event code here.
 // Use "Add Action" button to add code snippets.
 
 
 //**********  Insert a record into another table  ************
 
-$sql = "INSERT INTO tbl_persona(cedula, nro_matricula, nombres, apellidos, telefono, email_institucional, email, direccion, pass, nivel, paralelo, foto, id_ciudad, id_carrera, id_periodo, id_rol) 
-values ('".$values['cedula']."', '".$values['nro_matricula']."', '".$values['nombres']."', '".$values['apellidos']."', '".$values['telefono']."', '".$values['email_institucional']."', '".$values['email']."', '".$values['direccion']."', '".$values['cedula']."', '".$values['nivel']."', '".$values['paralelo']."', '".$values['foto']."', ".$values['id_ciudad'].", ".$values['id_carrera'].", ".$values['id_periodo'].", ".$values['id_rol'].")";
+$sql = "INSERT INTO tbl_persona(cedula, nro_matricula, nombres, apellidos, 
+telefono, email_institucional, email, direccion, 
+pass, nivel, paralelo, foto, id_ciudad, 
+id_carrera, id_periodo, id_rol, id_modalidad) 
+values ('".$values['cedula']."', '".$values['nro_matricula']."', '".$values['nombres']."', '".$values['apellidos']."', 
+'".$values['telefono']."', '".$values['email_institucional']."', '".$values['email']."', '".$values['direccion']."', 
+'".$values['cedula']."', '".$values['nivel']."', '".$values['paralelo']."', '".$values['foto']."', ".$values['id_ciudad'].", 
+".$values['id_carrera'].", ".$values['id_periodo'].", ".$values['id_rol'].",".$values['id_modalidad'].")";
 CustomQuery($sql);
 
 
@@ -153,7 +170,8 @@ foto='".$values['foto']."',
 id_ciudad=".$values['id_ciudad'].", 
 id_carrera=".$values['id_carrera'].", 
 id_periodo=".$values['id_periodo'].", 
-id_rol=".$values['id_rol']." where cedula=".$values['cedula'].";";
+id_rol=".$values['id_rol'].",
+id_modalidad=".$values['id_modalidad']." where cedula=".$values['cedula'].";";
 CustomQuery($sql);
 
 
@@ -199,6 +217,137 @@ return false;
 		
 		
 		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// Before Insert Record
+function BeforeInsert(&$rawvalues, &$values, &$pageObject, &$message)
+{
+
+		
+
+//**********  Check if specific record exists  ************
+//Nullos
+$values['nro_matricula'] = $values['nro_matricula']!="" ? $values['nro_matricula']: "null";
+$values['telefono'] = $values['telefono']!="" ? $values['telefono']: "null";
+$values['email'] = $values['email']!="" ? $values['email']: "null";
+$values['direccion'] = $values['direccion']!="" ? $values['direccion']: "null";
+$values['nivel'] = $values['nivel']!="" ? $values['nivel']: "null";
+$values['paralelo'] = $values['paralelo']!="" ? $values['paralelo']: "null";
+
+
+global $conn;
+$strSQLExists = "select cedula from tbl_persona where cedula='".$values['cedula']."';";
+$rsExists = db_query($strSQLExists,$conn);
+$data=db_fetch_array($rsExists);
+if($data)
+{
+	$sql = "UPDATE tbl_persona SET nro_matricula='".$values['nro_matricula']."', 
+		telefono='".$values['telefono']."', 
+		email='".$values['email']."', 
+		direccion='".$values['direccion']."', 
+		nivel='".$values['nivel']."', 
+		paralelo='".$values['paralelo']."', 
+		id_ciudad=(select id_ciudad from tbl_ciudad where ciudad='".$rawvalues['id_ciudad']."' and estado='Activo'), 
+		id_carrera=(select id_carrera from tbl_carrera where carrera='".$rawvalues['id_carrera']."' and estado='Activo'
+			and id_facultad=(select id_facultad from tbl_facultad where facultad='".$rawvalues['id_facultad']."'
+			and id_extension = (select id_extension from `tbl_extension` where extension='".$rawvalues['id_extension']."' and estado='Activo')
+			and estado='Activo')
+			and INSTR(id_modalidad,(select id_modalidad from tbl_modalidad where modalidad='".$rawvalues['id_modalidad']."' and estado='Activo'))>0 ), 
+		id_periodo=(select id_periodo from tbl_periodo where codigo='".$rawvalues['id_periodo']."' and estado='Activo'),
+		id_modalidad = (select id_modalidad from tbl_modalidad where modalidad='".$rawvalues['id_modalidad']."' and estado='Activo') 
+where cedula= '".$values['cedula']."';";
+}
+else
+{
+	$sql = "INSERT INTO tbl_persona(cedula, nro_matricula, nombres, apellidos, 
+	telefono, email, direccion, 
+	pass, nivel, paralelo, id_ciudad, 
+	id_carrera, id_periodo, id_rol, id_modalidad) 
+	values ('".$values['cedula']."', '".$values['nro_matricula']."', '".$values['nombres']."', '".$values['apellidos']."', 
+	'".$values['telefono']."', '".$values['email']."', '".$values['direccion']."', 
+	'".$values['cedula']."', '".$values['nivel']."', '".$values['paralelo']."', 
+  (select id_ciudad from tbl_ciudad where ciudad='".$rawvalues['id_ciudad']."' and estado='Activo'), 
+	(select id_carrera from tbl_carrera where carrera='".$rawvalues['id_carrera']."' and estado='Activo' and id_facultad=(select id_facultad from tbl_facultad where facultad='".$rawvalues['id_facultad']."' and id_extension = (select id_extension from tbl_extension where extension='".$rawvalues['id_extension']."' and estado='Activo') and estado='Activo') 
+		and INSTR(id_modalidad,(select id_modalidad from tbl_modalidad where modalidad='".$rawvalues['id_modalidad']."' and estado='Activo'))>0 ),
+	(select id_periodo from tbl_periodo where codigo='".$rawvalues['id_periodo']."' and estado='Activo'), 
+	(select id_rol from tbl_rol where rol='ESTUDIANTE' and estado='Activo'), 
+	(select id_modalidad from tbl_modalidad where modalidad='".$rawvalues['id_modalidad']."' and estado='Activo'));";
+}
+
+CustomQuery($sql);
+
+//$pageObject->setMessageType(MESSAGE_SUCCESS);
+
+//$pageObject->setMessage("Registros Guardados Correctamente, la contraseña es el número de cédula si es la primera vez");
+
+
+
+
+
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+
+return false;
+;		
+} // function BeforeInsert
+
 		
 		
 		

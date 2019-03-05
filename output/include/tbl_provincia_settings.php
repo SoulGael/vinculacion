@@ -149,7 +149,7 @@ $tdatatbl_provincia[".rowHighlite"] = true;
 
 
 
-
+			
 $tdatatbl_provincia[".flexibleSearch"] = true;
 
 

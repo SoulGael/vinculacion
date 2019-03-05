@@ -1,0 +1,4 @@
+Modified tables ("-" means deleted field, "+" means new field):
+	● tbl_vinculacion_estudiantes:
+		 + codigo_solicitud
+		 + doc_oficio_contestacion

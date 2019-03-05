@@ -622,15 +622,23 @@ $tableCaptions["Spanish"]["tbl_carrera"] = "Carreras";
 $tableCaptions["Spanish"]["tbl_extension"] = "Extensiones";
 $tableCaptions["Spanish"]["tbl_facultad"] = "Facultades";
 $tableCaptions["Spanish"]["tbl_modalidad"] = "Modalidades";
-$tableCaptions["Spanish"]["tbl_periodo"] = "Periodos";
+$tableCaptions["Spanish"]["tbl_periodo"] = "Periodos Academicos";
 $tableCaptions["Spanish"]["tbl_rol"] = "Roles";
 $tableCaptions["Spanish"]["tbl_provincia"] = "Provincias";
 $tableCaptions["Spanish"]["tbl_persona"] = "Usuarios";
 $tableCaptions["Spanish"]["tbl_distributivo_proyectos"] = "Distributivo de Proyectos";
+$tableCaptions["Spanish"]["tbl_convenio"] = "Tbl Convenio";
+$tableCaptions["Spanish"]["tbl_institucion"] = "Tbl Institucion";
+$tableCaptions["Spanish"]["tbl_linea_investigacion"] = "Linea Investigacion";
+$tableCaptions["Spanish"]["tbl_programa_vinculacion"] = "Programa Vinculacion";
+$tableCaptions["Spanish"]["tbl_proyecto_vinculacion"] = "Proyecto Vinculacion";
+$tableCaptions["Spanish"]["tbl_vinculacion_estudiantes"] = "Vinculacion Estudiantes";
 $tableCaptions["English"] = array();
 $tableCaptions["English"][""] = "";
 $tableCaptions["English"]["tbl_extension"] = "Tbl Extension";
 $tableCaptions["English"]["tbl_persona"] = "Usuarios";
+$tableCaptions["English"]["tbl_carrera"] = "Carreras";
+$tableCaptions["English"]["tbl_distributivo_proyectos"] = "Distributivo de Proyectos";
 
 
 $globalEvents = new class_GlobalEvents;
