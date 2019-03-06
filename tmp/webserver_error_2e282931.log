@@ -1,0 +1,11 @@
+[Wed Mar 06 09:14:39.608209 2019] [core:warn] [pid 16724:tid 664] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/ggabr/Documents/PHPRunnerProjects/vinculacion/tmp/webserver.conf.
+[Wed Mar 06 09:14:40.723879 2019] [mpm_winnt:notice] [pid 16724:tid 664] AH00455: Apache/2.4.10 (Win32) PHP/5.5.18 configured -- resuming normal operations
+[Wed Mar 06 09:14:40.724880 2019] [mpm_winnt:notice] [pid 16724:tid 664] AH00456: Apache Lounge VC11 Server built: Jul 17 2014 11:50:08
+[Wed Mar 06 09:14:40.724880 2019] [core:notice] [pid 16724:tid 664] AH00094: Command line: 'C:\\Program Files\\PHPRunner10.0\\EmbeddedServer\\bin\\httpd.exe -d C:/Program Files/PHPRunner10.0/EmbeddedServer -d C:\\Program Files\\PHPRunner10.0\\EmbeddedServer -f C:\\Users\\ggabr\\Documents\\PHPRunnerProjects\\vinculacion\\tmp\\webserver.conf'
+[Wed Mar 06 09:14:40.729876 2019] [mpm_winnt:notice] [pid 16724:tid 664] AH00418: Parent: Created child process 9364
+[Wed Mar 06 09:14:41.736309 2019] [core:warn] [pid 9364:tid 652] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/ggabr/Documents/PHPRunnerProjects/vinculacion/tmp/webserver.conf.
+[Wed Mar 06 09:14:41.780408 2019] [core:warn] [pid 9364:tid 652] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/ggabr/Documents/PHPRunnerProjects/vinculacion/tmp/webserver.conf.
+[Wed Mar 06 09:14:41.815387 2019] [mpm_winnt:notice] [pid 9364:tid 652] AH00354: Child: Starting 64 worker threads.
+[Wed Mar 06 11:30:21.769627 2019] [mpm_winnt:notice] [pid 16724:tid 664] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Mar 06 11:30:23.784989 2019] [mpm_winnt:notice] [pid 9364:tid 652] AH00364: Child: All worker threads have exited.
+[Wed Mar 06 11:30:23.840954 2019] [mpm_winnt:notice] [pid 16724:tid 664] AH00430: Parent: Child process 9364 exited successfully.

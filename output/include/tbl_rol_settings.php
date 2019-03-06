@@ -204,13 +204,13 @@ $tdatatbl_rol[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "ORDER BY id_rol";
+$tstrOrderBy = "ORDER BY rol";
 if(strlen($tstrOrderBy) && strtolower(substr($tstrOrderBy,0,8))!="order by")
 	$tstrOrderBy = "order by ".$tstrOrderBy;
 $tdatatbl_rol[".strOrderBy"] = $tstrOrderBy;
 
 $tdatatbl_rol[".orderindexes"] = array();
-	$tdatatbl_rol[".orderindexes"][] = array(1, (1 ? "ASC" : "DESC"), "id_rol");
+	$tdatatbl_rol[".orderindexes"][] = array(2, (1 ? "ASC" : "DESC"), "rol");
 
 
 $tdatatbl_rol[".sqlHead"] = "SELECT id_rol,  rol,  estado";
@@ -580,7 +580,8 @@ $tdatatbl_rol[".hideMobileList"] = array();
 	$edata["autoCompleteFields"] = array();
 		$edata["LCType"] = 4;
 
-	
+		$edata["HorizontalLookup"] = true;
+
 	
 		$edata["LookupValues"] = array();
 	$edata["LookupValues"][] = "Activo";
@@ -720,7 +721,7 @@ $proto0["m_strHead"] = "SELECT";
 $proto0["m_strFieldList"] = "id_rol,  rol,  estado";
 $proto0["m_strFrom"] = "FROM tbl_rol";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "ORDER BY id_rol";
+$proto0["m_strOrderBy"] = "ORDER BY rol";
 	
 		;
 			$proto0["cipherer"] = null;
@@ -838,7 +839,7 @@ $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
 												$proto16=array();
 						$obj = new SQLField(array(
-	"m_strName" => "id_rol",
+	"m_strName" => "rol",
 	"m_strTable" => "tbl_rol",
 	"m_srcTableName" => "tbl_rol"
 ));
